@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NapierHealthCareProject">
+<listeners><listener class-name="com.HC.utilities.Reporting" /></listeners>
+<test name="HealthCare Test">
+<parameter name="browser" value="chrome" />
+<classes>
+<class name="com.HC.testCases.TC_IncidentReportAllDetails" />
+</classes>
+</test>
+</suite>

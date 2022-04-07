@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="NapierHealthCareProject" duration-ms="70168" started-at="2022-04-07T13:48:14Z" finished-at="2022-04-07T13:49:24Z">
+    <groups>
+    </groups>
+    <test name="HealthCare Test" duration-ms="70168" started-at="2022-04-07T13:48:14Z" finished-at="2022-04-07T13:49:24Z">
+      <class name="com.HC.testCases.TC_IncidentReportClearDetails">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.HC.testCases.TC_IncidentReportClearDetails@548e7350]" name="setup" is-config="true" duration-ms="8643" started-at="2022-04-07T13:48:14Z" finished-at="2022-04-07T13:48:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_IncidentReportClearDetails()[pri:0, instance:com.HC.testCases.TC_IncidentReportClearDetails@548e7350]" name="TC_IncidentReportClearDetails" duration-ms="61218" started-at="2022-04-07T13:48:23Z" finished-at="2022-04-07T13:49:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_IncidentReportClearDetails -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.HC.testCases.TC_IncidentReportClearDetails@548e7350]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-04-07T13:49:24Z" finished-at="2022-04-07T13:49:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.HC.testCases.TC_IncidentReportClearDetails -->
+    </test> <!-- HealthCare Test -->
+  </suite> <!-- NapierHealthCareProject -->
+</testng-results>
