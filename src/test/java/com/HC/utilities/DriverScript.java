@@ -1,11 +1,8 @@
-package com.HC.pageObjects;
+package com.HC.utilities;
 
 import java.util.ArrayList;
 import java.util.List;
 import org.testng.TestNG;
-import com.HC.utilities.Constants;
-import com.HC.utilities.ExcelUtils;
-import com.HC.utilities.CreateXML;
 
 public class DriverScript {
 
@@ -23,7 +20,7 @@ public class DriverScript {
     	ExcelUtils.setExcelFile(Constants.Path_TestData);
 		int iTotalTestCases = ExcelUtils.getRowCount(Constants.Sheet_TestCases);
 		//Object[] tests = null;
-    	System.out.println("iTotalTestCases: "+iTotalTestCases);
+    	//System.out.println("iTotalTestCases: "+iTotalTestCases);
 		//This loop will execute number of times equal to Total number of test cases
 		List<String> li=new ArrayList<String>();
 		for(int iTestcase=1;iTestcase<=iTotalTestCases;iTestcase++){
@@ -33,16 +30,16 @@ public class DriverScript {
 			sRunMode = ExcelUtils.getCellData(iTestcase, Constants.Col_RunMode,Constants.Sheet_TestCases);
 			//This is the condition statement on RunMode value
 			if (sRunMode.equals("Yes")){
-				System.out.println("output: "+sTestCaseID);
+			//	System.out.println("output: "+sTestCaseID);
 				li.add(sTestCaseID);
-				System.out.println("added"+li);
+			//	System.out.println("added"+li);
 			}
     	}
 	
 		CreateXML.writeFile(li);		
 		TestNG runner=new TestNG();
 		List<String> suitefiles=new ArrayList<String>();
-		suitefiles.add("C:\\Users\\venkata\\Downloads\\NapierHeathCareProject\\testng2.xml");
+		suitefiles.add(Constants.Path_TestNG);
 
 		runner.setTestSuites(suitefiles);
 		

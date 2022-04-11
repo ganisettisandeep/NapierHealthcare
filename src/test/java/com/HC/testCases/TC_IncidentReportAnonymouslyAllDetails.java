@@ -8,7 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.HC.pageObjects.IncidentPO;
 import com.HC.pageObjects.LoginPage;
+import com.HC.utilities.BaseClass;
 import com.HC.utilities.Constants;
 import com.HC.utilities.XLUtils;
 
@@ -29,14 +31,16 @@ public class TC_IncidentReportAnonymouslyAllDetails extends BaseClass {
 		lp.clicksubmit();
 		logger.info("Login button pressed");
 		Thread.sleep(5000);
+
+		IncidentPO in = new IncidentPO(driver);
 		
 		//click anonymous details
-		lp.clickAnonymous();
+		in.clickAnonymous();
 		logger.info("Anonymous is clicked");
 		Thread.sleep(2000);
 
 		//save anonymous confirmation
-		lp.popClickAnonymous();
+		in.popClickAnonymous();
 		logger.info("popup anonymous is clicked");
 		Thread.sleep(2000);
 		
@@ -67,7 +71,7 @@ public class TC_IncidentReportAnonymouslyAllDetails extends BaseClass {
 		lp.settypeincident();
 		logger.info("Incident type clicked");
 		Thread.sleep(2000);
-		
+	/*	
 		lp.selectCheckBoxText();
 		logger.info("CheckBoxText selected");
 		Thread.sleep(2000);
@@ -75,7 +79,7 @@ public class TC_IncidentReportAnonymouslyAllDetails extends BaseClass {
 		lp.selectCheckScore();
 		logger.info("CheckScore selected");
 		Thread.sleep(2000);
-				
+	*/			
 		//category
 		String cat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAnonymouslyAll", 1, 3);
 		System.out.println("cat is: "+cat);
@@ -97,48 +101,48 @@ public class TC_IncidentReportAnonymouslyAllDetails extends BaseClass {
 		
 		//dept involved
 		String dept = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAnonymouslyAll", 1, 6);
-		lp.selectDeptInvolved(dept);
+		in.selectDeptInvolved(dept);
 		logger.info("dept involved entered");
 		Thread.sleep(2000);
 
 		//preventability
-		lp.selectpreventability();
+		in.selectpreventability();
 		logger.info("preventability selected");
 		Thread.sleep(2000);
 
 		//ActionTakenText
 		String text = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAnonymouslyAll", 1, 7);
-		lp.immedActionTakenText(text);
+		in.immedActionTakenText(text);
 		logger.info("ActionTaken entered");
 		Thread.sleep(2000);
 
 		//action takenBy
 		String takenBy = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAnonymouslyAll", 1, 8);
-		lp.selectImmedActionTakenBy(takenBy);
+		in.selectImmedActionTakenBy(takenBy);
 		logger.info("action takenBy selected");
 		Thread.sleep(2000);
 		
 		//action DateTime selection
 		String actionDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAnonymouslyAll", 1, 9);
-		lp.selectActionTakenDateTime(actionDateTime);
+		in.selectActionTakenDateTime(actionDateTime);
 		logger.info("action DateTime selected");
 		Thread.sleep(2000);
 
 		//witness selected
 		String witness = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAnonymouslyAll", 1, 10);
-		lp.selectWitnessedBy(witness);
+		in.selectWitnessedBy(witness);
 		logger.info("witness selected");
 		Thread.sleep(2000);
 
 		//notifiedTo selection
 		String notifiedTo = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAnonymouslyAll", 1, 11);
-		lp.selectNotifiedTo(notifiedTo);
+		in.selectNotifiedTo(notifiedTo);
 		logger.info("notifiedTo selected");
 		Thread.sleep(2000);
 
 		//notifiedDateTime selection
 		String notifiedDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAnonymouslyAll", 1, 12);
-		lp.selectNotifiedDateTime(notifiedDateTime);
+		in.selectNotifiedDateTime(notifiedDateTime);
 		logger.info("notified DateTime selected");
 		Thread.sleep(2000);
 
@@ -150,7 +154,7 @@ public class TC_IncidentReportAnonymouslyAllDetails extends BaseClass {
 		Thread.sleep(2000);
 		String number = LoginPage.getincidentnumber();
 		System.out.println("incident number -->" + number);
-		capureScreen(driver,"IncidentRepSubmited");
+		capureScreen(driver,"TC_IncidentReportAnonymouslyAllDetails");
 		Thread.sleep(5000);
 		boolean save = lp.popsave();
 		Thread.sleep(2500);

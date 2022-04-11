@@ -7,6 +7,7 @@ public class Constants {
 	public static final String Path_TestData = "C://Users//venkata//Downloads//NapierHeathCareProject//DataEngine.xlsx";
 	public static final String Path_IncidentData = "C://Users//venkata//Downloads//NapierHeathCareProject//DataEngine.xlsx";
 	public static final String Path_FileUpload = "C:\\Users\\venkata\\Downloads\\NapierHeathCareProject\\incidentImage1.jpg";
+	public static final String Path_TestNG = "C:\\Users\\venkata\\Downloads\\NapierHeathCareProject\\testng2.xml";
 	
 	//List of Data Sheet Column Numbers
 	public static final int Col_TestCaseID = 0;	

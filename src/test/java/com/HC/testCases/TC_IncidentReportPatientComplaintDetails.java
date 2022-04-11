@@ -7,7 +7,9 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import com.HC.pageObjects.IncidentPO;
 import com.HC.pageObjects.LoginPage;
+import com.HC.utilities.BaseClass;
 import com.HC.utilities.Constants;
 import com.HC.utilities.XLUtils;
 
@@ -29,13 +31,15 @@ public class TC_IncidentReportPatientComplaintDetails extends BaseClass {
 		logger.info("Login button pressed");
 		Thread.sleep(5000);
 
+		IncidentPO in = new IncidentPO(driver);
+		
 		//click anonymous details
-		lp.clickAnonymous();
+		in.clickAnonymous();
 		logger.info("Anonymous is clicked");
 		Thread.sleep(2000);
 
 		//save anonymous confirmation
-		lp.popClickAnonymous();
+		in.popClickAnonymous();
 		logger.info("popup anonymous is clicked");
 		Thread.sleep(2000);
 		
@@ -63,19 +67,19 @@ public class TC_IncidentReportPatientComplaintDetails extends BaseClass {
 		Thread.sleep(2000);
 
 		//selection of patient compliant
-		lp.patientCompliantYes();
+		in.patientCompliantYes();
 		logger.info("patient compliant yes selected");
 		Thread.sleep(2000);
 
 		//ComplaintDateTime
 		String ComplaintDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 3);
-		lp.selectComplaintDateTime(ComplaintDateTime);
+		in.selectComplaintDateTime(ComplaintDateTime);
 		logger.info("Compliant Date&Time entered");
 		Thread.sleep(2000);
 
 		//Complaint ID
 		String ComplaintID = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 4);
-		lp.complaintID(ComplaintID);
+		in.complaintID(ComplaintID);
 		logger.info("Compliant ID entered");
 		Thread.sleep(2000);
 		
@@ -84,14 +88,16 @@ public class TC_IncidentReportPatientComplaintDetails extends BaseClass {
 		logger.info("Incident type clicked");
 		Thread.sleep(2000);
 		
-		lp.selectCheckBoxText();
+		/*
+		in.selectCheckBoxText();
 		logger.info("CheckBoxText selected");
 		Thread.sleep(2000);
 		
-		lp.selectCheckScore();
+		in.selectCheckScore();
 		logger.info("CheckScore selected");
 		Thread.sleep(2000);
-				
+		*/	
+		
 		//category
 		String cat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 5);
 		System.out.println("cat is: "+cat);
@@ -113,48 +119,48 @@ public class TC_IncidentReportPatientComplaintDetails extends BaseClass {
 		
 		//dept involved
 		String dept = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 8);
-		lp.selectDeptInvolved(dept);
+		in.selectDeptInvolved(dept);
 		logger.info("dept involved entered");
 		Thread.sleep(2000);
 
 		//preventability
-		lp.selectpreventability();
+		in.selectpreventability();
 		logger.info("preventability selected");
 		Thread.sleep(2000);
 
 		//ActionTakenText
 		String text = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 9);
-		lp.immedActionTakenText(text);
+		in.immedActionTakenText(text);
 		logger.info("ActionTaken entered");
 		Thread.sleep(2000);
 
 		//action takenBy
 		String takenBy = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 10);
-		lp.selectImmedActionTakenBy(takenBy);
+		in.selectImmedActionTakenBy(takenBy);
 		logger.info("action takenBy selected");
 		Thread.sleep(2000);
 		
 		//action DateTime selection
 		String actionDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 11);
-		lp.selectActionTakenDateTime(actionDateTime);
+		in.selectActionTakenDateTime(actionDateTime);
 		logger.info("action DateTime selected");
 		Thread.sleep(2000);
 
 		//witness selected
 		String witness = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 12);
-		lp.selectWitnessedBy(witness);
+		in.selectWitnessedBy(witness);
 		logger.info("witness selected");
 		Thread.sleep(2000);
 
 		//notifiedTo selection
 		String notifiedTo = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 13);
-		lp.selectNotifiedTo(notifiedTo);
+		in.selectNotifiedTo(notifiedTo);
 		logger.info("notifiedTo selected");
 		Thread.sleep(2000);
 
 		//notifiedDateTime selection
 		String notifiedDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 14);
-		lp.selectNotifiedDateTime(notifiedDateTime);
+		in.selectNotifiedDateTime(notifiedDateTime);
 		logger.info("notified DateTime selected");
 		Thread.sleep(2000);
 
@@ -166,7 +172,7 @@ public class TC_IncidentReportPatientComplaintDetails extends BaseClass {
 		Thread.sleep(2000);
 		String number = LoginPage.getincidentnumber();
 		System.out.println("incident number -->" + number);
-		capureScreen(driver,"IncidentRepSubmited");
+		capureScreen(driver,"TC_IncidentReportPatientComplaintDetails");
 		Thread.sleep(5000);
 		lp.popsave();
 		Thread.sleep(2500);

@@ -8,7 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.HC.pageObjects.DashboardPO;
 import com.HC.pageObjects.LoginPage;
+import com.HC.utilities.BaseClass;
 import com.HC.utilities.Constants;
 import com.HC.utilities.XLUtils;
 
@@ -30,28 +32,38 @@ public class TC_IncidentDashboardSearchIRcode extends BaseClass {
 		logger.info("Login button pressed");
 		Thread.sleep(5000);
 
+		DashboardPO db = new DashboardPO(driver);
+		
 		//dashboard
-		lp.clickincidentdashboard();
+		db.clickincidentdashboard();
 		logger.info("dashboard button clicked");
 		Thread.sleep(2500);
 
 		//enter IR code
-		lp.enterIRCode1("128 /04 NAP IR");
+		db.enterIRCode1("317 /2022 CONFIG CODE");
 		logger.info("IR code is entered");
 		Thread.sleep(2500);
 
 		//search button
-		lp.searchButton();
+		db.searchButton();
 		logger.info("search button is clicked");
 		Thread.sleep(2500);
 		
-		//view button
-		lp.viewIRcode();
-		logger.info("view button is clicked");
+		//validation
+		String text = db.getIRcode();
+		Assert.assertEquals("317 /2022 CONFIG CODE", text);
+		logger.info("validation passed");
 		Thread.sleep(2500);
 		
+		//view button
+		db.viewIRcode();
+		logger.info("view button is clicked");
+		Thread.sleep(2500);
+
+		capureScreen(driver,"TC_IncidentDashboardSearchIRcode");
+		
 		//result		
-		boolean viewPage = lp.viewInciPage();
+		boolean viewPage = db.viewInciPage();
 		Assert.assertTrue(viewPage);
 	}
 }

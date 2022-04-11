@@ -21,7 +21,7 @@
 		
 			<class name="com.HC.pageObjects.DriverScript" />   
 		-->	
-			<class name="com.HC.testCases.TC_IncidentReportClearDetails" />
+			<class name="com.HC.testCases.TC_IncidentDashboardSearchIRcode" />
 
 	
 		</classes>

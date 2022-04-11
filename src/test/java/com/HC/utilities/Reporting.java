@@ -40,9 +40,9 @@ public class Reporting extends TestListenerAdapter
 		extent.attachReporter(htmlReporter);
 		extent.setSystemInfo("Host name","localhost");
 		extent.setSystemInfo("Environemnt","QA");
-		extent.setSystemInfo("user","Aakash");
+		extent.setSystemInfo("user","Sandeep");
 		
-		htmlReporter.config().setDocumentTitle("HealthCare Test Project"); // Tile of report
+		htmlReporter.config().setDocumentTitle("Napier HealthCare"); // Tile of report
 		htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
 		htmlReporter.config().setTheme(Theme.DARK);
@@ -50,40 +50,55 @@ public class Reporting extends TestListenerAdapter
 	
 	public void onTestSuccess(ITestResult tr)
 	{
-		logger=extent.createTest(tr.getName()); // create new entry in th report
+		logger=extent.createTest(tr.getName()); // create new entry in the report
 		logger.log(Status.PASS,MarkupHelper.createLabel(tr.getName(),ExtentColor.GREEN)); // send the passed information to the report with GREEN color highlighted
+		logger.pass("Screenshot is below:");
+		attachScreenshot(tr);
 	}
 	
 	public void onTestFailure(ITestResult tr)
 	{
-		logger=extent.createTest(tr.getName()); // create new entry in th report
-		logger.log(Status.FAIL,MarkupHelper.createLabel(tr.getName(),ExtentColor.RED)); // send the passed information to the report with GREEN color highlighted
-		
-		String screenshotPath=System.getProperty("user.dir")+"\\Screenshots\\"+tr.getName()+".png";
-		
-		File f = new File(screenshotPath); 
-		
-		if(f.exists())
-		{
-		try {
-			logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotPath));
-			} 
-		catch (IOException e) 
-				{
-				e.printStackTrace();
-				}
-		}
-		
+		logger=extent.createTest(tr.getName()); // create new entry in the report
+		logger.log(Status.FAIL,MarkupHelper.createLabel(tr.getName(),ExtentColor.RED)); // send the passed information to the report with RED color highlighted
+		System.out.println("in onTestFailure");
+		logger.fail("Screenshot is below:");
+		attachScreenshot(tr);
 	}
 	
-	public void onTestSkipped(ITestResult tr)
-	{
-		logger=extent.createTest(tr.getName()); // create new entry in th report
+	public void onTestSkipped(ITestResult tr){
+		logger=extent.createTest(tr.getName()); // create new entry in the report
 		logger.log(Status.SKIP,MarkupHelper.createLabel(tr.getName(),ExtentColor.ORANGE));
+		logger.skip("Screenshot is below:");
+		attachScreenshot(tr);
 	}
 	
 	public void onFinish(ITestContext testContext)
 	{
+
+		System.out.println("in onFinish");
 		extent.flush();
 	}
+	
+
+	public void attachScreenshot(ITestResult tr) {
+		String screenshotPath=System.getProperty("user.dir")+"\\Screenshots\\"+tr.getName()+".png";
+		System.out.println("screenshotPath: "+screenshotPath);
+		File f = new File(screenshotPath); 
+		
+		if(f.exists()){
+			System.out.println("in if");
+		try {
+			System.out.println("in try");
+			//logger.pass("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotPath));
+
+			logger.addScreenCaptureFromPath(screenshotPath);
+			System.out.println("added");
+			} 
+		catch (IOException e){
+			System.out.println("in catch");
+				e.printStackTrace();
+				}
+		}
+	}
+	
 }

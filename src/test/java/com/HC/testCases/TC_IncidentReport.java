@@ -8,7 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 
+import com.HC.pageObjects.DashboardPO;
 import com.HC.pageObjects.LoginPage;
+import com.HC.utilities.BaseClass;
 import com.HC.utilities.Constants;
 import com.HC.utilities.XLUtils;
 
@@ -29,7 +31,10 @@ public class TC_IncidentReport extends BaseClass {
 		lp.clicksubmit();
 		logger.info("Login button pressed");
 		Thread.sleep(5000);
+		
 
+		DashboardPO db = new DashboardPO(driver);
+		
 		//incident Time
 		String timeformat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReport", 1,0);
 		System.out.println("Time format -->" + timeformat);
@@ -45,7 +50,8 @@ public class TC_IncidentReport extends BaseClass {
 		Thread.sleep(2000);
 		logger.info("Incident Location entered");
 		Thread.sleep(2000);
-								
+
+		
 		//for Location details
 		String detail = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReport", 1, 2);
 		System.out.println("detail is:"+detail);
@@ -94,7 +100,7 @@ public class TC_IncidentReport extends BaseClass {
 		Thread.sleep(2000);
 		String number = LoginPage.getincidentnumber();
 		System.out.println("incident number -->" + number);
-		capureScreen(driver,"IncidentRepSubmited");
+		capureScreen(driver,"TC_IncidentReport");
 		Thread.sleep(5000);
 		boolean save = lp.popsave();
 		Thread.sleep(2500);
@@ -102,5 +108,29 @@ public class TC_IncidentReport extends BaseClass {
 		XLUtils.setCellData(Constants.Path_IncidentData,"TC_IncidentReport", 1 , 6, number);
 		System.out.println(XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReport", 1, 6));
 				
+		
+		//dashboard
+		db.clickincidentdashboard();
+		logger.info("dashboard button clicked");
+		Thread.sleep(2500);
+
+		//enter IR code
+		db.enterIRCode1(number);
+		logger.info("IR code is entered");
+		Thread.sleep(2500);
+
+		//search button
+		db.searchButton();
+		logger.info("search button is clicked");
+		Thread.sleep(2500);
+
+		//validation
+		String text = db.getIRcode();
+		Assert.assertEquals(number, text);
+		logger.info("validation passed");
+		Thread.sleep(2500);
+		
+		capureScreen(driver,"TC_IncidentReport");
+
 	}
 }

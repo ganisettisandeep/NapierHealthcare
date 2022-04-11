@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.HC.pageObjects.LoginPage;
+import com.HC.utilities.BaseClass;
 import com.HC.utilities.XLUtils;
 
 public class TC_IncidentDashboard extends BaseClass {

@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="NapierHealthCareProject" duration-ms="70168" started-at="2022-04-07T13:48:14Z" finished-at="2022-04-07T13:49:24Z">
+  <suite name="NapierHealthCareProject" duration-ms="29626" started-at="2022-04-11T13:55:40Z" finished-at="2022-04-11T13:56:09Z">
     <groups>
     </groups>
-    <test name="HealthCare Test" duration-ms="70168" started-at="2022-04-07T13:48:14Z" finished-at="2022-04-07T13:49:24Z">
-      <class name="com.HC.testCases.TC_IncidentReportClearDetails">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.HC.testCases.TC_IncidentReportClearDetails@548e7350]" name="setup" is-config="true" duration-ms="8643" started-at="2022-04-07T13:48:14Z" finished-at="2022-04-07T13:48:23Z">
+    <test name="HealthCare Test" duration-ms="29626" started-at="2022-04-11T13:55:40Z" finished-at="2022-04-11T13:56:09Z">
+      <class name="com.HC.testCases.TC_IncidentDashboardSearchIRcode">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.HC.testCases.TC_IncidentDashboardSearchIRcode@548e7350]" name="setup" is-config="true" duration-ms="5684" started-at="2022-04-11T13:55:40Z" finished-at="2022-04-11T13:55:46Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TC_IncidentReportClearDetails()[pri:0, instance:com.HC.testCases.TC_IncidentReportClearDetails@548e7350]" name="TC_IncidentReportClearDetails" duration-ms="61218" started-at="2022-04-07T13:48:23Z" finished-at="2022-04-07T13:49:24Z">
+        <test-method status="PASS" signature="TC_IncidentDashboardSearchIRcode()[pri:0, instance:com.HC.testCases.TC_IncidentDashboardSearchIRcode@548e7350]" name="TC_IncidentDashboardSearchIRcode" duration-ms="23644" started-at="2022-04-11T13:55:46Z" finished-at="2022-04-11T13:56:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_IncidentReportClearDetails -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.HC.testCases.TC_IncidentReportClearDetails@548e7350]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-04-07T13:49:24Z" finished-at="2022-04-07T13:49:24Z">
+        </test-method> <!-- TC_IncidentDashboardSearchIRcode -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.HC.testCases.TC_IncidentDashboardSearchIRcode@548e7350]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-04-11T13:56:09Z" finished-at="2022-04-11T13:56:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.HC.testCases.TC_IncidentReportClearDetails -->
+      </class> <!-- com.HC.testCases.TC_IncidentDashboardSearchIRcode -->
     </test> <!-- HealthCare Test -->
   </suite> <!-- NapierHealthCareProject -->
 </testng-results>

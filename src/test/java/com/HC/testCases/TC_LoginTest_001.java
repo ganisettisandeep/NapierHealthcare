@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.HC.pageObjects.LoginPage;
+import com.HC.utilities.BaseClass;
 
 
 public class TC_LoginTest_001 extends BaseClass

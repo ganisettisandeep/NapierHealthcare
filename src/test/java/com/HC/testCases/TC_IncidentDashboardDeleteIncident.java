@@ -8,7 +8,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.HC.pageObjects.DashboardPO;
+import com.HC.pageObjects.IncidentPO;
 import com.HC.pageObjects.LoginPage;
+import com.HC.utilities.BaseClass;
 import com.HC.utilities.Constants;
 import com.HC.utilities.XLUtils;
 
@@ -30,6 +33,9 @@ public class TC_IncidentDashboardDeleteIncident extends BaseClass {
 		logger.info("Login button pressed");
 		Thread.sleep(5000);
 
+		DashboardPO db = new DashboardPO(driver);
+		IncidentPO in = new IncidentPO(driver);
+		
 		//incident Time
 		String timeformat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReport", 1,0);
 		System.out.println("Time format -->" + timeformat);
@@ -85,15 +91,18 @@ public class TC_IncidentDashboardDeleteIncident extends BaseClass {
 		Thread.sleep(2500);
 		
 		//dashboard
-		lp.clickincidentdashboard();
+		db.clickincidentdashboard();
 		logger.info("dashboard button clicked");
 		Thread.sleep(2500);
 
 		//delete
-		lp.deleteButton();
+		db.deleteButton();
 		logger.info("delete button clicked");
 		Thread.sleep(2500);
-		boolean delete = lp.popClickDelete();
+		
+		capureScreen(driver,"TC_IncidentDashboardDeleteIncident");
+		
+		boolean delete = in.popClickDelete();
 		Thread.sleep(2500);
 		Assert.assertTrue(delete);
 						

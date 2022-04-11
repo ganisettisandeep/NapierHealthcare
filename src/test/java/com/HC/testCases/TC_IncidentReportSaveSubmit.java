@@ -8,7 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.HC.pageObjects.IncidentPO;
 import com.HC.pageObjects.LoginPage;
+import com.HC.utilities.BaseClass;
 import com.HC.utilities.Constants;
 import com.HC.utilities.XLUtils;
 
@@ -30,6 +32,8 @@ public class TC_IncidentReportSaveSubmit extends BaseClass {
 		logger.info("Login button pressed");
 		Thread.sleep(5000);
 
+		IncidentPO in = new IncidentPO(driver);
+		
 		//incident Time
 		String timeformat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportSaveSubmit", 1,0);
 		System.out.println("Time format -->" + timeformat);
@@ -91,7 +95,7 @@ public class TC_IncidentReportSaveSubmit extends BaseClass {
 		Thread.sleep(2500);
 		
 		//edit button
-		lp.editButton();
+		in.editButton();
 		logger.info("edit button clicked");
 		Thread.sleep(2500);
 		
@@ -103,7 +107,7 @@ public class TC_IncidentReportSaveSubmit extends BaseClass {
 		Thread.sleep(2000);
 		String number = LoginPage.getincidentnumber();
 		System.out.println("incident number -->" + number);
-		capureScreen(driver,"IncidentRepSubmited");
+		capureScreen(driver,"TC_IncidentReportSaveSubmit");
 		Thread.sleep(5000);
 		boolean save1 = lp.popsave();
 		Assert.assertTrue(save1);

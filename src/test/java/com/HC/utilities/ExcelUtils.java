@@ -24,12 +24,12 @@ public class ExcelUtils {
             //This method is to read the test data from the Excel cell
             //In this we are passing Arguments as Row Num, Col Num & Sheet Name
             public static String getCellData(int RowNum, int colTestcaseid, String SheetName ) throws Exception{
-            	System.out.println("details: "+RowNum +colTestcaseid +SheetName);
+            	//System.out.println("details: "+RowNum +colTestcaseid +SheetName);
                 	ExcelWSheet = ExcelWBook.getSheet(SheetName);
                 	 try{
                    	  Cell = ExcelWSheet.getRow(RowNum).getCell(colTestcaseid);
                          String CellData = Cell.getStringCellValue();
-                         System.out.println("CellData: "+CellData);
+                  //       System.out.println("CellData: "+CellData);
                          return CellData;
                          }catch (Exception e){
                            return"";
@@ -38,7 +38,7 @@ public class ExcelUtils {
 
         	//This method is to get the row count used of the excel sheet
         	public static int getRowCount(String SheetName){
-        		System.out.println("SheetName: "+SheetName);
+        		//System.out.println("SheetName: "+SheetName);
         			ExcelWSheet = ExcelWBook.getSheet(SheetName);
         			int number=ExcelWSheet.getLastRowNum();
         			return number;

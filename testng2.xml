@@ -5,7 +5,12 @@
 <test name="HealthCare Test">
 <parameter name="browser" value="chrome" />
 <classes>
-<class name="com.HC.testCases.TC_IncidentReportAllDetails" />
+<class name="com.HC.testCases.TC_IncidentDashboardSentinelEvents" />
+<class name="com.HC.testCases.TC_IncidentDashboardPatientComplaints" />
+<class name="com.HC.testCases.TC_QualityDashboardAllDetails" />
+<class name="com.HC.testCases.TC_QualityDashboardAssignedIRs" />
+<class name="com.HC.testCases.TC_IncidentDashboardClearDetails" />
+<class name="com.HC.testCases.TC_QualityDashboardSearch" />
 </classes>
 </test>
 </suite>

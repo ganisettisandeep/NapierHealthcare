@@ -9,7 +9,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.HC.pageObjects.IncidentPO;
 import com.HC.pageObjects.LoginPage;
+import com.HC.utilities.BaseClass;
 import com.HC.utilities.Constants;
 import com.HC.utilities.XLUtils;
 
@@ -31,6 +33,8 @@ public class TC_IncidentReportClearDetails extends BaseClass {
 		logger.info("Login button pressed");
 		Thread.sleep(5000);
 
+		IncidentPO in = new IncidentPO(driver);
+		
 		//incident Time
 		String timeformat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1,0);
 		System.out.println("Time format -->" + timeformat);
@@ -90,69 +94,71 @@ public class TC_IncidentReportClearDetails extends BaseClass {
 		
 		//dept involved
 		String dept = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 6);
-		lp.selectDeptInvolved(dept);
+		in.selectDeptInvolved(dept);
 		logger.info("dept involved entered");
 		Thread.sleep(2000);
 
 		//preventability
-		lp.selectpreventability();
+		in.selectpreventability();
 		logger.info("preventability selected");
 		Thread.sleep(2000);
 
 		//ActionTakenText
 		String text = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 7);
-		lp.immedActionTakenText(text);
+		in.immedActionTakenText(text);
 		logger.info("ActionTaken entered");
 		Thread.sleep(2000);
 
 		//action takenBy
 		String takenBy = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 8);
-		lp.selectImmedActionTakenBy(takenBy);
+		in.selectImmedActionTakenBy(takenBy);
 		logger.info("action takenBy selected");
 		Thread.sleep(2000);
 		
 		//action DateTime selection
 		String actionDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 9);
-		lp.selectActionTakenDateTime(actionDateTime);
+		in.selectActionTakenDateTime(actionDateTime);
 		logger.info("action DateTime selected");
 		Thread.sleep(2000);
 
 		//witness selected
 		String witness = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 10);
-		lp.selectWitnessedBy(witness);
+		in.selectWitnessedBy(witness);
 		logger.info("witness selected");
 		Thread.sleep(2000);
 
 		//notifiedTo selection
 		String notifiedTo = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 11);
-		lp.selectNotifiedTo(notifiedTo);
+		in.selectNotifiedTo(notifiedTo);
 		logger.info("notifiedTo selected");
 		Thread.sleep(2000);
 
 		//notifiedDateTime selection
 		String notifiedDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 12);
-		lp.selectNotifiedDateTime(notifiedDateTime);
+		in.selectNotifiedDateTime(notifiedDateTime);
 		logger.info("notified DateTime selected");
 		Thread.sleep(2000);
 
 		//HeadofDept selection
 		String hod = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 13);
-		lp.selectHeadofDept(hod);
+		in.selectHeadofDept(hod);
 		logger.info("HeadofDept selected");
 		Thread.sleep(2000);
 		
 		//file upload
-		lp.clickFileUpload();
+		in.clickFileUpload();
 		logger.info("File upload done");
 		Thread.sleep(2000);
 		
 		//clear button
-		lp.IRclearButton();
+		in.IRclearButton();
 		logger.info("clear button clicked");
 		Thread.sleep(2000);
+
+		capureScreen(driver,"TC_IncidentReportClearDetails");
 		
 		//verify clear
-		String result = lp.verifyClearIR();
+		String result = in.verifyClearIR();
 		Assert.assertEquals(result, "");
 		logger.info("verify clear");
 		Thread.sleep(2000);

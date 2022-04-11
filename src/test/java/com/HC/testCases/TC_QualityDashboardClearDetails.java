@@ -8,7 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.HC.pageObjects.DashboardPO;
 import com.HC.pageObjects.LoginPage;
+import com.HC.utilities.BaseClass;
 import com.HC.utilities.Constants;
 import com.HC.utilities.XLUtils;
 
@@ -30,64 +32,68 @@ public class TC_QualityDashboardClearDetails extends BaseClass {
 		logger.info("Login button pressed");
 		Thread.sleep(5000);
 
+		DashboardPO db = new DashboardPO(driver);
+		
 		//dashboard
-		lp.clickincidentdashboard();
+		db.clickincidentdashboard();
 		logger.info("dashboard button clicked");
 		Thread.sleep(2500);
 		
 		//quality dashboard
-		lp.clickQualityDashboard();
+		db.clickQualityDashboard();
 		logger.info("quality dashboard button clicked");
 		Thread.sleep(2000);
 
 		//category
-		lp.selectCategory();
+		db.selectCategory();
 		logger.info("category selected");
 		Thread.sleep(2500);
 		
 		//incident from date
-		lp.selectFromInciDateTime("01-04-2022");
+		db.selectFromInciDateTime("01-04-2022");
 		logger.info("incident from date entered");
 		Thread.sleep(2500);
 
 		//incident to date
-		lp.selectToInciDateTime("05");
+		db.selectToInciDateTime("05");
 		logger.info("incident to data entered");
 		Thread.sleep(2500);
 
 		
 		//reporting from date
-		lp.selectFromRepoDate("01-04-2022");
+		db.selectFromRepoDate("01-04-2022");
 		logger.info("reporting from date entered");
 		Thread.sleep(2500);
 
 		//reporting to date
-		lp.selectToRepoDate("05");
+		db.selectToRepoDate("05");
 		logger.info("reporting to data entered");
 		Thread.sleep(2500);
 
 		//type of incident
-		lp.selectTypeofInci();
+		db.selectTypeofInci();
 		logger.info("type of incident selected");
 		Thread.sleep(2500);
 
 		//select Investigator
-		lp.selectInvestigator();
+		db.selectInvestigator();
 		logger.info("Investigator is selected");
 		Thread.sleep(2500);
 		
 		//select status
-		lp.selectStatus();
+		db.selectStatus();
 		logger.info("Status is selected");
 		Thread.sleep(2500);
 
 		//clear button
-		lp.clearButton();
+		db.clearButton();
 		logger.info("clear button is clicked");
 		Thread.sleep(2500);
 
+		capureScreen(driver,"TC_QualityDashboardClearDetails");
+		
 		//result
-		String result = lp.verifyClear();
+		String result = db.verifyClear();
 		Assert.assertEquals(result, "");
 		logger.info("Assert verified");
 				

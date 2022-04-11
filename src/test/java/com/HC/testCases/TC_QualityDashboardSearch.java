@@ -8,7 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.HC.pageObjects.DashboardPO;
 import com.HC.pageObjects.LoginPage;
+import com.HC.utilities.BaseClass;
 import com.HC.utilities.Constants;
 import com.HC.utilities.XLUtils;
 
@@ -30,23 +32,27 @@ public class TC_QualityDashboardSearch extends BaseClass {
 		logger.info("Login button pressed");
 		Thread.sleep(5000);
 
+		DashboardPO db = new DashboardPO(driver);
+		
 		//dashboard
-		lp.clickincidentdashboard();
+		db.clickincidentdashboard();
 		logger.info("dashboard button clicked");
 		Thread.sleep(2500);
 		
 		//quality dashboard
-		lp.clickQualityDashboard();
+		db.clickQualityDashboard();
 		logger.info("quality dashboard button clicked");
 		Thread.sleep(2000);
 
 		//search button
-		lp.searchButton();
+		db.searchButton();
 		logger.info("search button is clicked");
 		Thread.sleep(2500);
+
+		capureScreen(driver,"TC_QualityDashboardSearch");
 		
 		//result
-		boolean result = lp.resultIRcode();
+		boolean result = db.resultIRcode();
 		Assert.assertTrue(result);
 		
 	}
