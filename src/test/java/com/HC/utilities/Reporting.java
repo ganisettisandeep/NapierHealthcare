@@ -74,8 +74,6 @@ public class Reporting extends TestListenerAdapter
 	
 	public void onFinish(ITestContext testContext)
 	{
-
-		System.out.println("in onFinish");
 		extent.flush();
 	}
 	
@@ -86,18 +84,12 @@ public class Reporting extends TestListenerAdapter
 		File f = new File(screenshotPath); 
 		
 		if(f.exists()){
-			System.out.println("in if");
 		try {
-			System.out.println("in try");
-			//logger.pass("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotPath));
-
 			logger.addScreenCaptureFromPath(screenshotPath);
-			System.out.println("added");
 			} 
 		catch (IOException e){
-			System.out.println("in catch");
-				e.printStackTrace();
-				}
+			e.printStackTrace();
+			}
 		}
 	}
 	

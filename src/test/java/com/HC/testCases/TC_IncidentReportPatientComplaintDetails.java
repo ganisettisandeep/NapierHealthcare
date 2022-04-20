@@ -48,17 +48,14 @@ public class TC_IncidentReportPatientComplaintDetails extends BaseClass {
 		System.out.println("Time format -->" + timeformat);
 		lp.intdate(timeformat);
 		Thread.sleep(2000);
-		
+
 		//location of incident
 		String loc = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 1);
 		System.out.println("loc>" + loc);
-		driver.findElement(By.xpath("//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-2-placeholder\"]")).sendKeys(loc,Keys.RETURN);
-		System.out.println("while selecting");
-		System.out.println("after selecting");
-		Thread.sleep(2000);
+		lp.clickincidentlocation(loc);
 		logger.info("Incident Location entered");
 		Thread.sleep(2000);
-								
+
 		//for Location details
 		String detail = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 2);
 		System.out.println("detail is:"+detail);
@@ -88,29 +85,19 @@ public class TC_IncidentReportPatientComplaintDetails extends BaseClass {
 		logger.info("Incident type clicked");
 		Thread.sleep(2000);
 		
-		/*
-		in.selectCheckBoxText();
-		logger.info("CheckBoxText selected");
-		Thread.sleep(2000);
-		
-		in.selectCheckScore();
-		logger.info("CheckScore selected");
-		Thread.sleep(2000);
-		*/	
-		
 		//category
 		String cat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 5);
 		System.out.println("cat is: "+cat);
-		driver.findElement(By.xpath("//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-3-placeholder\"]")).sendKeys(cat,Keys.RETURN);
+		lp.setIncicat(cat);
 		logger.info("Incident Category entered");
 		Thread.sleep(2000);
 				
 		//subcat
 		String subcat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 6);
 		System.out.println("subcat is: "+subcat);
-		driver.findElement(By.xpath("//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-4-placeholder\"]")).sendKeys(subcat,Keys.RETURN);
+		lp.setincidentsubcat(subcat);
 		logger.info("Incident sub-category entered");
-		
+
 		//description
 		String dec = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 7);
 		lp.setincidescrep(dec);

@@ -24,8 +24,7 @@ public class LoginPage {
 
 	WebDriver ldriver;
 	
-	public LoginPage(WebDriver rdriver)
-	{
+	public LoginPage(WebDriver rdriver){
 		ldriver=rdriver;
 		PageFactory.initElements(rdriver, this);
 	}
@@ -38,38 +37,34 @@ public class LoginPage {
 	@CacheLookup
 	WebElement txtPassword;
 	
-	@FindBy(xpath="//button[@class='btn wd-100']")
+	@FindBy(xpath="//button[contains(text(),\"Sign in\")]")
 	WebElement btnLogin;
 	
 	@FindBy(xpath="//button[@data-testid='logout']")
 	WebElement btnLogout;
 	
-//	@FindBy(xpath="//div[@class='incidentReporting_box__3Fr47']/form[@class='incidentReporting_boxContent__9CzgB']/section[1]//input")
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/form[1]/section[1]/div[1]/span[1]/input[1]")
+	@FindBy(xpath="//input[@name=\"incident_Date_Time\"]")
 	WebElement datetime;
 	
-	@FindBy(xpath="//body/div[@id='root']/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/form[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]")
+	@FindBy(xpath="(//*[@class=\"reactSelect__input\"])[1]")
 	WebElement incidentlocation;
 	
-	@FindBy(xpath="//body/div[@id='root']/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/form[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]")
-	WebElement clickincidentlocation;
-	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/form[1]/section[3]/div[1]/span[1]/input[1]")
+	@FindBy(xpath="//*[@name=\"locationDetailsEntry\"]")
 	WebElement locationdetail;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/section[1]/label[1]/input[1]")
+	@FindBy(xpath="//*[contains(text(),\"Unsafe condition\")]")	
 	WebElement typeincident;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[3]/div[2]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]")
+	@FindBy(xpath="(//*[@class=\"reactSelect__input\"])[2]")
 	WebElement incidentcat;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[3]/div[2]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[2]")
+	@FindBy(xpath="(//*[@class=\"reactSelect__input\"])[3]")
 	WebElement incidentsubcat;
 	
 	@FindBy(name="inciDescription")
 	WebElement incidescrep;
 	
-	@FindBy(xpath="//button[@class='btn wd-100']")
+	@FindBy(xpath="//button[contains(text(),\"Submit\")]")
 	WebElement btnsubmit;
 	
 	@FindBy(xpath="//button[contains(text(),\"Save\")]")
@@ -81,8 +76,6 @@ public class LoginPage {
 	@FindBy(xpath="//button[contains(text(),'Yes')]")
 	WebElement popsubmit;
 
-	//@FindBy(css="body:nth-child(2) div:nth-child(4) div.prompt div.content > p.question")
-	//@FindBy(xpath="//body/div[@id='prompt']/div[2]/div[1]/p[1]/br/preceding::text()")
 	@FindBy(xpath="//span[@id=\"irCode\"]")
 	static
 	WebElement incidentnumber;
@@ -90,166 +83,80 @@ public class LoginPage {
 	@FindBy(xpath="//p[contains(text(),'Invalid credentials.')]")
 	WebElement Logincheck;
 	
-	public String checkloginpage()
-	{
+	public String checkloginpage(){
 		return Logincheck.getText();
 	}
 	
-	public static String getincidentnumber()
-	{
+	public static String getincidentnumber(){
 		 return incidentnumber.getText();
-		// return incidentnumber.getAttribute("innerText");
 	}
 	
-	
-	public void setUserName(String uname)
-	{
+	public void setUserName(String uname){
 		txtUserName.sendKeys(uname);
 	}
 	
-	public void setPassword(String pwd)
-	{
+	public void setPassword(String pwd){
 		txtPassword.sendKeys(pwd);
 	}
 	
-	public void clicksubmit() throws InterruptedException
-	{
+	public void clicksubmit() throws InterruptedException{
 		btnLogin.click();
 		Thread.sleep(2000);
 		ldriver.manage().window().maximize();
 	}
 	
-
-	public void clicklogout()
-	{
+	public void clicklogout(){
 		btnLogout.click();
 	}
 	
-	public void incidentsave()
-	{
+	public void incidentsave(){
 		btnsave.click();
 	}
 	
-	public void incidentsubmit()
-	{
+	public void incidentsubmit(){
 		btnsubmit.click();
 	}
 	
-	public boolean popsave()
-	{
+	public boolean popsave(){
 		popsave.click();
 		return true;
 	}
 	
-	public void popsubmit()
-	{
+	public void popsubmit(){
 		popsubmit.click();
 	}
 	
-	public void intdate(String date)
-	{
+	public void intdate(String date){
 		datetime.sendKeys(date);
 	}
 	
-	public void settypeincident()
-	{
+	public void settypeincident(){
 		typeincident.click();
 	}
-	
 
-	public void setIncicatclick()
-	{
-		
-		incidentcat.click();
-	}
-	public void setIncicat(String cat)
-	{
+	public void setIncicat(String cat){
 		//return setIncicat(cat);
-		incidentcat.sendKeys(cat);
+		incidentcat.sendKeys(cat,Keys.RETURN);
 	}
 	
-	public void setincidentlocation(String loc)
-	{
+	public void setincidentlocation(String loc){
 		incidentlocation.sendKeys(loc);
 	}
 	
-	public void clickincidentlocation()
-	{
-		clickincidentlocation.click();
+	public void clickincidentlocation(String loc){
+		incidentlocation.sendKeys(loc,Keys.RETURN);
 	}
 	
-	public void setlocationdetail(String detail)
-	{
+	public void setlocationdetail(String detail){
 		locationdetail.sendKeys(detail);
 	}
 	
-	public void setincidentsubcat(String subcat)
-	{
-		incidentsubcat.sendKeys(subcat);
+	public void setincidentsubcat(String subcat){
+		incidentsubcat.sendKeys(subcat,Keys.RETURN);
 	}
 	
-	public void setincidescrep(String incides)
-	{
+	public void setincidescrep(String incides){
 		incidescrep.sendKeys(incides);
 	}
 
-	public void setIncicat1(Keys arrowDown, Keys enter) {
-		incidentcat.sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
-	}
-	
-	public void setincidentlocation1(Keys arrowDown, Keys enter) {
-		incidentlocation.sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
-	}
-	
-	public void setincidentsubcat1(Keys arrowDown, Keys enter) {
-		incidentsubcat.sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
-	}
-
-	
-	
-	//Incident Dashboard
-	
-	@FindBy(xpath="//span[contains(text(),'Incident Dashboard')]")
-	WebElement btnIncidentdashboard;
-	
-	
-	public void clickincidentdashboard()
-	{
-		btnIncidentdashboard.click();
-	}
-	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[2]/form[1]/section[1]/div[1]/span[1]/input[1]")
-	WebElement sendIRcode;
-	
-	public void enterIRcode(String IRcode)
-	{
-		sendIRcode.sendKeys(IRcode);
-	}
-	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[2]/form[1]/section[1]/div[1]/span[1]/input[1]")
-	WebElement clickIRcode;
-	public void clickcode()
-	{
-		clickIRcode.click();
-	}
-	
-	@FindBy(xpath="//body/div[@id='root']/div[1]/div[1]/main[1]/div[1]/div[2]/form[1]/section[8]/button[1]")
-	WebElement clicksearch;
-	
-	public void dashboardsearch()
-	{
-		clicksearch.click();
-	}
-	
-	@FindBy(xpath="//tbody/tr[1]/td[1]")
-	WebElement verifyIrcode;
-	
-	public String verifyCode()
-	{
-		return verifyIrcode.getText();
-	}
-	
-	//Below is the newly added code
-	
-		
 }

@@ -40,7 +40,7 @@ public class IncidentPO {
 		checkScore.click();
 	}
 
-	@FindBy(xpath="//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-5-placeholder\"]")
+	@FindBy(xpath="(//*[@class=\"reactSelect__input\"])[4]")
 	WebElement deptInvolved;
 	public void selectDeptInvolved(String dept){
 		deptInvolved.sendKeys(dept,Keys.RETURN);
@@ -58,7 +58,7 @@ public class IncidentPO {
 		immedActionTaken.sendKeys(text);
 	}
 
-	@FindBy(xpath="//*[@aria-describedby=\"react-select-6-placeholder\"]")
+	@FindBy(xpath="(//*[@class=\"reactSelect__input\"])[5]")
 	WebElement immedActionTakenBy;
 	public void selectImmedActionTakenBy(String text){
 		immedActionTakenBy.sendKeys(text,Keys.RETURN);
@@ -70,13 +70,13 @@ public class IncidentPO {
 		actionTakenDateTime.sendKeys(text);
 	}
 
-	@FindBy(xpath="//*[@aria-describedby=\"react-select-7-placeholder\"]")
+	@FindBy(xpath="(//*[@class=\"reactSelect__input\"])[6]")
 	WebElement witnessedBy;
 	public void selectWitnessedBy(String text){
 		witnessedBy.sendKeys(text,Keys.RETURN);
 	}
 
-	@FindBy(xpath="//*[@aria-describedby=\"react-select-8-placeholder\"]")
+	@FindBy(xpath="(//*[@class=\"reactSelect__input\"])[7]")
 	WebElement notifiedTo;
 	public void selectNotifiedTo(String text){
 		notifiedTo.sendKeys(text,Keys.RETURN);
@@ -88,7 +88,7 @@ public class IncidentPO {
 		notifiedDateTime.sendKeys(text);
 	}
 
-	@FindBy(xpath="//*[@aria-controls=\"react-select-9-listbox\"]")
+	@FindBy(xpath="(//*[@class=\"reactSelect__input\"])[8]")
 	WebElement headofDept;
 	public void selectHeadofDept(String text){
 		headofDept.sendKeys(text,Keys.RETURN);
@@ -147,7 +147,7 @@ public class IncidentPO {
 	//WebElement fileUpload;
 	public void clickFileUpload() throws InterruptedException, AWTException{
 		Actions act= new Actions(ldriver);
-		  WebElement chooseFile=ldriver.findElement(By.xpath("//*[@class=\"elements_fileNames__2Jemg\"]"));
+		  WebElement chooseFile=ldriver.findElement(By.xpath("//*[contains(text(),\"Item select\")]"));
 		  act.moveToElement(chooseFile).click().perform();
 		  Thread.sleep(2000);
 

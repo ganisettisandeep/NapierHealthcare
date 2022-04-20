@@ -2501,3 +2501,419 @@
 2022-04-11 19:26:01,871 - ehealth -INFO - search button is clicked
 2022-04-11 19:26:04,437 - ehealth -INFO - search button is clicked
 2022-04-11 19:26:07,106 - ehealth -INFO - view button is clicked
+2022-04-11 20:14:07,939 - ehealth -INFO - URL is opened
+2022-04-11 20:14:08,173 - ehealth -INFO - Entered username
+2022-04-11 20:14:10,304 - ehealth -INFO - Entered Password
+2022-04-11 20:14:12,632 - ehealth -INFO - Login button pressed
+2022-04-11 20:14:23,009 - ehealth -INFO - Incident Location entered
+2022-04-11 20:14:27,343 - ehealth -INFO - Incident type clicked
+2022-04-11 20:14:29,611 - ehealth -INFO - Incident Category entered
+2022-04-11 20:14:31,847 - ehealth -INFO - Incident sub-category entered
+2022-04-11 20:14:32,048 - ehealth -INFO - Incident decscription entered
+2022-04-11 20:14:34,219 - ehealth -INFO - Submit button clicked
+2022-04-11 20:14:46,608 - ehealth -INFO - dashboard button clicked
+2022-04-11 20:14:49,269 - ehealth -INFO - incident number entered:325 /2022 CONFIG CODE
+2022-04-11 20:14:51,916 - ehealth -INFO - search button is clicked
+2022-04-11 20:14:54,462 - ehealth -INFO - validation passed
+2022-04-19 19:44:59,884 - ehealth -INFO - URL is opened
+2022-04-19 19:45:00,403 - ehealth -INFO - Entered username
+2022-04-19 19:45:02,525 - ehealth -INFO - Entered Password
+2022-04-19 19:45:04,745 - ehealth -INFO - Login button pressed
+2022-04-19 19:45:09,972 - ehealth -INFO - dashboard button clicked
+2022-04-19 19:45:12,597 - ehealth -INFO - sentinelEvents is clicked
+2022-04-19 19:45:30,965 - ehealth -INFO - URL is opened
+2022-04-19 19:45:31,095 - ehealth -INFO - Entered username
+2022-04-19 19:45:33,201 - ehealth -INFO - Entered Password
+2022-04-19 19:45:35,461 - ehealth -INFO - Login button pressed
+2022-04-19 19:45:40,665 - ehealth -INFO - dashboard button clicked
+2022-04-19 19:45:43,321 - ehealth -INFO - patientComplaints is clicked
+2022-04-19 19:46:01,994 - ehealth -INFO - URL is opened
+2022-04-19 19:46:02,148 - ehealth -INFO - Entered username
+2022-04-19 19:46:04,249 - ehealth -INFO - Entered Password
+2022-04-19 19:46:06,456 - ehealth -INFO - Login button pressed
+2022-04-19 19:46:11,642 - ehealth -INFO - dashboard button clicked
+2022-04-19 19:46:14,254 - ehealth -INFO - quality dashboard button clicked
+2022-04-19 19:46:33,620 - ehealth -INFO - URL is opened
+2022-04-19 19:46:33,800 - ehealth -INFO - Entered username
+2022-04-19 19:46:35,909 - ehealth -INFO - Entered Password
+2022-04-19 19:46:38,109 - ehealth -INFO - Login button pressed
+2022-04-19 19:46:43,303 - ehealth -INFO - dashboard button clicked
+2022-04-19 19:46:45,917 - ehealth -INFO - quality dashboard button clicked
+2022-04-19 19:46:48,005 - ehealth -INFO - radio but for Assigned IRs clicked
+2022-04-19 19:46:51,847 - ehealth -INFO - search button is clicked
+2022-04-19 19:47:01,595 - ehealth -INFO - URL is opened
+2022-04-19 19:47:01,800 - ehealth -INFO - Entered username
+2022-04-19 19:47:03,933 - ehealth -INFO - Entered Password
+2022-04-19 19:47:06,254 - ehealth -INFO - Login button pressed
+2022-04-19 19:47:11,468 - ehealth -INFO - dashboard button clicked
+2022-04-19 19:47:29,769 - ehealth -INFO - URL is opened
+2022-04-19 19:47:29,900 - ehealth -INFO - Entered username
+2022-04-19 19:47:32,025 - ehealth -INFO - Entered Password
+2022-04-19 19:47:34,286 - ehealth -INFO - Login button pressed
+2022-04-19 19:47:39,463 - ehealth -INFO - dashboard button clicked
+2022-04-19 19:47:42,076 - ehealth -INFO - quality dashboard button clicked
+2022-04-19 19:47:47,324 - ehealth -INFO - search button is clicked
+2022-04-19 19:56:24,878 - ehealth -INFO - URL is opened
+2022-04-19 19:56:25,849 - ehealth -INFO - Entered username
+2022-04-19 19:56:27,955 - ehealth -INFO - Entered Password
+2022-04-19 19:56:30,344 - ehealth -INFO - Login button pressed
+2022-04-19 19:56:35,508 - ehealth -INFO - dashboard button clicked
+2022-04-19 19:56:38,140 - ehealth -INFO - quality dashboard button clicked
+2022-04-19 19:56:43,898 - ehealth -INFO - search button is clicked
+2022-04-19 19:58:48,455 - ehealth -INFO - URL is opened
+2022-04-19 19:58:48,647 - ehealth -INFO - Entered username
+2022-04-19 19:58:50,750 - ehealth -INFO - Entered Password
+2022-04-19 19:58:52,960 - ehealth -INFO - Login button pressed
+2022-04-19 19:58:58,114 - ehealth -INFO - dashboard button clicked
+2022-04-19 19:59:00,752 - ehealth -INFO - sentinelEvents is clicked
+2022-04-19 19:59:08,708 - ehealth -INFO - URL is opened
+2022-04-19 19:59:08,824 - ehealth -INFO - Entered username
+2022-04-19 19:59:10,930 - ehealth -INFO - Entered Password
+2022-04-19 19:59:13,233 - ehealth -INFO - Login button pressed
+2022-04-19 19:59:18,402 - ehealth -INFO - dashboard button clicked
+2022-04-19 19:59:21,042 - ehealth -INFO - patientComplaints is clicked
+2022-04-19 19:59:29,003 - ehealth -INFO - URL is opened
+2022-04-19 19:59:29,163 - ehealth -INFO - Entered username
+2022-04-19 19:59:31,263 - ehealth -INFO - Entered Password
+2022-04-19 19:59:33,511 - ehealth -INFO - Login button pressed
+2022-04-19 19:59:38,681 - ehealth -INFO - dashboard button clicked
+2022-04-19 19:59:41,307 - ehealth -INFO - quality dashboard button clicked
+2022-04-19 20:00:00,967 - ehealth -INFO - URL is opened
+2022-04-19 20:00:01,091 - ehealth -INFO - Entered username
+2022-04-19 20:00:03,322 - ehealth -INFO - Entered Password
+2022-04-19 20:00:05,573 - ehealth -INFO - Login button pressed
+2022-04-19 20:00:10,753 - ehealth -INFO - dashboard button clicked
+2022-04-19 20:00:13,370 - ehealth -INFO - quality dashboard button clicked
+2022-04-19 20:00:18,225 - ehealth -INFO - radio but for Assigned IRs clicked
+2022-04-19 20:00:20,872 - ehealth -INFO - search button is clicked
+2022-04-19 20:00:28,964 - ehealth -INFO - URL is opened
+2022-04-19 20:00:29,134 - ehealth -INFO - Entered username
+2022-04-19 20:00:31,234 - ehealth -INFO - Entered Password
+2022-04-19 20:00:33,458 - ehealth -INFO - Login button pressed
+2022-04-19 20:00:38,647 - ehealth -INFO - dashboard button clicked
+2022-04-19 20:22:19,359 - ehealth -INFO - URL is opened
+2022-04-19 20:22:19,524 - ehealth -INFO - Entered username
+2022-04-19 20:22:21,625 - ehealth -INFO - Entered Password
+2022-04-19 20:22:23,827 - ehealth -INFO - Login button pressed
+2022-04-19 20:22:28,993 - ehealth -INFO - dashboard button clicked
+2022-04-19 20:22:31,605 - ehealth -INFO - quality dashboard button clicked
+2022-04-19 20:22:36,516 - ehealth -INFO - category selected
+2022-04-19 20:22:39,247 - ehealth -INFO - incident from date entered
+2022-04-19 20:22:41,845 - ehealth -INFO - incident to data entered
+2022-04-19 20:22:44,516 - ehealth -INFO - reporting from date entered
+2022-04-19 20:22:47,111 - ehealth -INFO - reporting to data entered
+2022-04-19 20:23:04,893 - ehealth -INFO - URL is opened
+2022-04-19 20:23:04,995 - ehealth -INFO - Entered username
+2022-04-19 20:23:07,097 - ehealth -INFO - Entered Password
+2022-04-19 20:23:09,307 - ehealth -INFO - Login button pressed
+2022-04-19 20:23:14,467 - ehealth -INFO - dashboard button clicked
+2022-04-19 20:23:17,115 - ehealth -INFO - category selected
+2022-04-19 20:23:19,802 - ehealth -INFO - incident from date entered
+2022-04-19 20:23:22,388 - ehealth -INFO - incident to data entered
+2022-04-19 20:23:24,998 - ehealth -INFO - reporting from date entered
+2022-04-19 20:23:27,577 - ehealth -INFO - reporting to data entered
+2022-04-19 20:35:44,327 - ehealth -INFO - URL is opened
+2022-04-19 20:35:44,511 - ehealth -INFO - Entered username
+2022-04-19 20:35:46,613 - ehealth -INFO - Entered Password
+2022-04-19 20:35:48,861 - ehealth -INFO - Login button pressed
+2022-04-19 20:35:54,049 - ehealth -INFO - dashboard button clicked
+2022-04-19 20:35:56,662 - ehealth -INFO - quality dashboard button clicked
+2022-04-19 20:35:58,821 - ehealth -INFO - category selected
+2022-04-19 20:36:01,755 - ehealth -INFO - incident from date entered
+2022-04-19 20:36:04,350 - ehealth -INFO - incident to data entered
+2022-04-19 20:36:06,986 - ehealth -INFO - reporting from date entered
+2022-04-19 20:36:09,614 - ehealth -INFO - reporting to data entered
+2022-04-19 20:36:31,023 - ehealth -INFO - URL is opened
+2022-04-19 20:36:31,157 - ehealth -INFO - Entered username
+2022-04-19 20:36:33,256 - ehealth -INFO - Entered Password
+2022-04-19 20:36:35,491 - ehealth -INFO - Login button pressed
+2022-04-19 20:36:40,696 - ehealth -INFO - dashboard button clicked
+2022-04-19 20:36:43,342 - ehealth -INFO - category selected
+2022-04-19 20:36:46,019 - ehealth -INFO - incident from date entered
+2022-04-19 20:36:48,604 - ehealth -INFO - incident to data entered
+2022-04-19 20:36:51,218 - ehealth -INFO - reporting from date entered
+2022-04-19 20:36:53,794 - ehealth -INFO - reporting to data entered
+2022-04-19 20:41:05,505 - ehealth -INFO - URL is opened
+2022-04-19 20:41:05,731 - ehealth -INFO - Entered username
+2022-04-19 20:41:07,834 - ehealth -INFO - Entered Password
+2022-04-19 20:41:10,062 - ehealth -INFO - Login button pressed
+2022-04-19 20:41:15,248 - ehealth -INFO - dashboard button clicked
+2022-04-19 20:41:17,860 - ehealth -INFO - quality dashboard button clicked
+2022-04-19 20:41:22,859 - ehealth -INFO - category selected
+2022-04-19 20:41:25,575 - ehealth -INFO - incident from date entered
+2022-04-19 20:41:28,165 - ehealth -INFO - incident to data entered
+2022-04-19 20:41:30,801 - ehealth -INFO - reporting from date entered
+2022-04-19 20:41:33,399 - ehealth -INFO - reporting to data entered
+2022-04-19 20:41:38,156 - ehealth -INFO - type of incident selected
+2022-04-19 20:41:40,987 - ehealth -INFO - Investigator is selected
+2022-04-19 20:41:43,754 - ehealth -INFO - Status is selected
+2022-04-19 20:41:46,948 - ehealth -INFO - search button is clicked
+2022-04-19 20:41:56,128 - ehealth -INFO - URL is opened
+2022-04-19 20:41:56,265 - ehealth -INFO - Entered username
+2022-04-19 20:41:58,375 - ehealth -INFO - Entered Password
+2022-04-19 20:42:00,608 - ehealth -INFO - Login button pressed
+2022-04-19 20:42:05,778 - ehealth -INFO - dashboard button clicked
+2022-04-19 20:42:08,454 - ehealth -INFO - category selected
+2022-04-19 20:42:11,132 - ehealth -INFO - incident from date entered
+2022-04-19 20:42:13,716 - ehealth -INFO - incident to data entered
+2022-04-19 20:42:16,328 - ehealth -INFO - reporting from date entered
+2022-04-19 20:42:18,901 - ehealth -INFO - reporting to data entered
+2022-04-19 20:42:23,569 - ehealth -INFO - type of incident selected
+2022-04-19 20:42:26,258 - ehealth -INFO - Investigator is selected
+2022-04-19 20:42:28,937 - ehealth -INFO - Status is selected
+2022-04-19 20:47:01,678 - ehealth -INFO - URL is opened
+2022-04-19 20:47:01,875 - ehealth -INFO - Entered username
+2022-04-19 20:47:03,978 - ehealth -INFO - Entered Password
+2022-04-19 20:47:06,197 - ehealth -INFO - Login button pressed
+2022-04-19 20:47:11,405 - ehealth -INFO - dashboard button clicked
+2022-04-19 20:47:14,055 - ehealth -INFO - category selected
+2022-04-19 20:47:16,740 - ehealth -INFO - incident from date entered
+2022-04-19 20:47:19,329 - ehealth -INFO - incident to data entered
+2022-04-19 20:47:21,949 - ehealth -INFO - reporting from date entered
+2022-04-19 20:47:24,531 - ehealth -INFO - reporting to data entered
+2022-04-19 20:47:29,204 - ehealth -INFO - type of incident selected
+2022-04-19 20:47:31,892 - ehealth -INFO - Investigator is selected
+2022-04-19 20:47:34,603 - ehealth -INFO - Status is selected
+2022-04-19 20:47:37,229 - ehealth -INFO - clear button is clicked
+2022-04-19 20:47:40,131 - ehealth -INFO - Assert verified
+2022-04-19 21:22:30,357 - ehealth -INFO - URL is opened
+2022-04-19 21:22:31,153 - ehealth -INFO - Entered username
+2022-04-19 21:22:33,267 - ehealth -INFO - Entered Password
+2022-04-19 21:22:35,670 - ehealth -INFO - Login button pressed
+2022-04-19 21:25:18,082 - ehealth -INFO - URL is opened
+2022-04-19 21:25:18,310 - ehealth -INFO - Entered username
+2022-04-19 21:25:20,551 - ehealth -INFO - Entered Password
+2022-04-19 21:25:22,843 - ehealth -INFO - Login button pressed
+2022-04-19 21:25:28,064 - ehealth -INFO - dashboard button clicked
+2022-04-19 21:25:30,723 - ehealth -INFO - category selected
+2022-04-19 21:25:33,437 - ehealth -INFO - incident from date entered
+2022-04-19 21:25:36,046 - ehealth -INFO - incident to data entered
+2022-04-19 21:25:38,680 - ehealth -INFO - reporting from date entered
+2022-04-19 21:25:41,265 - ehealth -INFO - reporting to data entered
+2022-04-19 21:25:46,008 - ehealth -INFO - type of incident selected
+2022-04-19 21:25:48,719 - ehealth -INFO - Investigator is selected
+2022-04-19 21:25:51,452 - ehealth -INFO - Status is selected
+2022-04-19 21:25:54,101 - ehealth -INFO - clear button is clicked
+2022-04-19 21:25:57,157 - ehealth -INFO - Assert verified
+2022-04-19 21:26:03,610 - ehealth -INFO - URL is opened
+2022-04-19 21:26:03,773 - ehealth -INFO - Entered username
+2022-04-19 21:26:05,890 - ehealth -INFO - Entered Password
+2022-04-19 21:26:08,106 - ehealth -INFO - Login button pressed
+2022-04-19 21:26:13,288 - ehealth -INFO - dashboard button clicked
+2022-04-19 21:26:16,079 - ehealth -INFO - IR code is entered
+2022-04-19 21:26:18,705 - ehealth -INFO - search button is clicked
+2022-04-19 21:26:21,250 - ehealth -INFO - validation passed
+2022-04-19 21:26:23,926 - ehealth -INFO - view button is clicked
+2022-04-19 21:26:32,832 - ehealth -INFO - URL is opened
+2022-04-19 21:26:32,955 - ehealth -INFO - Entered username
+2022-04-19 21:26:35,085 - ehealth -INFO - Entered Password
+2022-04-19 21:26:37,296 - ehealth -INFO - Login button pressed
+2022-04-19 21:26:42,484 - ehealth -INFO - dashboard button clicked
+2022-04-19 21:26:45,057 - ehealth -INFO - my department IRs button is clicked
+2022-04-19 21:26:47,688 - ehealth -INFO - search button is clicked
+2022-04-19 21:26:57,041 - ehealth -INFO - URL is opened
+2022-04-19 21:26:57,189 - ehealth -INFO - Entered username
+2022-04-19 21:26:59,315 - ehealth -INFO - Entered Password
+2022-04-19 21:27:01,522 - ehealth -INFO - Login button pressed
+2022-04-19 21:27:06,708 - ehealth -INFO - dashboard button clicked
+2022-04-19 21:27:09,362 - ehealth -INFO - submitted IR is clicked
+2022-04-19 21:27:18,657 - ehealth -INFO - URL is opened
+2022-04-19 21:27:18,782 - ehealth -INFO - Entered username
+2022-04-19 21:27:20,892 - ehealth -INFO - Entered Password
+2022-04-19 21:27:23,134 - ehealth -INFO - Login button pressed
+2022-04-19 21:27:28,303 - ehealth -INFO - dashboard button clicked
+2022-04-19 21:27:30,939 - ehealth -INFO - currentMonths IR is clicked
+2022-04-20 12:35:29,244 - ehealth -INFO - URL is opened
+2022-04-20 12:35:29,505 - ehealth -INFO - Entered username
+2022-04-20 12:35:31,611 - ehealth -INFO - Entered Password
+2022-04-20 12:35:33,851 - ehealth -INFO - Login button pressed
+2022-04-20 12:35:43,433 - ehealth -INFO - Incident Location entered
+2022-04-20 12:35:47,698 - ehealth -INFO - Incident type clicked
+2022-04-20 12:35:50,008 - ehealth -INFO - Incident Category entered
+2022-04-20 12:35:52,295 - ehealth -INFO - Incident sub-category entered
+2022-04-20 12:35:52,501 - ehealth -INFO - Incident decscription entered
+2022-04-20 12:35:54,691 - ehealth -INFO - dept involved entered
+2022-04-20 12:35:56,756 - ehealth -INFO - preventability selected
+2022-04-20 12:35:58,941 - ehealth -INFO - ActionTaken entered
+2022-04-20 12:36:01,177 - ehealth -INFO - action takenBy selected
+2022-04-20 12:36:03,317 - ehealth -INFO - action DateTime selected
+2022-04-20 12:36:05,566 - ehealth -INFO - witness selected
+2022-04-20 12:36:07,803 - ehealth -INFO - notifiedTo selected
+2022-04-20 12:36:09,929 - ehealth -INFO - notified DateTime selected
+2022-04-20 12:36:12,106 - ehealth -INFO - HeadofDept selected
+2022-04-20 12:36:29,450 - ehealth -INFO - URL is opened
+2022-04-20 12:36:29,594 - ehealth -INFO - Entered username
+2022-04-20 12:36:31,696 - ehealth -INFO - Entered Password
+2022-04-20 12:36:33,924 - ehealth -INFO - Login button pressed
+2022-04-20 12:36:43,271 - ehealth -INFO - Incident Location entered
+2022-04-20 12:36:47,512 - ehealth -INFO - Incident type clicked
+2022-04-20 12:36:49,712 - ehealth -INFO - Incident Category entered
+2022-04-20 12:36:51,942 - ehealth -INFO - Incident sub-category entered
+2022-04-20 12:36:52,120 - ehealth -INFO - Incident decscription entered
+2022-04-20 12:36:54,270 - ehealth -INFO - Save button clicked
+2022-04-20 12:36:59,477 - ehealth -INFO - dashboard button clicked
+2022-04-20 12:37:02,072 - ehealth -INFO - delete button clicked
+2022-04-20 12:37:12,250 - ehealth -INFO - URL is opened
+2022-04-20 12:37:12,384 - ehealth -INFO - Entered username
+2022-04-20 12:37:14,491 - ehealth -INFO - Entered Password
+2022-04-20 12:37:16,703 - ehealth -INFO - Login button pressed
+2022-04-20 12:37:21,871 - ehealth -INFO - dashboard button clicked
+2022-04-20 12:37:24,484 - ehealth -INFO - quality dashboard button clicked
+2022-04-20 12:37:29,355 - ehealth -INFO - entered IR code
+2022-04-20 12:37:31,989 - ehealth -INFO - search button clicked
+2022-04-20 12:37:34,062 - ehealth -INFO - actions clicked
+2022-04-20 12:37:36,155 - ehealth -INFO - assign IR clicked
+2022-04-20 12:37:38,296 - ehealth -INFO - selected user to assign
+2022-04-20 12:37:40,355 - ehealth -INFO - click assign button
+2022-04-20 12:37:47,733 - ehealth -INFO - URL is opened
+2022-04-20 12:37:47,993 - ehealth -INFO - Entered username
+2022-04-20 12:37:50,096 - ehealth -INFO - Entered Password
+2022-04-20 12:37:52,291 - ehealth -INFO - Login button pressed
+2022-04-20 12:37:57,514 - ehealth -INFO - dashboard button clicked
+2022-04-20 12:38:00,131 - ehealth -INFO - quality dashboard button clicked
+2022-04-20 12:38:02,332 - ehealth -INFO - entered IR code
+2022-04-20 12:38:05,769 - ehealth -INFO - search button clicked
+2022-04-20 12:38:07,833 - ehealth -INFO - actions clicked
+2022-04-20 12:38:09,910 - ehealth -INFO - Re assign IR clicked
+2022-04-20 12:38:12,045 - ehealth -INFO - selected user to re-assign
+2022-04-20 12:38:14,113 - ehealth -INFO - click assign button
+2022-04-20 12:38:20,591 - ehealth -INFO - URL is opened
+2022-04-20 12:38:20,716 - ehealth -INFO - Entered username
+2022-04-20 12:38:22,819 - ehealth -INFO - Entered Password
+2022-04-20 12:38:25,034 - ehealth -INFO - Login button pressed
+2022-04-20 12:38:30,203 - ehealth -INFO - dashboard button clicked
+2022-04-20 12:38:32,847 - ehealth -INFO - category selected
+2022-04-20 12:38:35,529 - ehealth -INFO - incident from date entered
+2022-04-20 12:38:38,113 - ehealth -INFO - incident to data entered
+2022-04-20 12:38:40,721 - ehealth -INFO - reporting from date entered
+2022-04-20 12:38:43,289 - ehealth -INFO - reporting to data entered
+2022-04-20 12:38:47,962 - ehealth -INFO - type of incident selected
+2022-04-20 12:38:50,649 - ehealth -INFO - Investigator is selected
+2022-04-20 12:38:53,336 - ehealth -INFO - Status is selected
+2022-04-20 12:38:55,970 - ehealth -INFO - search button is clicked
+2022-04-20 12:48:29,380 - ehealth -INFO - URL is opened
+2022-04-20 12:48:29,593 - ehealth -INFO - Entered username
+2022-04-20 12:48:31,727 - ehealth -INFO - Entered Password
+2022-04-20 12:48:33,950 - ehealth -INFO - Login button pressed
+2022-04-20 12:48:43,449 - ehealth -INFO - Incident Location entered
+2022-04-20 12:48:47,716 - ehealth -INFO - Incident type clicked
+2022-04-20 12:48:49,994 - ehealth -INFO - Incident Category entered
+2022-04-20 12:48:52,214 - ehealth -INFO - Incident sub-category entered
+2022-04-20 12:48:52,455 - ehealth -INFO - Incident decscription entered
+2022-04-20 12:48:54,597 - ehealth -INFO - Submit button clicked
+2022-04-20 12:49:11,081 - ehealth -INFO - URL is opened
+2022-04-20 12:49:11,228 - ehealth -INFO - Entered username
+2022-04-20 12:49:13,328 - ehealth -INFO - Entered Password
+2022-04-20 12:49:15,548 - ehealth -INFO - Login button pressed
+2022-04-20 12:49:24,956 - ehealth -INFO - Incident Location entered
+2022-04-20 12:49:29,227 - ehealth -INFO - Incident type clicked
+2022-04-20 12:49:31,504 - ehealth -INFO - Incident Category entered
+2022-04-20 12:49:33,714 - ehealth -INFO - Incident sub-category entered
+2022-04-20 12:49:33,911 - ehealth -INFO - Incident decscription entered
+2022-04-20 12:49:36,093 - ehealth -INFO - dept involved entered
+2022-04-20 12:49:38,160 - ehealth -INFO - preventability selected
+2022-04-20 12:49:40,289 - ehealth -INFO - ActionTaken entered
+2022-04-20 12:49:42,515 - ehealth -INFO - action takenBy selected
+2022-04-20 12:49:44,656 - ehealth -INFO - action DateTime selected
+2022-04-20 12:49:46,868 - ehealth -INFO - witness selected
+2022-04-20 12:49:49,120 - ehealth -INFO - notifiedTo selected
+2022-04-20 12:49:51,255 - ehealth -INFO - notified DateTime selected
+2022-04-20 12:49:53,399 - ehealth -INFO - HeadofDept selected
+2022-04-20 12:50:04,415 - ehealth -INFO - File upload done
+2022-04-20 12:50:06,532 - ehealth -INFO - Submit button clicked
+2022-04-20 12:50:24,780 - ehealth -INFO - URL is opened
+2022-04-20 12:50:24,962 - ehealth -INFO - Entered username
+2022-04-20 12:50:27,055 - ehealth -INFO - Entered Password
+2022-04-20 12:50:29,332 - ehealth -INFO - Login button pressed
+2022-04-20 12:50:38,702 - ehealth -INFO - Incident Location entered
+2022-04-20 12:50:42,926 - ehealth -INFO - Incident type clicked
+2022-04-20 12:50:45,117 - ehealth -INFO - Incident Category entered
+2022-04-20 12:50:47,333 - ehealth -INFO - Incident sub-category entered
+2022-04-20 12:50:47,587 - ehealth -INFO - Incident decscription entered
+2022-04-20 12:50:49,744 - ehealth -INFO - Save button clicked
+2022-04-20 12:50:54,939 - ehealth -INFO - dashboard button clicked
+2022-04-20 12:50:57,589 - ehealth -INFO - edit button clicked
+2022-04-20 12:51:00,432 - ehealth -INFO - Submit button clicked
+2022-04-20 12:51:18,444 - ehealth -INFO - URL is opened
+2022-04-20 12:51:18,636 - ehealth -INFO - Entered username
+2022-04-20 12:51:20,736 - ehealth -INFO - Entered Password
+2022-04-20 12:51:23,007 - ehealth -INFO - Login button pressed
+2022-04-20 12:51:28,170 - ehealth -INFO - Anonymous is clicked
+2022-04-20 12:51:30,252 - ehealth -INFO - popup anonymous is clicked
+2022-04-20 12:51:36,676 - ehealth -INFO - Incident Location entered
+2022-04-20 12:51:40,962 - ehealth -INFO - Incident type clicked
+2022-04-20 12:51:43,193 - ehealth -INFO - Incident Category entered
+2022-04-20 12:51:45,358 - ehealth -INFO - Incident sub-category entered
+2022-04-20 12:51:45,528 - ehealth -INFO - Incident decscription entered
+2022-04-20 12:51:47,686 - ehealth -INFO - dept involved entered
+2022-04-20 12:51:49,751 - ehealth -INFO - preventability selected
+2022-04-20 12:51:51,864 - ehealth -INFO - ActionTaken entered
+2022-04-20 12:51:54,138 - ehealth -INFO - action takenBy selected
+2022-04-20 12:51:56,261 - ehealth -INFO - action DateTime selected
+2022-04-20 12:51:58,577 - ehealth -INFO - witness selected
+2022-04-20 12:52:00,782 - ehealth -INFO - notifiedTo selected
+2022-04-20 12:52:02,890 - ehealth -INFO - notified DateTime selected
+2022-04-20 12:52:04,994 - ehealth -INFO - Submit button clicked
+2022-04-20 12:52:22,841 - ehealth -INFO - URL is opened
+2022-04-20 12:52:23,006 - ehealth -INFO - Entered username
+2022-04-20 12:52:25,110 - ehealth -INFO - Entered Password
+2022-04-20 12:52:27,316 - ehealth -INFO - Login button pressed
+2022-04-20 12:52:32,399 - ehealth -INFO - Anonymous is clicked
+2022-04-20 12:52:34,488 - ehealth -INFO - popup anonymous is clicked
+2022-04-20 12:52:40,735 - ehealth -INFO - Incident Location entered
+2022-04-20 12:52:44,975 - ehealth -INFO - patient compliant yes selected
+2022-04-20 12:52:47,081 - ehealth -INFO - Compliant Date&Time entered
+2022-04-20 12:52:49,182 - ehealth -INFO - Compliant ID entered
+2022-04-20 12:52:51,249 - ehealth -INFO - Incident type clicked
+2022-04-20 12:52:53,447 - ehealth -INFO - Incident Category entered
+2022-04-20 12:52:55,623 - ehealth -INFO - Incident sub-category entered
+2022-04-20 12:52:55,759 - ehealth -INFO - Incident decscription entered
+2022-04-20 12:52:57,888 - ehealth -INFO - dept involved entered
+2022-04-20 12:52:59,953 - ehealth -INFO - preventability selected
+2022-04-20 12:53:02,058 - ehealth -INFO - ActionTaken entered
+2022-04-20 12:53:04,226 - ehealth -INFO - action takenBy selected
+2022-04-20 12:53:06,336 - ehealth -INFO - action DateTime selected
+2022-04-20 12:53:08,627 - ehealth -INFO - witness selected
+2022-04-20 12:53:10,813 - ehealth -INFO - notifiedTo selected
+2022-04-20 12:53:12,918 - ehealth -INFO - notified DateTime selected
+2022-04-20 12:53:14,996 - ehealth -INFO - Submit button clicked
+2022-04-20 12:53:32,875 - ehealth -INFO - URL is opened
+2022-04-20 12:53:33,005 - ehealth -INFO - Entered username
+2022-04-20 12:53:35,107 - ehealth -INFO - Entered Password
+2022-04-20 12:53:37,357 - ehealth -INFO - Login button pressed
+2022-04-20 12:53:46,638 - ehealth -INFO - Incident Location entered
+2022-04-20 12:53:50,855 - ehealth -INFO - Incident type clicked
+2022-04-20 12:53:53,042 - ehealth -INFO - Incident Category entered
+2022-04-20 12:53:55,203 - ehealth -INFO - Incident sub-category entered
+2022-04-20 12:53:55,351 - ehealth -INFO - Incident decscription entered
+2022-04-20 12:53:57,497 - ehealth -INFO - dept involved entered
+2022-04-20 12:53:59,563 - ehealth -INFO - preventability selected
+2022-04-20 12:54:01,692 - ehealth -INFO - ActionTaken entered
+2022-04-20 12:54:03,899 - ehealth -INFO - action takenBy selected
+2022-04-20 12:54:06,006 - ehealth -INFO - action DateTime selected
+2022-04-20 12:54:08,204 - ehealth -INFO - witness selected
+2022-04-20 12:54:10,388 - ehealth -INFO - notifiedTo selected
+2022-04-20 12:54:12,496 - ehealth -INFO - notified DateTime selected
+2022-04-20 12:54:14,626 - ehealth -INFO - HeadofDept selected
+2022-04-20 12:54:16,700 - ehealth -INFO - clear button clicked
+2022-04-20 12:54:18,953 - ehealth -INFO - verify clear
+2022-04-20 13:06:56,563 - ehealth -INFO - URL is opened
+2022-04-20 13:06:56,782 - ehealth -INFO - Entered username
+2022-04-20 13:06:58,885 - ehealth -INFO - Entered Password
+2022-04-20 13:07:01,090 - ehealth -INFO - Login button pressed
+2022-04-20 13:07:10,591 - ehealth -INFO - Incident Location entered
+2022-04-20 13:07:14,846 - ehealth -INFO - Incident type clicked
+2022-04-20 13:07:17,083 - ehealth -INFO - Incident Category entered
+2022-04-20 13:07:19,374 - ehealth -INFO - Incident sub-category entered
+2022-04-20 13:07:19,602 - ehealth -INFO - Incident decscription entered
+2022-04-20 13:07:21,784 - ehealth -INFO - dept involved entered
+2022-04-20 13:07:23,863 - ehealth -INFO - preventability selected
+2022-04-20 13:07:26,015 - ehealth -INFO - ActionTaken entered
+2022-04-20 13:07:28,267 - ehealth -INFO - action takenBy selected
+2022-04-20 13:07:30,432 - ehealth -INFO - action DateTime selected
+2022-04-20 13:07:32,701 - ehealth -INFO - witness selected
+2022-04-20 13:07:34,955 - ehealth -INFO - notifiedTo selected
+2022-04-20 13:07:37,087 - ehealth -INFO - notified DateTime selected
+2022-04-20 13:07:39,252 - ehealth -INFO - HeadofDept selected
+2022-04-20 13:07:49,476 - ehealth -INFO - File upload done
+2022-04-20 13:07:51,598 - ehealth -INFO - Submit button clicked

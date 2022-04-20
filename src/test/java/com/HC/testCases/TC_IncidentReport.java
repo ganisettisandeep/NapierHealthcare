@@ -44,10 +44,7 @@ public class TC_IncidentReport extends BaseClass {
 		//location of incident
 		String loc = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReport", 1, 1);
 		System.out.println("loc>" + loc);
-		driver.findElement(By.xpath("//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-2-placeholder\"]")).sendKeys(loc,Keys.RETURN);
-		System.out.println("while selecting");
-		System.out.println("after selecting");
-		Thread.sleep(2000);
+		lp.clickincidentlocation(loc);
 		logger.info("Incident Location entered");
 		Thread.sleep(2000);
 
@@ -67,14 +64,14 @@ public class TC_IncidentReport extends BaseClass {
 		//category
 		String cat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReport", 1, 3);
 		System.out.println("cat is: "+cat);
-		driver.findElement(By.xpath("//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-3-placeholder\"]")).sendKeys(cat,Keys.RETURN);
+		lp.setIncicat(cat);
 		logger.info("Incident Category entered");
 		Thread.sleep(2000);
 				
 		//subcat
 		String subcat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReport", 1, 4);
 		System.out.println("subcat is: "+subcat);
-		driver.findElement(By.xpath("//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-4-placeholder\"]")).sendKeys(subcat,Keys.RETURN);
+		lp.setincidentsubcat(subcat);
 		logger.info("Incident sub-category entered");
 		
 		//description
@@ -82,15 +79,6 @@ public class TC_IncidentReport extends BaseClass {
 		lp.setincidescrep(dec);
 		logger.info("Incident decscription entered");
 		Thread.sleep(2000);
-		
-		//Save
-	/*	lp.incidentsave();
-		logger.info("Save button clicked");
-		
-		Thread.sleep(2500);
-		lp.popsave();
-		Thread.sleep(2500);
-		*/
 		
 		//submit
 		lp.incidentsubmit();
@@ -107,7 +95,6 @@ public class TC_IncidentReport extends BaseClass {
 		Assert.assertTrue(save);
 		XLUtils.setCellData(Constants.Path_IncidentData,"TC_IncidentReport", 1 , 6, number);
 		System.out.println(XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReport", 1, 6));
-				
 		
 		//dashboard
 		db.clickincidentdashboard();
@@ -116,7 +103,7 @@ public class TC_IncidentReport extends BaseClass {
 
 		//enter IR code
 		db.enterIRCode1(number);
-		logger.info("IR code is entered");
+		logger.info("incident number entered:"+ number);
 		Thread.sleep(2500);
 
 		//search button

@@ -52,7 +52,7 @@ public class BaseClass {
 	@AfterClass
 	public void tearDown()
 	{
-		//driver.quit();
+		driver.quit();
 	}
 	
 	public void capureScreen(WebDriver driver, String tname) throws IOException {

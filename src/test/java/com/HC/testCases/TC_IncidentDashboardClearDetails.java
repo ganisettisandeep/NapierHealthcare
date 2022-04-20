@@ -88,8 +88,7 @@ public class TC_IncidentDashboardClearDetails extends BaseClass {
 		capureScreen(driver,"TC_IncidentDashboardClearDetails");
 
 		//result
-		String result = db.verifyClear();
-		Assert.assertEquals(result, "");
+		db.verifyClear();
 		logger.info("Assert verified");
 		
 	}

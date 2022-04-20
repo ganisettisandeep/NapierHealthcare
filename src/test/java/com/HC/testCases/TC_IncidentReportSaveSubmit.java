@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.HC.pageObjects.DashboardPO;
 import com.HC.pageObjects.IncidentPO;
 import com.HC.pageObjects.LoginPage;
 import com.HC.utilities.BaseClass;
@@ -32,6 +33,7 @@ public class TC_IncidentReportSaveSubmit extends BaseClass {
 		logger.info("Login button pressed");
 		Thread.sleep(5000);
 
+		DashboardPO db = new DashboardPO(driver);
 		IncidentPO in = new IncidentPO(driver);
 		
 		//incident Time
@@ -43,10 +45,7 @@ public class TC_IncidentReportSaveSubmit extends BaseClass {
 		//location of incident
 		String loc = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportSaveSubmit", 1, 1);
 		System.out.println("loc>" + loc);
-		driver.findElement(By.xpath("//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-2-placeholder\"]")).sendKeys(loc,Keys.RETURN);
-		System.out.println("while selecting");
-		System.out.println("after selecting");
-		Thread.sleep(2000);
+		lp.clickincidentlocation(loc);
 		logger.info("Incident Location entered");
 		Thread.sleep(2000);
 								
@@ -65,14 +64,14 @@ public class TC_IncidentReportSaveSubmit extends BaseClass {
 		//category
 		String cat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportSaveSubmit", 1, 3);
 		System.out.println("cat is: "+cat);
-		driver.findElement(By.xpath("//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-3-placeholder\"]")).sendKeys(cat,Keys.RETURN);
+		lp.setIncicat(cat);
 		logger.info("Incident Category entered");
 		Thread.sleep(2000);
 				
 		//subcat
 		String subcat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportSaveSubmit", 1, 4);
 		System.out.println("subcat is: "+subcat);
-		driver.findElement(By.xpath("//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-4-placeholder\"]")).sendKeys(subcat,Keys.RETURN);
+		lp.setincidentsubcat(subcat);
 		logger.info("Incident sub-category entered");
 		
 		//description
@@ -90,7 +89,7 @@ public class TC_IncidentReportSaveSubmit extends BaseClass {
 		Assert.assertTrue(save);
 		
 		//dashboard
-		lp.clickincidentdashboard();
+		db.clickincidentdashboard();
 		logger.info("dashboard button clicked");
 		Thread.sleep(2500);
 		

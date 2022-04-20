@@ -93,8 +93,7 @@ public class TC_QualityDashboardClearDetails extends BaseClass {
 		capureScreen(driver,"TC_QualityDashboardClearDetails");
 		
 		//result
-		String result = db.verifyClear();
-		Assert.assertEquals(result, "");
+		db.verifyClear();
 		logger.info("Assert verified");
 				
 	}

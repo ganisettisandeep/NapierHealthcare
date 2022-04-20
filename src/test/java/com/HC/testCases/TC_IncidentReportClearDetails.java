@@ -44,14 +44,11 @@ public class TC_IncidentReportClearDetails extends BaseClass {
 		//location of incident
 		String loc = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 1);
 		System.out.println("loc>" + loc);
-		driver.findElement(By.xpath("//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-2-placeholder\"]")).sendKeys(loc,Keys.RETURN);
-		System.out.println("while selecting");
-		System.out.println("after selecting");
-		Thread.sleep(2000);
+		lp.clickincidentlocation(loc);
 		logger.info("Incident Location entered");
 		Thread.sleep(2000);
-								
-		//Location details
+
+		//for Location details
 		String detail = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 2);
 		System.out.println("detail is:"+detail);
 		lp.setlocationdetail(detail);
@@ -63,29 +60,19 @@ public class TC_IncidentReportClearDetails extends BaseClass {
 		logger.info("Incident type clicked");
 		Thread.sleep(2000);
 		
-		/*
-		lp.selectCheckBoxText();
-		logger.info("CheckBoxText selected");
-		Thread.sleep(2000);
-		
-		lp.selectCheckScore();
-		logger.info("CheckScore selected");
-		Thread.sleep(2000);
-		*/		
-		
 		//category
 		String cat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 3);
 		System.out.println("cat is: "+cat);
-		driver.findElement(By.xpath("//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-3-placeholder\"]")).sendKeys(cat,Keys.RETURN);
+		lp.setIncicat(cat);
 		logger.info("Incident Category entered");
 		Thread.sleep(2000);
 				
 		//subcat
 		String subcat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 4);
 		System.out.println("subcat is: "+subcat);
-		driver.findElement(By.xpath("//*[@class=\"reactSelect__input\" and @aria-describedby=\"react-select-4-placeholder\"]")).sendKeys(subcat,Keys.RETURN);
+		lp.setincidentsubcat(subcat);
 		logger.info("Incident sub-category entered");
-		
+
 		//description
 		String dec = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IncidentReportAllDetails", 1, 5);
 		lp.setincidescrep(dec);
@@ -144,12 +131,7 @@ public class TC_IncidentReportClearDetails extends BaseClass {
 		in.selectHeadofDept(hod);
 		logger.info("HeadofDept selected");
 		Thread.sleep(2000);
-		
-		//file upload
-		in.clickFileUpload();
-		logger.info("File upload done");
-		Thread.sleep(2000);
-		
+	
 		//clear button
 		in.IRclearButton();
 		logger.info("clear button clicked");

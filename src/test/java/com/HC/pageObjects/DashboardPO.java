@@ -34,7 +34,7 @@ public class DashboardPO {
 		IRCode.sendKeys(text);
 	}
 	
-	@FindBy(xpath="(//*[@class=\"elements_displayValue__9jUr4 elements_placeholder__1Yfip\"])[2]")
+	@FindBy(xpath="(//*[starts-with(@class,\"elements_displayValue__\")])[2]")
 	WebElement categorydropdown;
 	@FindBy(xpath="//*[@data-testid=\"combobox-Medical\"]")
 	WebElement categogyOption;
@@ -67,8 +67,8 @@ public class DashboardPO {
 	public void selectToRepoDate(String text){
 		toRepoDateTime.sendKeys(text);
 	}
-	
-	@FindBy(xpath="(//*[@class=\"elements_displayValue__9jUr4 elements_placeholder__1Yfip\"])[2]")
+
+	@FindBy(xpath="(//*[starts-with(@class,\"elements_displayValue__\")])[3]")
 	WebElement typeofInci;
 	@FindBy(xpath="//*[@data-testid=\"combobox-Unsafe condition\"]")
 	WebElement typeofInciOption;
@@ -78,8 +78,8 @@ public class DashboardPO {
 		Thread.sleep(2000);
 		typeofInciOption.click();
 	}
-	
-	@FindBy(xpath="(//*[@class=\"elements_displayValue__9jUr4 elements_placeholder__1Yfip\"])[2]")
+
+	@FindBy(xpath="(//*[starts-with(@class,\"elements_displayValue__\")])[4]")
 	WebElement investigator;
 	@FindBy(xpath="//*[@data-testid=\"combobox-admin\"]")
 	WebElement typeofInvestigator;
@@ -89,7 +89,7 @@ public class DashboardPO {
 		typeofInvestigator.click();
 	}
 
-	@FindBy(xpath="(//*[@class=\"elements_displayValue__9jUr4 elements_placeholder__1Yfip\"])[2]")
+	@FindBy(xpath="(//*[starts-with(@class,\"elements_displayValue__\")])[5]")
 	WebElement status;
 	@FindBy(xpath="//*[@data-testid=\"combobox-Assigned\"]")
 	WebElement statusOption;
@@ -105,7 +105,7 @@ public class DashboardPO {
 		searchButton.click();
 	}
 
-	@FindBy(xpath="//*[@class=\"btn clear irDashboard_clear__39fwt\"]")
+	@FindBy(xpath="//button[contains(text(),\"Clear\")]")
 	WebElement clearButton;
 	public void clearButton(){
 		clearButton.click();
@@ -117,19 +117,18 @@ public class DashboardPO {
 		myDeptIR.click();
 	}
 
-	@FindBy(xpath="//*[@class=\"irDashboard_irCode__3cRB0\"]")
+	@FindBy(xpath="//*[starts-with(@class,\"irDashboard_irCode\")]")
 	WebElement resultIRcode;
 	public boolean resultIRcode(){
 		boolean result = resultIRcode.isDisplayed();
 		return result;
 	}
 
-	public String verifyClear(){
-		String result = fromInciDateTime.getText();
+	public void verifyClear(){
+		Assert.assertEquals("", fromInciDateTime.getText());
 		Assert.assertEquals("", fromRepoDateTime.getText());
 		Assert.assertEquals("", toInciDateTime.getText());
 		Assert.assertEquals("", toRepoDateTime.getText());
-		return result;
 	}
 	
 	
