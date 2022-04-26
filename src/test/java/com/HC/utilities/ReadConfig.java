@@ -56,6 +56,18 @@ public class ReadConfig {
 	String firefoxpath=pro.getProperty("firefoxpath");
 	return firefoxpath;
 	}
+	
+	public String getUsernameHIS()
+	{
+	String firefoxpath=pro.getProperty("usernameHIS");
+	return firefoxpath;
+	}
+	
+	public String getPasswordHIS()
+	{
+	String firefoxpath=pro.getProperty("passwordHIS");
+	return firefoxpath;
+	}
 
 	
 }

@@ -19,14 +19,16 @@ public class TC_IncidentReportPatientComplaintDetails extends BaseClass {
 			
 		logger.info("URL is opened");
 		LoginPage lp = new LoginPage(driver);
-		lp.setUserName(username);
+		lp.setUserName(usernameHIS);
 		logger.info("Entered username");
-		System.out.println("Entered Username -->" + username);
+		System.out.println("Entered Username -->" + usernameHIS);
 		Thread.sleep(1000);
-		lp.setPassword(password);
-		System.out.println("Entered Password --->" + password);
+		lp.setPassword(passwordHIS);
+		System.out.println("Entered Password --->" + passwordHIS);
 		Thread.sleep(1000);
 		logger.info("Entered Password");
+		Thread.sleep(1000);
+		lp.clickLoginHIS();
 		lp.clicksubmit();
 		logger.info("Login button pressed");
 		Thread.sleep(5000);
@@ -68,14 +70,20 @@ public class TC_IncidentReportPatientComplaintDetails extends BaseClass {
 		logger.info("patient compliant yes selected");
 		Thread.sleep(2000);
 
+		//selection of patient name
+		String patientName = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 3);
+		lp.setIncicat(patientName);
+		logger.info("patient compliant yes selected");
+		Thread.sleep(2000);
+
 		//ComplaintDateTime
-		String ComplaintDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 3);
+		String ComplaintDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 4);
 		in.selectComplaintDateTime(ComplaintDateTime);
 		logger.info("Compliant Date&Time entered");
 		Thread.sleep(2000);
 
 		//Complaint ID
-		String ComplaintID = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 4);
+		String ComplaintID = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 5);
 		in.complaintID(ComplaintID);
 		logger.info("Compliant ID entered");
 		Thread.sleep(2000);
@@ -86,27 +94,27 @@ public class TC_IncidentReportPatientComplaintDetails extends BaseClass {
 		Thread.sleep(2000);
 		
 		//category
-		String cat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 5);
+		String cat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 6);
 		System.out.println("cat is: "+cat);
-		lp.setIncicat(cat);
+		lp.setincidentsubcat(cat);
 		logger.info("Incident Category entered");
 		Thread.sleep(2000);
 				
 		//subcat
-		String subcat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 6);
+		String subcat = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 7);
 		System.out.println("subcat is: "+subcat);
-		lp.setincidentsubcat(subcat);
+		in.selectDeptInvolved(subcat);
 		logger.info("Incident sub-category entered");
 
 		//description
-		String dec = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 7);
+		String dec = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 8);
 		lp.setincidescrep(dec);
 		logger.info("Incident decscription entered");
 		Thread.sleep(2000);
 		
 		//dept involved
-		String dept = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 8);
-		in.selectDeptInvolved(dept);
+		String dept = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 9);
+		in.selectImmedActionTakenBy(dept);
 		logger.info("dept involved entered");
 		Thread.sleep(2000);
 
@@ -116,37 +124,37 @@ public class TC_IncidentReportPatientComplaintDetails extends BaseClass {
 		Thread.sleep(2000);
 
 		//ActionTakenText
-		String text = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 9);
+		String text = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 10);
 		in.immedActionTakenText(text);
 		logger.info("ActionTaken entered");
 		Thread.sleep(2000);
 
 		//action takenBy
-		String takenBy = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 10);
-		in.selectImmedActionTakenBy(takenBy);
+		String takenBy = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 11);
+		in.selectWitnessedBy(takenBy);
 		logger.info("action takenBy selected");
 		Thread.sleep(2000);
 		
 		//action DateTime selection
-		String actionDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 11);
+		String actionDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 12);
 		in.selectActionTakenDateTime(actionDateTime);
 		logger.info("action DateTime selected");
 		Thread.sleep(2000);
 
 		//witness selected
-		String witness = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 12);
-		in.selectWitnessedBy(witness);
+		String witness = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 13);
+		in.selectNotifiedTo(witness);
 		logger.info("witness selected");
 		Thread.sleep(2000);
 
 		//notifiedTo selection
-		String notifiedTo = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 13);
-		in.selectNotifiedTo(notifiedTo);
+		String notifiedTo = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 14);
+		in.selectHeadofDept(notifiedTo);
 		logger.info("notifiedTo selected");
 		Thread.sleep(2000);
 
 		//notifiedDateTime selection
-		String notifiedDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 14);
+		String notifiedDateTime = XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 15);
 		in.selectNotifiedDateTime(notifiedDateTime);
 		logger.info("notified DateTime selected");
 		Thread.sleep(2000);
@@ -164,7 +172,7 @@ public class TC_IncidentReportPatientComplaintDetails extends BaseClass {
 		lp.popsave();
 		Thread.sleep(2500);
 		XLUtils.setCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1 , 15, number);
-		System.out.println(XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 15));
+		System.out.println(XLUtils.getCellData(Constants.Path_IncidentData,"TC_InciRepPatientComplaint", 1, 16));
 				
 	}
 }

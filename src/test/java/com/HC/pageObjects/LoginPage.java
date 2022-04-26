@@ -159,4 +159,10 @@ public class LoginPage {
 		incidescrep.sendKeys(incides);
 	}
 
+	@FindBy(xpath="//input[@type=\"checkbox\"]")
+	WebElement LoginHIS;
+	public void clickLoginHIS(){
+		LoginHIS.click();
+	}
+
 }

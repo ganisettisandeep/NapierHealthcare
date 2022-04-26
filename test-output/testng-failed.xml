@@ -7,13 +7,13 @@
   <test thread-count="5" name="HealthCare Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.HC.testCases.TC_IncidentReportAllDetails">
+      <class name="com.HC.testCases.TC_IncidentReportPatientComplaintDetails">
         <methods>
           <include name="setup"/>
-          <include name="TC_IncidentReportAllDetails"/>
           <include name="tearDown"/>
+          <include name="TC_IncidentReportPatientComplaintDetails"/>
         </methods>
-      </class> <!-- com.HC.testCases.TC_IncidentReportAllDetails -->
+      </class> <!-- com.HC.testCases.TC_IncidentReportPatientComplaintDetails -->
     </classes>
   </test> <!-- HealthCare Test(failed) -->
 </suite> <!-- Failed suite [NapierHealthCareProject] -->

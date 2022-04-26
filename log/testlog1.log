@@ -2917,3 +2917,86 @@
 2022-04-20 13:07:39,252 [main] INFO ehealth - HeadofDept selected
 2022-04-20 13:07:49,476 [main] INFO ehealth - File upload done
 2022-04-20 13:07:51,598 [main] INFO ehealth - Submit button clicked
+2022-04-25 18:55:27,785 [main] INFO ehealth - URL is opened
+2022-04-25 18:55:28,341 [main] INFO ehealth - Entered username
+2022-04-25 18:55:30,445 [main] INFO ehealth - Entered Password
+2022-04-25 18:55:32,674 [main] INFO ehealth - Login button pressed
+2022-04-25 18:55:40,549 [main] INFO ehealth - Incident Location entered
+2022-04-25 18:55:44,802 [main] INFO ehealth - Incident type clicked
+2022-04-25 18:55:47,249 [main] INFO ehealth - Incident Category entered
+2022-04-25 18:55:49,471 [main] INFO ehealth - Incident sub-category entered
+2022-04-25 18:55:49,679 [main] INFO ehealth - Incident decscription entered
+2022-04-25 18:55:51,846 [main] INFO ehealth - dept involved entered
+2022-04-25 18:55:53,909 [main] INFO ehealth - preventability selected
+2022-04-25 18:55:56,056 [main] INFO ehealth - ActionTaken entered
+2022-04-25 18:55:58,295 [main] INFO ehealth - action takenBy selected
+2022-04-25 18:56:00,433 [main] INFO ehealth - action DateTime selected
+2022-04-25 18:56:02,664 [main] INFO ehealth - witness selected
+2022-04-25 18:56:04,888 [main] INFO ehealth - notifiedTo selected
+2022-04-25 18:56:07,026 [main] INFO ehealth - notified DateTime selected
+2022-04-25 18:56:09,196 [main] INFO ehealth - HeadofDept selected
+2022-04-25 18:56:20,061 [main] INFO ehealth - File upload done
+2022-04-25 18:56:22,170 [main] INFO ehealth - Submit button clicked
+2022-04-25 18:56:39,436 [main] INFO ehealth - URL is opened
+2022-04-25 18:56:39,551 [main] INFO ehealth - Entered username
+2022-04-25 18:56:41,678 [main] INFO ehealth - Entered Password
+2022-04-25 18:56:43,914 [main] INFO ehealth - Login button pressed
+2022-04-25 18:56:48,990 [main] INFO ehealth - Anonymous is clicked
+2022-04-25 18:56:51,067 [main] INFO ehealth - popup anonymous is clicked
+2022-04-25 18:56:55,362 [main] INFO ehealth - Incident Location entered
+2022-04-25 18:56:59,653 [main] INFO ehealth - patient compliant yes selected
+2022-04-25 18:57:01,802 [main] INFO ehealth - Compliant Date&Time entered
+2022-04-25 18:57:03,911 [main] INFO ehealth - Compliant ID entered
+2022-04-25 18:57:05,972 [main] INFO ehealth - Incident type clicked
+2022-04-25 19:01:47,758 [main] INFO ehealth - URL is opened
+2022-04-25 19:01:47,938 [main] INFO ehealth - Entered username
+2022-04-25 19:01:50,041 [main] INFO ehealth - Entered Password
+2022-04-25 19:01:53,324 [main] INFO ehealth - Login button pressed
+2022-04-26 11:11:06,782 [main] INFO ehealth - URL is opened
+2022-04-26 11:11:06,997 [main] INFO ehealth - Entered username
+2022-04-26 11:11:09,110 [main] INFO ehealth - Entered Password
+2022-04-26 11:11:12,430 [main] INFO ehealth - Login button pressed
+2022-04-26 11:11:17,525 [main] INFO ehealth - Anonymous is clicked
+2022-04-26 11:11:19,611 [main] INFO ehealth - popup anonymous is clicked
+2022-04-26 11:11:24,124 [main] INFO ehealth - Incident Location entered
+2022-04-26 11:11:28,475 [main] INFO ehealth - patient compliant yes selected
+2022-04-26 11:11:35,038 [main] INFO ehealth - patient compliant yes selected
+2022-04-26 11:11:37,246 [main] INFO ehealth - Compliant Date&Time entered
+2022-04-26 11:11:39,446 [main] INFO ehealth - Compliant ID entered
+2022-04-26 11:11:41,548 [main] INFO ehealth - Incident type clicked
+2022-04-26 11:11:43,774 [main] INFO ehealth - Incident Category entered
+2022-04-26 11:11:45,980 [main] INFO ehealth - Incident sub-category entered
+2022-04-26 11:11:46,182 [main] INFO ehealth - Incident decscription entered
+2022-04-26 11:11:48,409 [main] INFO ehealth - dept involved entered
+2022-04-26 11:11:50,499 [main] INFO ehealth - preventability selected
+2022-04-26 11:11:52,691 [main] INFO ehealth - ActionTaken entered
+2022-04-26 11:11:54,979 [main] INFO ehealth - action takenBy selected
+2022-04-26 11:11:57,155 [main] INFO ehealth - action DateTime selected
+2022-04-26 11:11:59,439 [main] INFO ehealth - witness selected
+2022-04-26 11:12:01,765 [main] INFO ehealth - notifiedTo selected
+2022-04-26 11:12:03,933 [main] INFO ehealth - notified DateTime selected
+2022-04-26 11:12:06,052 [main] INFO ehealth - Submit button clicked
+2022-04-26 11:18:59,639 [main] INFO ehealth - URL is opened
+2022-04-26 11:18:59,809 [main] INFO ehealth - Entered username
+2022-04-26 11:19:01,926 [main] INFO ehealth - Entered Password
+2022-04-26 11:19:05,341 [main] INFO ehealth - Login button pressed
+2022-04-26 11:19:10,440 [main] INFO ehealth - Anonymous is clicked
+2022-04-26 11:19:12,528 [main] INFO ehealth - popup anonymous is clicked
+2022-04-26 11:19:16,973 [main] INFO ehealth - Incident Location entered
+2022-04-26 11:19:21,316 [main] INFO ehealth - patient compliant yes selected
+2022-04-26 11:19:27,659 [main] INFO ehealth - patient compliant yes selected
+2022-04-26 11:19:29,837 [main] INFO ehealth - Compliant Date&Time entered
+2022-04-26 11:19:32,019 [main] INFO ehealth - Compliant ID entered
+2022-04-26 11:19:34,112 [main] INFO ehealth - Incident type clicked
+2022-04-26 11:19:36,316 [main] INFO ehealth - Incident Category entered
+2022-04-26 11:19:38,533 [main] INFO ehealth - Incident sub-category entered
+2022-04-26 11:19:38,729 [main] INFO ehealth - Incident decscription entered
+2022-04-26 11:19:40,910 [main] INFO ehealth - dept involved entered
+2022-04-26 11:19:42,995 [main] INFO ehealth - preventability selected
+2022-04-26 11:19:45,191 [main] INFO ehealth - ActionTaken entered
+2022-04-26 11:19:47,450 [main] INFO ehealth - action takenBy selected
+2022-04-26 11:19:49,619 [main] INFO ehealth - action DateTime selected
+2022-04-26 11:19:51,878 [main] INFO ehealth - witness selected
+2022-04-26 11:19:54,149 [main] INFO ehealth - notifiedTo selected
+2022-04-26 11:19:56,290 [main] INFO ehealth - notified DateTime selected
+2022-04-26 11:19:58,419 [main] INFO ehealth - Submit button clicked
