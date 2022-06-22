@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.HC.testCases.TC_QualityDashboardSearch">
+      <class name="com.HC.testCases.TC_IR_TAT">
         <methods>
-          <include name="TC_QualityDashboardSearch"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="TC_IR_TAT"/>
         </methods>
-      </class> <!-- com.HC.testCases.TC_QualityDashboardSearch -->
+      </class> <!-- com.HC.testCases.TC_IR_TAT -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

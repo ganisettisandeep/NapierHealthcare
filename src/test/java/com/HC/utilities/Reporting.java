@@ -5,6 +5,7 @@ package com.HC.utilities;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 import org.testng.ITestContext;
@@ -25,10 +26,8 @@ public class Reporting extends TestListenerAdapter
 	public ExtentHtmlReporter htmlReporter;
 	public ExtentReports extent;
 	public ExtentTest logger;
-	
 		
-	public void onStart(ITestContext testContext)
-	{
+	public void onStart(ITestContext testContext, ITestResult tr){
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
 		String repName="Test-Report-"+timeStamp+".html";
 		
@@ -46,18 +45,22 @@ public class Reporting extends TestListenerAdapter
 		htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
 		htmlReporter.config().setTheme(Theme.DARK);
+		
 	}
 	
 	public void onTestSuccess(ITestResult tr)
 	{
+		System.out.println("Test case passed" +tr.getName());
 		logger=extent.createTest(tr.getName()); // create new entry in the report
 		logger.log(Status.PASS,MarkupHelper.createLabel(tr.getName(),ExtentColor.GREEN)); // send the passed information to the report with GREEN color highlighted
 		logger.pass("Screenshot is below:");
 		attachScreenshot(tr);
+		
 	}
 	
 	public void onTestFailure(ITestResult tr)
 	{
+		System.out.println("Test case failed" +tr.getName());
 		logger=extent.createTest(tr.getName()); // create new entry in the report
 		logger.log(Status.FAIL,MarkupHelper.createLabel(tr.getName(),ExtentColor.RED)); // send the passed information to the report with RED color highlighted
 		System.out.println("in onTestFailure");
@@ -92,5 +95,6 @@ public class Reporting extends TestListenerAdapter
 			}
 		}
 	}
+
 	
 }

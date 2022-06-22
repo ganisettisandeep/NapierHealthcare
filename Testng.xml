@@ -21,7 +21,7 @@
 		
 			<class name="com.HC.pageObjects.DriverScript" />   
 		-->	
-			<class name="com.HC.testCases.TC_IncidentReport" />
+			<class name="com.HC.testCases.TC_IR_TAT" />
 
 	
 		</classes>

@@ -13,8 +13,6 @@ public class CreateXML {
 	      myWriter.write("<!DOCTYPE suite SYSTEM \"http://testng.org/testng-1.0.dtd\" >");
 	      myWriter.write("\n");
 	      myWriter.write("<suite name=\"NapierHealthCareProject\">");
-	      myWriter.write("\n");	      
-	      myWriter.write("<listeners><listener class-name=\"com.HC.utilities.Reporting\" /></listeners>");
 	      myWriter.write("\n");
 	      myWriter.write("<test name=\"HealthCare Test\">");
 	      myWriter.write("\n");

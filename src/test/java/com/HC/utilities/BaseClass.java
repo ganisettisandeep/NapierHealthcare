@@ -2,6 +2,14 @@ package com.HC.utilities;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.DirectoryNotEmptyException;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Path;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -13,9 +21,24 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.ChartLocation;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class BaseClass {
 
@@ -29,14 +52,52 @@ public class BaseClass {
 	public static WebDriver driver;
 	
 	public static Logger logger;
+
+	public ExtentHtmlReporter htmlReporter;
+	public ExtentReports extent;
+	public ExtentTest Elogger;
+	public ITestResult tr;
+	public int screens = 1;
+	
+	@BeforeSuite
+	public void setUpSuite() {
+	        try {
+	        	FileUtils.deleteDirectory(new File("./Screenshots"));
+	        } catch (NoSuchFileException x) {
+	            System.err.format("%s: no such" + " file or directory%n");
+	        } catch (IOException x) {
+	            System.err.println(x);
+	        }
+	        
+	        File newDir = new File("./Screenshots");
+	        if (!newDir.exists()){
+	        	newDir.mkdirs();
+	        }
+	        
+			String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
+			String repName="Test-Report-"+timeStamp+".html";
+			
+			htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/test-output/"+repName);//specify location of the report
+			htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
+			
+			extent =new ExtentReports();
+			extent.attachReporter(htmlReporter);
+			extent.setSystemInfo("Host name","localhost");
+			extent.setSystemInfo("Environemnt","QA");
+			extent.setSystemInfo("user","Sandeep");
+			
+			htmlReporter.config().setDocumentTitle("Napier HealthCare"); // Tile of report
+			htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
+			htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
+			htmlReporter.config().setTheme(Theme.DARK);
+		
+	}
 	
 	@Parameters("browser")
 	@BeforeClass
-	public void setup(String br)
-	{
+	public void setup(String br){
 		logger=Logger.getLogger("ehealth");
 		PropertyConfigurator.configure("Log4j.properties");
-		
 	if (br.equals("chrome"))	{
 		System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
 		driver= new ChromeDriver();
@@ -52,14 +113,55 @@ public class BaseClass {
 	}
 	
 	@AfterClass
-	public void tearDown()
-	{
+	public void tearDown(){
 		driver.quit();
 	}
+		
+
+	@AfterTest
+	public void tearDownMethod(ITestResult result){
+		if(result.getStatus() == ITestResult.SUCCESS) {
+			System.out.println("Test case passed" +result.getName());
+			Elogger.log(Status.PASS,MarkupHelper.createLabel(result.getName(),ExtentColor.GREEN));
+			Elogger.pass("Screenshot is below:");
+		}
+		else if(result.getStatus() == ITestResult.FAILURE) {
+			System.out.println("Test case failed" +result.getName());
+			Elogger.log(Status.FAIL,MarkupHelper.createLabel(result.getName(),ExtentColor.RED));
+			Elogger.fail("Screenshot is below:");
+		}
+		else if(result.getStatus() == ITestResult.SKIP) {
+			System.out.println("Test case skipped" +result.getName());
+			Elogger.log(Status.SKIP,MarkupHelper.createLabel(result.getName(),ExtentColor.ORANGE));
+			Elogger.skip("Screenshot is below:");
+		}
+		attachScreenshot(result, screens);
+
+		extent.flush();
+	}
+		
+
+	public void attachScreenshot(ITestResult tr, int screens1) {
+		
+		for(int i=1; i<=screens1; i++) {
+			
+		String screenshotPath=System.getProperty("user.dir")+"\\Screenshots\\"+tr.getName()+i+".png";
+		System.out.println("screenshotPath: "+screenshotPath);
+		File f = new File(screenshotPath); 
+		
+		if(f.exists()){
+		try {
+			Elogger.addScreenCaptureFromPath(screenshotPath);
+			} 
+		catch (IOException e){
+			e.printStackTrace();
+			}
+		}
+	}
+	}
+
 	
 	public void capureScreen(WebDriver driver, String tname) throws IOException {
-		
-	
 	TakesScreenshot ts = (TakesScreenshot) driver;
 	File scrFile = ts.getScreenshotAs(OutputType.FILE);
 	File target = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + ".png");
@@ -68,17 +170,16 @@ public class BaseClass {
 	
 	}
 	
-	public String randomestring()
-	{
+	public String randomestring(){
 		String generatedstring=RandomStringUtils.randomAlphabetic(8);
 		return(generatedstring);
 	}
 	
-	public static String randomeNum() {
+	public static String randomeNum(){
 		String generatedString2 = RandomStringUtils.randomNumeric(4);
 		return (generatedString2);
 	}
-			
+
 	
 	
 }

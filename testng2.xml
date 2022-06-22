@@ -5,7 +5,7 @@
 <test name="HealthCare Test">
 <parameter name="browser" value="chrome" />
 <classes>
-<class name="com.HC.testCases.TC_IncidentReportPatientComplaintDetails" />
+<class name="com.HC.testCases.TC_IR_TAT" />
 </classes>
 </test>
 </suite>
