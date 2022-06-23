@@ -302,21 +302,24 @@ public class DashboardPO {
 
 	@FindBy(xpath="//*[starts-with(@class,\"incidentReporting_icon\")]")
 	WebElement assertAcknowledge;
-	public void assertAcknowledge(){
-		assertAcknowledge.isDisplayed();
+	public boolean assertAcknowledge(){
+		boolean f3 = assertAcknowledge.isDisplayed();
+		return f3;
 	}
 
 	@FindBy(xpath="//*[starts-with(@class,\"incidentReporting_ack_\")]")
 	WebElement assertAcknowledgeBanner;
-	public void assertAcknowledgeBanner(){
-		assertAcknowledgeBanner.isDisplayed();
+	public boolean assertAcknowledgeBanner(){
+		boolean f2 = assertAcknowledgeBanner.isDisplayed();
+		return f2;
 	}
 	
 	@FindBy(xpath="//*[@stroke=\"currentColor\" and @style='color: rgb(21, 164, 40);']//parent::button")
 	WebElement assertFlag;
-	public void assertFlag(){
+	public boolean assertFlag(){
 		actions.click();
-		assertFlag.isDisplayed();
+		boolean f1 = assertFlag.isDisplayed();
+		return f1;
 	}
 	
 	

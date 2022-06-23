@@ -9,13 +9,59 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">NapierHealthCareProject</th></tr>
-<tr><td><a href="#t0">HealthCare Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,362</td><td></td><td></td></tr>
+<tr><td><a href="#t0">HealthCare Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">52,234</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">NapierHealthCareProject</th></tr></tbody><tbody id="t0"><tr><th colspan="4">HealthCare Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.HC.testCases.TC_IR_TAT</td><td><a href="#m0">TC_IR_TAT</a></td><td rowspan="1">1655892845835</td><td rowspan="1">9662</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">NapierHealthCareProject</th></tr></tbody><tbody id="t0"><tr><th colspan="4">HealthCare Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.HC.testCases.TC_IRAcknowledge</td><td><a href="#m0">TC_IRAcknowledge</a></td><td rowspan="1">1655981338634</td><td rowspan="1">19622</td></tr><tr class="failedodd"><td rowspan="1">com.HC.testCases.TC_IR_TAT</td><td><a href="#m1">TC_IR_TAT</a></td><td rowspan="1">1655981313358</td><td rowspan="1">19950</td></tr></tbody>
 </table>
-<h2>HealthCare Test</h2><h3 id="m0">com.HC.testCases.TC_IR_TAT#TC_IR_TAT</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.HC.utilities.Reporting.addInfo(Reporting.java:109)
-	at com.HC.testCases.TC_IR_TAT.TC_IR_TAT(TC_IR_TAT.java:47)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>HealthCare Test</h2><h3 id="m0">com.HC.testCases.TC_IRAcknowledge#TC_IRAcknowledge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@title=&quot;Acknowledge IR&quot;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SANDEEP&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\venkata\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57558}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d1690e28ac608050473f0996f33b56d
+*** Element info: {Using=xpath, value=//button[@title=&quot;Acknowledge IR&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at com.HC.pageObjects.DashboardPO.clickInciAcknowledge(DashboardPO.java:275)
+	at com.HC.testCases.TC_IRAcknowledge.TC_IRAcknowledge(TC_IRAcknowledge.java:51)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.HC.testCases.TC_IR_TAT#TC_IR_TAT</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@title=&quot;Acknowledge IR&quot;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SANDEEP&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\venkata\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bff1e5988de510b9a982f30f96093612
+*** Element info: {Using=xpath, value=//button[@title=&quot;Acknowledge IR&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at com.HC.pageObjects.DashboardPO.clickInciAcknowledge(DashboardPO.java:275)
+	at com.HC.testCases.TC_IR_TAT.TC_IR_TAT(TC_IR_TAT.java:50)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

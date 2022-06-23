@@ -1,9 +1,14 @@
 package com.HC.utilities;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 public class Constants {
 
 	//List of System Variables
 	//public static final String URL = "https://www.store.demoqa.com";
+	public static ExtentReports extent;
+	public static ExtentTest Elogger;
 	public static final String Path_TestData = "C://Users//venkata//Downloads//NapierHeathCareProject//DataEngine.xlsx";
 	public static final String Path_IncidentData = "C://Users//venkata//Downloads//NapierHeathCareProject//DataEngine.xlsx";
 	public static final String Path_FileUpload = "C:\\Users\\venkata\\Downloads\\NapierHeathCareProject\\incidentImage1.jpg";

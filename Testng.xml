@@ -3,7 +3,7 @@
 
 	<suite name="NapierHealthCareProject">
 
-	<listeners><listener class-name="com.HC.utilities.Reporting" /></listeners>
+	<!--  <listeners><listener class-name="com.HC.utilities.Reporting" /></listeners>  -->
 
 
 	<test name="HealthCare Test">
@@ -22,6 +22,7 @@
 			<class name="com.HC.pageObjects.DriverScript" />   
 		-->	
 			<class name="com.HC.testCases.TC_IR_TAT" />
+			<class name="com.HC.testCases.TC_IRAcknowledge" />
 
 	
 		</classes>

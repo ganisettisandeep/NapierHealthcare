@@ -25,7 +25,7 @@ public class TC_IRAcknowledge extends BaseClass {
 	@Test
 	public void TC_IRAcknowledge() throws IOException, InterruptedException{
 
-		screens = 5;		
+		screens = 6;		
 		
 		Elogger=extent.createTest("TC_IRAcknowledge");
 	
@@ -47,13 +47,15 @@ public class TC_IRAcknowledge extends BaseClass {
 		
 		DashboardPO db = new DashboardPO(driver);
 		JavascriptExecutor js = (JavascriptExecutor)driver; 
+
+		db.clickInciAcknowledge();
 		
 		//dashboard
 		db.clickincidentdashboard();
 		logger.info("dashboard button clicked");
 		Thread.sleep(2500);
 		Elogger.info("dashboard is clicked");
-		
+	/*	
 		//select status
 		db.selectStatus();
 		logger.info("Status is selected");
@@ -69,8 +71,9 @@ public class TC_IRAcknowledge extends BaseClass {
 		//getIRcode
 		String IRcode = db.getIRcodeText();
 		System.out.println("IRcode is:"+IRcode);
-		
+	*/
 		//enter IR code
+		String IRcode = "388 /2022 CONFIG CODE";
 		db.enterIRcodeQD(IRcode);
 		logger.info("entered IR code");
 		Thread.sleep(2000);
@@ -118,9 +121,10 @@ public class TC_IRAcknowledge extends BaseClass {
 		Thread.sleep(2000);
 		
 		//assert for acknowledged message
-		db.assertAcknowledge();
-		logger.info("Acknowledged message is displayed");
+		boolean ackicon = db.assertAcknowledge();
 		Thread.sleep(2000);
+		Assert.assertEquals(ackicon, true);
+		logger.info("Acknowledged message is displayed");
 		Elogger.info("Acknowledged message is displayed");
 		
 		//dashboard
@@ -138,19 +142,20 @@ public class TC_IRAcknowledge extends BaseClass {
 		db.searchButtonQD();
 		logger.info("search button clicked");
 		Thread.sleep(2000);
+		capureScreen(driver,"TC_IRAcknowledge4");
 		
+		/*
 		//fetching the status of IR
 		String statusText = db.getStatusText(js);
 		logger.info("statusText fetched is: "+statusText);
 		Thread.sleep(2000);
 		Elogger.info("statusText fetched is: "+statusText);
-
-		capureScreen(driver,"TC_IRAcknowledge4");
 		
 		//result
 		Assert.assertEquals(statusText, "Acknowledged");
 		logger.info("status is matching");
 		Elogger.info("status assertion is passed");
+		*/
 		
 		//acknowledgeIR
 		db.clickInciAcknowledge();
@@ -158,12 +163,44 @@ public class TC_IRAcknowledge extends BaseClass {
 		Thread.sleep(2000);
 
 		//assertAcknowledgeBanner
-		db.assertAcknowledgeBanner();
-		logger.info("acknowledge banner is checked");
+		boolean banner = db.assertAcknowledgeBanner();
 		Thread.sleep(2000);
+		Assert.assertEquals(banner, true);
+		logger.info("acknowledge banner is checked");
 		Elogger.info("acknowledge banner is checked");
 		
 		capureScreen(driver,"TC_IRAcknowledge5");
+		
+
+		//dashboard
+		db.clickincidentdashboard();
+		logger.info("dashboard button clicked");
+		Thread.sleep(2500);
+		
+		//quality dashboard
+		db.clickQualityDashboard();
+		logger.info("quality dashboard button clicked");
+		Thread.sleep(5000);
+		Elogger.info("Dashboard is clicked");
+		
+		//enter IR code
+		db.enterIRcodeQD(IRcode);
+		logger.info("entered IR code");
+		Thread.sleep(2000);
+		
+		//search button
+		db.searchButtonQD();
+		logger.info("search button clicked");
+		Thread.sleep(4000);
+		Elogger.info("searched with IRcode");
+
+		//asserting the green flag
+		boolean flag = db.assertFlag();
+		Assert.assertEquals(flag, true);
+		Elogger.info("asserted the green flag");
+
+		capureScreen(driver,"TC_IRAcknowledge6");
+		
 		
 	}
 }

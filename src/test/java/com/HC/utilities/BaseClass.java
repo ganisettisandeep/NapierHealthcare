@@ -27,6 +27,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -40,7 +41,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class BaseClass {
+public class BaseClass extends Constants{
 
 	ReadConfig readconfig=new ReadConfig();
 	
@@ -54,12 +55,12 @@ public class BaseClass {
 	public static Logger logger;
 
 	public ExtentHtmlReporter htmlReporter;
-	public ExtentReports extent;
-	public ExtentTest Elogger;
-	public ITestResult tr;
+	//public ExtentReports extent;
+	//public ExtentTest Elogger;
+	//public ITestResult tr;
 	public int screens = 1;
 	
-	@BeforeSuite
+	@BeforeTest
 	public void setUpSuite() {
 	        try {
 	        	FileUtils.deleteDirectory(new File("./Screenshots"));
@@ -80,7 +81,7 @@ public class BaseClass {
 			htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/test-output/"+repName);//specify location of the report
 			htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
 			
-			extent =new ExtentReports();
+			extent = loggersGenerator();
 			extent.attachReporter(htmlReporter);
 			extent.setSystemInfo("Host name","localhost");
 			extent.setSystemInfo("Environemnt","QA");
@@ -94,7 +95,7 @@ public class BaseClass {
 	}
 	
 	@Parameters("browser")
-	@BeforeClass
+	@BeforeMethod
 	public void setup(String br){
 		logger=Logger.getLogger("ehealth");
 		PropertyConfigurator.configure("Log4j.properties");
@@ -109,16 +110,10 @@ public class BaseClass {
 	
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(baseURL);
-	
+		System.out.println("inside before class");
 	}
-	
-	@AfterClass
-	public void tearDown(){
-		driver.quit();
-	}
-		
 
-	@AfterTest
+	@AfterMethod
 	public void tearDownMethod(ITestResult result){
 		if(result.getStatus() == ITestResult.SUCCESS) {
 			System.out.println("Test case passed" +result.getName());
@@ -136,10 +131,14 @@ public class BaseClass {
 			Elogger.skip("Screenshot is below:");
 		}
 		attachScreenshot(result, screens);
+		driver.quit();
+	}
+		
+	@AfterTest
+	public void tearDownTest(){
 
 		extent.flush();
 	}
-		
 
 	public void attachScreenshot(ITestResult tr, int screens1) {
 		
@@ -180,6 +179,11 @@ public class BaseClass {
 		return (generatedString2);
 	}
 
-	
+	public static ExtentReports loggersGenerator() {
+		ExtentReports ExtentReport;
+		ExtentReport = new ExtentReports();
+		return ExtentReport;
+		
+	}
 	
 }

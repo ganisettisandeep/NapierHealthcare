@@ -47,6 +47,7 @@ public class TC_IR_TAT extends BaseClass {
 		Actions actions = new Actions(driver); 
 		JavascriptExecutor js = (JavascriptExecutor)driver; 
 
+		db.clickInciAcknowledge();
 		
 		//dashboard
 		db.clickincidentdashboard();
