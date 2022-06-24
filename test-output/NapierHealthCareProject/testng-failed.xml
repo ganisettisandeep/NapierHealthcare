@@ -4,15 +4,6 @@
   <test thread-count="5" name="HealthCare Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.HC.testCases.TC_IR_TAT">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDownMethod"/>
-          <include name="TC_IR_TAT"/>
-          <include name="tearDownTest"/>
-          <include name="setUpSuite"/>
-        </methods>
-      </class> <!-- com.HC.testCases.TC_IR_TAT -->
       <class name="com.HC.testCases.TC_IRAcknowledge">
         <methods>
           <include name="setup"/>

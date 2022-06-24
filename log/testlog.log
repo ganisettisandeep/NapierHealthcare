@@ -4294,3 +4294,116 @@
 2022-06-23 16:18:58,791 - ehealth -INFO - Entered username
 2022-06-23 16:19:00,917 - ehealth -INFO - Entered Password
 2022-06-23 16:19:03,183 - ehealth -INFO - Login button pressed
+2022-06-24 12:02:51,974 - ehealth -INFO - URL is opened
+2022-06-24 12:02:52,385 - ehealth -INFO - Entered username
+2022-06-24 12:02:54,488 - ehealth -INFO - Entered Password
+2022-06-24 12:02:56,699 - ehealth -INFO - Login button pressed
+2022-06-24 12:03:16,748 - ehealth -INFO - URL is opened
+2022-06-24 12:03:16,906 - ehealth -INFO - Entered username
+2022-06-24 12:03:19,005 - ehealth -INFO - Entered Password
+2022-06-24 12:03:21,229 - ehealth -INFO - Login button pressed
+2022-06-24 12:04:30,324 - ehealth -INFO - URL is opened
+2022-06-24 12:04:30,494 - ehealth -INFO - Entered username
+2022-06-24 12:04:32,596 - ehealth -INFO - Entered Password
+2022-06-24 12:04:34,798 - ehealth -INFO - Login button pressed
+2022-06-24 12:04:40,123 - ehealth -INFO - dashboard button clicked
+2022-06-24 12:04:42,793 - ehealth -INFO - quality dashboard button clicked
+2022-06-24 12:04:48,092 - ehealth -INFO - Status is selected
+2022-06-24 12:04:50,726 - ehealth -INFO - search button is clicked
+2022-06-24 12:04:55,893 - ehealth -INFO - entered IR code
+2022-06-24 12:04:57,975 - ehealth -INFO - search button clicked
+2022-06-24 12:05:02,512 - ehealth -INFO - TAT link is clicked
+2022-06-24 12:05:05,044 - ehealth -INFO - status text is captured
+2022-06-24 12:05:07,574 - ehealth -INFO - IRcode from Popup is captured
+2022-06-24 12:05:10,075 - ehealth -INFO - IRcode from Popup is: 009 /06/2022 NAP H
+2022-06-24 12:05:10,104 - ehealth -INFO - DateTime from Popup is captured
+2022-06-24 12:05:12,605 - ehealth -INFO - DateTime from Popup is: 16/06/2022 10:50
+2022-06-24 12:05:12,977 - ehealth -INFO - TAT text is captured
+2022-06-24 12:05:15,507 - ehealth -INFO - TAT from dashboard is captured
+2022-06-24 12:05:25,669 - ehealth -INFO - URL is opened
+2022-06-24 12:05:25,838 - ehealth -INFO - Entered username
+2022-06-24 12:05:27,943 - ehealth -INFO - Entered Password
+2022-06-24 12:05:30,151 - ehealth -INFO - Login button pressed
+2022-06-24 12:05:35,472 - ehealth -INFO - dashboard button clicked
+2022-06-24 12:05:38,127 - ehealth -INFO - entered IR code
+2022-06-24 12:05:40,305 - ehealth -INFO - search button clicked
+2022-06-24 12:05:42,730 - ehealth -INFO - acknowledge button clicked on dashboard
+2022-06-24 12:05:45,072 - ehealth -INFO - acknowledge button is clicked
+2022-06-24 12:05:47,176 - ehealth -INFO - remark is entered
+2022-06-24 12:05:49,495 - ehealth -INFO - acknowledge button is clicked
+2022-06-24 12:05:51,549 - ehealth -INFO - OK button is clicked
+2022-06-24 12:05:55,682 - ehealth -INFO - Acknowledged message is displayed
+2022-06-24 12:05:55,777 - ehealth -INFO - dashboard button clicked
+2022-06-24 12:05:58,399 - ehealth -INFO - entered IR code
+2022-06-24 12:06:00,516 - ehealth -INFO - search button clicked
+2022-06-24 12:06:02,847 - ehealth -INFO - acknowledge button clicked on dashboard
+2022-06-24 12:06:06,893 - ehealth -INFO - acknowledge banner is checked
+2022-06-24 12:06:07,229 - ehealth -INFO - dashboard button clicked
+2022-06-24 12:06:09,848 - ehealth -INFO - quality dashboard button clicked
+2022-06-24 12:06:14,960 - ehealth -INFO - entered IR code
+2022-06-24 12:06:17,102 - ehealth -INFO - search button clicked
+2022-06-24 12:53:41,937 - ehealth -INFO - URL is opened
+2022-06-24 12:53:42,181 - ehealth -INFO - Entered username
+2022-06-24 12:53:44,284 - ehealth -INFO - Entered Password
+2022-06-24 12:53:46,475 - ehealth -INFO - Login button pressed
+2022-06-24 12:53:51,691 - ehealth -INFO - dashboard button clicked
+2022-06-24 12:53:54,323 - ehealth -INFO - quality dashboard button clicked
+2022-06-24 12:53:59,584 - ehealth -INFO - Status is selected
+2022-06-24 12:54:02,235 - ehealth -INFO - search button is clicked
+2022-06-24 12:54:07,406 - ehealth -INFO - entered IR code
+2022-06-24 12:54:09,499 - ehealth -INFO - search button clicked
+2022-06-24 12:54:14,069 - ehealth -INFO - TAT link is clicked
+2022-06-24 12:54:16,602 - ehealth -INFO - status text is captured
+2022-06-24 12:54:19,135 - ehealth -INFO - IRcode from Popup is captured
+2022-06-24 12:54:21,635 - ehealth -INFO - IRcode from Popup is: 009 /06/2022 NAP H
+2022-06-24 12:54:21,665 - ehealth -INFO - DateTime from Popup is captured
+2022-06-24 12:54:24,166 - ehealth -INFO - DateTime from Popup is: 16/06/2022 10:50
+2022-06-24 12:54:24,556 - ehealth -INFO - TAT text is captured
+2022-06-24 12:54:27,083 - ehealth -INFO - TAT from dashboard is captured
+2022-06-24 12:54:38,271 - ehealth -INFO - URL is opened
+2022-06-24 12:54:38,421 - ehealth -INFO - Entered username
+2022-06-24 12:54:40,531 - ehealth -INFO - Entered Password
+2022-06-24 12:54:42,738 - ehealth -INFO - Login button pressed
+2022-06-24 12:54:47,916 - ehealth -INFO - dashboard button clicked
+2022-06-24 12:54:52,074 - ehealth -INFO - entered IR code
+2022-06-24 12:54:54,223 - ehealth -INFO - search button clicked
+2022-06-24 13:37:10,667 - ehealth -INFO - URL is opened
+2022-06-24 13:37:10,935 - ehealth -INFO - Entered username
+2022-06-24 13:37:13,039 - ehealth -INFO - Entered Password
+2022-06-24 13:37:15,245 - ehealth -INFO - Login button pressed
+2022-06-24 13:37:20,611 - ehealth -INFO - dashboard button clicked
+2022-06-24 13:37:23,267 - ehealth -INFO - quality dashboard button clicked
+2022-06-24 13:37:28,599 - ehealth -INFO - Status is selected
+2022-06-24 13:37:31,254 - ehealth -INFO - search button is clicked
+2022-06-24 13:37:36,433 - ehealth -INFO - entered IR code
+2022-06-24 13:37:38,529 - ehealth -INFO - search button clicked
+2022-06-24 13:37:43,082 - ehealth -INFO - TAT link is clicked
+2022-06-24 13:37:45,620 - ehealth -INFO - status text is captured
+2022-06-24 13:37:48,161 - ehealth -INFO - IRcode from Popup is captured
+2022-06-24 13:37:50,662 - ehealth -INFO - IRcode from Popup is: 009 /06/2022 NAP H
+2022-06-24 13:37:50,705 - ehealth -INFO - DateTime from Popup is captured
+2022-06-24 13:37:53,206 - ehealth -INFO - DateTime from Popup is: 16/06/2022 10:50
+2022-06-24 13:37:53,586 - ehealth -INFO - TAT text is captured
+2022-06-24 13:37:56,121 - ehealth -INFO - TAT from dashboard is captured
+2022-06-24 13:38:06,483 - ehealth -INFO - URL is opened
+2022-06-24 13:38:06,620 - ehealth -INFO - Entered username
+2022-06-24 13:38:08,734 - ehealth -INFO - Entered Password
+2022-06-24 13:38:10,944 - ehealth -INFO - Login button pressed
+2022-06-24 13:38:16,293 - ehealth -INFO - dashboard button clicked
+2022-06-24 13:38:19,954 - ehealth -INFO - entered IR code
+2022-06-24 13:38:22,118 - ehealth -INFO - search button clicked
+2022-06-24 13:38:24,595 - ehealth -INFO - acknowledge button clicked on dashboard
+2022-06-24 13:38:26,943 - ehealth -INFO - acknowledge button is clicked
+2022-06-24 13:38:29,051 - ehealth -INFO - remark is entered
+2022-06-24 13:38:31,370 - ehealth -INFO - acknowledge button is clicked
+2022-06-24 13:38:33,428 - ehealth -INFO - OK button is clicked
+2022-06-24 13:38:37,502 - ehealth -INFO - Acknowledged message is displayed
+2022-06-24 13:38:37,616 - ehealth -INFO - dashboard button clicked
+2022-06-24 13:38:40,247 - ehealth -INFO - entered IR code
+2022-06-24 13:38:42,380 - ehealth -INFO - search button clicked
+2022-06-24 13:38:44,743 - ehealth -INFO - acknowledge button clicked on dashboard
+2022-06-24 13:38:48,789 - ehealth -INFO - acknowledge banner is checked
+2022-06-24 13:38:49,147 - ehealth -INFO - dashboard button clicked
+2022-06-24 13:38:51,781 - ehealth -INFO - quality dashboard button clicked
+2022-06-24 13:38:56,904 - ehealth -INFO - entered IR code
+2022-06-24 13:38:59,054 - ehealth -INFO - search button clicked

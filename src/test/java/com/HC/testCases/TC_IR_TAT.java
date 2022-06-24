@@ -18,6 +18,7 @@ import com.HC.utilities.Constants;
 import com.HC.utilities.Reporting;
 import com.HC.utilities.XLUtils;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
 public class TC_IR_TAT extends BaseClass {
 
@@ -41,14 +42,12 @@ public class TC_IR_TAT extends BaseClass {
 		logger.info("Login button pressed");
 		Thread.sleep(5000);
 		
-		Elogger.info("Login is successful");
+		Elogger.log(Status.PASS, "Login is successful");
 		
 		DashboardPO db = new DashboardPO(driver);
 		Actions actions = new Actions(driver); 
 		JavascriptExecutor js = (JavascriptExecutor)driver; 
 
-		db.clickInciAcknowledge();
-		
 		//dashboard
 		db.clickincidentdashboard();
 		logger.info("dashboard button clicked");
@@ -58,19 +57,19 @@ public class TC_IR_TAT extends BaseClass {
 		db.clickQualityDashboard();
 		logger.info("quality dashboard button clicked");
 		Thread.sleep(5000);
-		Elogger.info("Dashboard is clicked");
+		Elogger.log(Status.PASS, "Dashboard is clicked");
 		
 		//select status
 		db.selectStatus();
 		logger.info("Status is selected");
 		Thread.sleep(2500);
-		Elogger.info("Status is selected");
+		Elogger.log(Status.PASS, "Status is selected");
 		
 		//search button
 		db.searchButton();
 		logger.info("search button is clicked");
 		Thread.sleep(5000);
-		Elogger.info("search button is clicked");
+		Elogger.log(Status.PASS, "search button is clicked");
 		
 		//getIRcode
 		String IRcode = db.getIRcodeText();
@@ -85,7 +84,7 @@ public class TC_IR_TAT extends BaseClass {
 		db.searchButtonQD();
 		logger.info("search button clicked");
 		Thread.sleep(2000);
-		Elogger.info("searched with IRcode");
+		Elogger.log(Status.PASS, "searched with IRcode");
 		
 		//fetching the status of IR
 		String statusText = db.getStatusText(js);
@@ -99,17 +98,17 @@ public class TC_IR_TAT extends BaseClass {
 		db.clickTAT(js);
 		logger.info("TAT link is clicked");
 		Thread.sleep(2500);
-		Elogger.info("TAT link is clicked");
+		Elogger.log(Status.PASS, "TAT link is clicked");
 		
 		//get status from pop-up
 		String status = db.getStatus();
 		logger.info("status text is captured");
 		Thread.sleep(2500);
-		Elogger.info("status from pop-up: "+status);
+		Elogger.log(Status.PASS, "status from pop-up: "+status);
 		
 		//asserting the status
 		Assert.assertEquals(statusText, status);
-		Elogger.info("status is asserted");
+		Elogger.log(Status.PASS, "status is asserted");
 		
 		//get IRcode from pop-up
 		String IRcodePopup = db.IRcodePopup();
@@ -119,9 +118,9 @@ public class TC_IR_TAT extends BaseClass {
 		//asserting the IRcode
 		String IRcodePopup1 = IRcodePopup.substring(9);
 		logger.info("IRcode from Popup is: "+IRcodePopup1);
-		Elogger.info("IRcode from Popup is:"+IRcodePopup1);
+		Elogger.log(Status.PASS, "IRcode from Popup is:"+IRcodePopup1);
 		Assert.assertEquals(IRcode, IRcodePopup1);
-		Elogger.info("IRcode is asserted");
+		Elogger.log(Status.PASS, "IRcode is asserted");
 		
 		
 		//get DateTime from pop-up
@@ -132,9 +131,9 @@ public class TC_IR_TAT extends BaseClass {
 		//asserting the DateTime
 		String DateTimePopup1 = DateTimePopup.substring(22);
 		logger.info("DateTime from Popup is: "+DateTimePopup1);
-		Elogger.info("DateTime from Popup is: "+DateTimePopup1);
+		Elogger.log(Status.PASS, "DateTime from Popup is: "+DateTimePopup1);
 		Assert.assertEquals(DateTime, DateTimePopup1);
-		Elogger.info("Date&Time is asserted");
+		Elogger.log(Status.PASS, "Date&Time is asserted");
 
 
 		capureScreen(driver,"TC_IR_TAT2");
@@ -151,9 +150,9 @@ public class TC_IR_TAT extends BaseClass {
 		Thread.sleep(5000);
 		
 		//asserting the days
-		Elogger.info("TAT from pop-up: "+arr[1]);
+		Elogger.log(Status.PASS, "TAT from pop-up: "+arr[1]);
 		Assert.assertEquals(TATlink, arr[1]);
-		Elogger.info("TAT is asserted");
+		Elogger.log(Status.PASS, "TAT is asserted");
 
 		capureScreen(driver,"TC_IR_TAT3");
 		
