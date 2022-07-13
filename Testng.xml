@@ -20,9 +20,10 @@
  		
 		
 			<class name="com.HC.pageObjects.DriverScript" />   
-		-->	
 			<class name="com.HC.testCases.TC_IR_TAT" />
-			<class name="com.HC.testCases.TC_IRAcknowledge" />
+		
+		-->	
+			<class name="com.HC.testCases.TC_IRinvestigationRequestInput" />
 
 	
 		</classes>

@@ -1,5 +1,9 @@
 package com.HC.pageObjects;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -331,7 +335,61 @@ public class DashboardPO {
 		String text = statusText.getText();
 		return text;
 	}
+
+	@FindBy(xpath="//*[contains(text(),'IR Configuration')]")
+	WebElement IRConfiguration;
+	public void IRConfiguration(){
+		IRConfiguration.click();
+	}
 	
+	@FindBy(xpath="(//*[@data-testid=\"toggleInput\"])[8]")
+	WebElement riskAssessment;
+	public boolean isRiskAssessment(){
+		String classR1 = riskAssessment.getAttribute("class");
+		System.out.println(classR1);
+		boolean isEnabled = classR1.contains("elements_on");
+		return isEnabled;
+	}
+	
+	public void enableRiskAssessment(){
+		riskAssessment.click();
+	}
+
+	@FindBy(xpath="(//*[@data-testid=\"toggleInput\"])[9]")
+	WebElement selfReporting;
+	public boolean isSelfReporting(){
+		String classR1 = selfReporting.getAttribute("class");
+		System.out.println(classR1);
+		boolean isEnabled = classR1.contains("elements_on");
+		return isEnabled;
+	}
+	
+	public void enableSelfReporting(){
+		selfReporting.click();
+	}
+
+	@FindBy(xpath="(//*[@data-testid=\"toggleInput\"])[10]")
+	WebElement IPSGtype;
+	public boolean isIPSGtype(){
+		String classR1 = IPSGtype.getAttribute("class");
+		System.out.println(classR1);
+		boolean isEnabled = classR1.contains("elements_on");
+		return isEnabled;
+	}
+	
+	public void enableIPSGtype(){
+		IPSGtype.click();
+	}
+
+	@FindBy(xpath="(//*[contains(text(),\"Save\")])[8]")
+	WebElement configSave;
+	public void configSave(){
+		boolean f2 = configSave.isEnabled();
+		System.out.println("save flag: "+f2);
+		//configSave.click();
+		//configSave.isEnabled()
+		configSave.getAttribute("disabled");
+	}
 	
 	@FindBy(xpath="//button[@title=\"IR Investigation\"]")
 	WebElement investigationButton;
@@ -385,7 +443,13 @@ public class DashboardPO {
 		IRQueryDashboard.click();
 	}
 	
-	@FindBy(xpath="(//*[@title=\"Reponse\"])[1]")
+	@FindBy(xpath="//input[@name=\"irCode\"]")
+	WebElement IRcodeQueryDB;
+	public void enterIRcodeQueryDB(String code){
+		IRcodeQueryDB.sendKeys(code);
+	}
+	
+	@FindBy(xpath="(//*[@title=\"Response\"])[1]")
 	WebElement viewResponse;
 	public void viewResponse(){
 		viewResponse.click();
@@ -396,12 +460,33 @@ public class DashboardPO {
 	public void responseText(String resp){
 		responseText.sendKeys(resp);
 	}
+
+	@FindBy(xpath="//*[starts-with(@class,\"irDashboard_innerWrapper__\")]/child::p[1]")
+	WebElement assertQuery;
+	public String assertQuery(){
+		String requestQuery = assertQuery.getText();
+		return requestQuery;
+	}
 	
 	@FindBy(xpath="//button[text()=\"Submit\"]")
 	WebElement responseSubmit;
 	public void responseSubmit(){
 		responseSubmit.click();
 	}
+
+	@FindBy(xpath="(//button[@title=\"View\"])[1]")
+	WebElement viewButton;
+	public void viewSubmittedResponse(){
+		viewButton.click();
+	}
+
+	@FindBy(xpath="//*[starts-with(@class,\"style_responses__\")]/child::li/child::p[2]")
+	WebElement assertResponse;
+	public String assertResponse(){
+		String response = assertResponse.getText();
+		return response;
+	}
+	
 	
 	@FindBy(xpath="//button[contains(text(),\"Record Inputs\")]")
 	WebElement recordInputs;
@@ -409,12 +494,26 @@ public class DashboardPO {
 		recordInputs.click();
 	}
 
-	@FindBy(xpath="//*[@name=\"source\"]")
-	WebElement evidenceSource;
-	public void evidenceSource(String text){
-		evidenceSource.sendKeys(text);
+	@FindBy(xpath="//*[@name='dept']//parent::div")
+	WebElement department;
+	@FindBy(xpath="//*[starts-with(@class,\"elements_options__\")]/child::li[3]")
+	WebElement deptOption;
+	public String selectDept(){
+		department.click();
+		String dept = deptOption.getText();
+		deptOption.click();
+		return dept;
 	}
-
+	
+	@FindBy(xpath="//*[@name='source']//parent::div")
+	WebElement evidenceSource;
+	@FindBy(xpath="//*[contains(text(),'Test 1')]")
+	WebElement sourceOption;
+	public void evidenceSource(){
+		evidenceSource.click();
+		sourceOption.click();
+	}
+	
 	@FindBy(xpath="//input[@name=\"recievedOn\"]")
 	WebElement recievedOn;
 	public void recievedOn(String date){
@@ -426,6 +525,48 @@ public class DashboardPO {
 	public void submitResponse(){
 		submitResponse.click();
 	}
+	
+	@FindBy(xpath="//tbody/tr/td[4]")
+	WebElement getDepts;
+	public ArrayList<String> getDepts(){
+		ArrayList<String> ar = new ArrayList<String>();
+		List<WebElement> text1 = getDepts.findElements(By.xpath("//tbody/tr/td[4]"));
+		for(WebElement a:text1) {
+			ar.add(a.getText());
+		}
+		return ar;
+	}
+
+	@FindBy(xpath="//*[contains(text(),'Raised on')]/following-sibling::div/span/input")
+	WebElement getRaisedOnDateTime;
+	public String getRaisedOnDateTime(){
+		String date = getRaisedOnDateTime.getAttribute("value");
+		return date;
+	}
+	
+
+	@FindBy(xpath="//tbody/tr/td[1]")
+	WebElement getQueryDateTime;
+	public ArrayList<String> getQueryDateTime(){
+		ArrayList<String> ar = new ArrayList<String>();
+		List<WebElement> text1 = getResDateTime.findElements(By.xpath("//tbody/tr/td[1]"));
+		for(WebElement a:text1) {
+			ar.add(a.getText());
+		}
+		return ar;
+	}
+	
+	@FindBy(xpath="//tbody/tr/td[5]")
+	WebElement getResDateTime;
+	public ArrayList<String> getResDateTime(){
+		ArrayList<String> ar = new ArrayList<String>();
+		List<WebElement> text1 = getResDateTime.findElements(By.xpath("//tbody/tr/td[5]"));
+		for(WebElement a:text1) {
+			ar.add(a.getText());
+		}
+		return ar;
+	}
+	
 
 	@FindBy(xpath="//*[starts-with(@class,\"elements_tableActions\")]/preceding-sibling::td[1]")
 	WebElement TAT;
@@ -494,16 +635,163 @@ public class DashboardPO {
 		return text;
 	}
 	
+	//IR Details page
+	
+	@FindBy(xpath="//*[contains(text(),'IR Details')]")
+	WebElement IRdetailsTab;
+	public void clickIRdetailsTab(){
+		IRdetailsTab.click();
+	}
+
+	@FindBy(xpath="//*[@id=\"prevSimilarfalse\"]")
+	WebElement NoRadioButton;
+	public void clickNoRadioButton(){
+		NoRadioButton.click();
+	}
+
+	@FindBy(xpath="//*[@name=\"details\"]")
+	WebElement details;
+	public void enterDetails(String text){
+		details.sendKeys(text);
+	}
+	
+	@FindBy(xpath="(//*[@name=\"dateTime\"])[1]")
+	WebElement TableEventsDateTime;
+	public void TableEventsDateTime(String text){
+		TableEventsDateTime.sendKeys(text);
+	}
+
+	@FindBy(xpath="(//*[contains(text(),'Add')])[1]")
+	WebElement addButton;
+	public void clickAddButton(){
+		addButton.click();
+	}
+
+	@FindBy(xpath="//tbody/tr/td[3]")
+	WebElement eventTime;
+	public ArrayList<String> assertEvent(){
+		ArrayList<String> ar = new ArrayList<String>();
+		List<WebElement> text1 = eventTime.findElements(By.xpath("//tbody/tr/td[3]"));
+		for(WebElement a:text1) {
+			ar.add(a.getText());
+		}
+		return ar;
+	}
+	
+
+	//Severity
+	@FindBy(xpath="(//*[starts-with(@class,\"elements_displayValue__\")])[2]//parent::div")
+	WebElement severityDropdown;
+	@FindBy(xpath="//*[contains(text(),'Major')]")
+	WebElement optionMajor;
+	public void selectSeverity(){
+		severityDropdown.click();
+		optionMajor.click();
+	}
+	
+	//Likelihood
+	@FindBy(xpath="(//*[starts-with(@class,\"elements_displayValue__\")])[3]//parent::div")
+	WebElement LikelihoodDropdown;
+	@FindBy(xpath="//*[contains(text(),'High')]")
+	WebElement optionHigh;
+	public void selectLikelihood(){
+		LikelihoodDropdown.click();
+		optionHigh.click();
+	}
+
+	// Risk inlcuded in Risk Register
+	@FindBy(xpath="//*[@id=\"riskIncludedfalse\"]")
+	WebElement NoRadiobutton;
+	public void selectRiskRadioButton(){
+		NoRadiobutton.click();
+	}
+		
+	//Risk ID
+	@FindBy(xpath="//input[@name=\"riskId\"]")
+	WebElement RiskID;
+	public void enterRiskID(String riskid){
+		RiskID.sendKeys(riskid);
+	}
+	
+	//self reporting No button
+	@FindBy(xpath="//input[@id=\"selfRepfalse\"]")
+	WebElement notesNoButton;
+	public void selectSelfReporting(){
+		notesNoButton.click();
+	}
+	
+	//NotesName
+	@FindBy(xpath="//input[@class=\"reactSelect__input\"]")
+	WebElement notesName;
+	public void selectName(String name){
+		notesName.sendKeys(name, Keys.RETURN);
+	}
+	
+	//Notes_NotesName
+	@FindBy(xpath="//input[@name=\"notes\"]")
+	WebElement notes;
+	public void enterNotes(String name){
+		notes.sendKeys(name);
+	}
+	
+	//Notes_Date&Time
+	@FindBy(xpath="(//*[@name=\"dateTime\"])[2]")
+	WebElement NotesDateTime;
+	public void selectDateTime(String text){
+		NotesDateTime.sendKeys(text);
+	}
+	
+	//Notes_Add button
+	@FindBy(xpath="(//*[contains(text(),'Add')])[2]")
+	WebElement NotesaddButton;
+	public void clickNotesAddButton(){
+		NotesaddButton.click();
+	}
+
+	@FindBy(xpath="//tbody/tr/td[2]")
+	WebElement notesTime;
+	public ArrayList<String> assertNotes(){
+		ArrayList<String> ar = new ArrayList<String>();
+		List<WebElement> text1 = notesTime.findElements(By.xpath("//tbody/tr/td[2]"));
+		for(WebElement a:text1) {
+			ar.add(a.getText());
+		}
+		return ar;
+	}
 	
 	
-	//(//*[starts-with(@class,"irDashboard_tat")])[31]
-	//(//*[starts-with(@class,"irDashboard_tat")])[2]
+	//submit button
+	@FindBy(xpath="//button[contains(text(),'Submit')]")
+	WebElement IRdetailsSubmitButton;
+	public void SubmitButton(){
+		IRdetailsSubmitButton.click();
+	}
+
+	@FindBy(xpath="//*[contains(text(),'Investigation detail has been successfully saved.')]")
+	WebElement successResponse;
+	public boolean assertSuccessResponse(){
+		boolean f3 = successResponse.isDisplayed();
+		return f3;
+	}
+
+	@FindBy(xpath="//button[contains(text(),'Ok')]")
+	WebElement buttonOK;
+	public void OKbutton(){
+		buttonOK.click();
+	}
+	
+	
+	//(//*[starts-with(@class,"elements_displayValue__")])[2]
+	
+	
 	
 	//div/table/tbody/tr/td[contains(text(),"Assigned")]
 	//(//td[contains(text(),"Assigned")])[3]/following-sibling::td[2]
 	//(//td[contains(text(),"Submitted")])[1]/following-sibling::td[2]
 	//div/table/thead/tr/th[contains(text(),"Days")]//parent::tr//parent::thead/following-sibling::tbody/tr/td
-	//*[starts-with(@class,"irDashboard_irDetail")]/child::li[6]
-	
+	//(//*[starts-with(@class,"elements_displayValue__")])
+	//*[starts-with(@class,"irDashboard_innerWrapper__")]/child::p[1]
+	//*[starts-with(@class,"style_responses__")]/child::li/child::p[2]
+	//*[starts-with(@class,"elements_field__")]
 }
 

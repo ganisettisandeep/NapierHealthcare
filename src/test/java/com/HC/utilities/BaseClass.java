@@ -59,18 +59,17 @@ public class BaseClass extends Constants{
 	//public ExtentTest Elogger;
 	//public ITestResult tr;
 	public int screens = 1;
+	public static String folderName;
 	
 	@BeforeTest
 	public void setUpSuite() {
-	        try {
-	        	FileUtils.deleteDirectory(new File("./Screenshots"));
-	        } catch (NoSuchFileException x) {
-	            System.err.format("%s: no such" + " file or directory%n");
-	        } catch (IOException x) {
-	            System.err.println(x);
-	        }
+	     
+	        SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy HH.mm.ss");  
+	        Date date = new Date();  
+	        folderName = "TestReport-"+formatter.format(date);
+	        System.out.println(folderName);
 	        
-	        File newDir = new File("./Screenshots");
+	        File newDir = new File("./"+folderName);
 	        if (!newDir.exists()){
 	        	newDir.mkdirs();
 	        }
@@ -78,7 +77,7 @@ public class BaseClass extends Constants{
 			String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
 			String repName="Test-Report-"+timeStamp+".html";
 			
-			htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/test-output/"+repName);//specify location of the report
+			htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+"/"+folderName+"/"+repName);//specify location of the report
 			htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
 			
 			extent = loggersGenerator();
@@ -110,7 +109,7 @@ public class BaseClass extends Constants{
 	
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(baseURL);
-		System.out.println("inside before class");
+		System.out.println("inside before method");
 	}
 
 	@AfterMethod
@@ -144,7 +143,7 @@ public class BaseClass extends Constants{
 		
 		for(int i=1; i<=screens1; i++) {
 			
-		String screenshotPath=System.getProperty("user.dir")+"\\Screenshots\\"+tr.getName()+i+".png";
+		String screenshotPath=System.getProperty("user.dir")+"\\"+folderName+"\\"+tr.getName()+i+".png";
 		System.out.println("screenshotPath: "+screenshotPath);
 		File f = new File(screenshotPath); 
 		
@@ -163,7 +162,8 @@ public class BaseClass extends Constants{
 	public void capureScreen(WebDriver driver, String tname) throws IOException {
 	TakesScreenshot ts = (TakesScreenshot) driver;
 	File scrFile = ts.getScreenshotAs(OutputType.FILE);
-	File target = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + ".png");
+	File target = new File(System.getProperty("user.dir") + "/"+ folderName+ "/" + tname + ".png");
+	System.out.println("target"+target);
 	FileUtils.copyFile(scrFile, target);
 	System.out.println("ScreenShot Taken");
 	
