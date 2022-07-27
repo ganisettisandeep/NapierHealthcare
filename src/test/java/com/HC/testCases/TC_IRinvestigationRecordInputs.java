@@ -1,5 +1,6 @@
 package com.HC.testCases;
 
+import java.awt.AWTException;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -13,79 +14,40 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.HC.pageObjects.DashboardPO;
+import com.HC.pageObjects.IncidentPO;
 import com.HC.pageObjects.LoginPage;
 import com.HC.utilities.BaseClass;
 import com.HC.utilities.Constants;
+import com.HC.utilities.ReuseableFunctions;
 import com.HC.utilities.XLUtils;
 import com.aventstack.extentreports.Status;
 
 public class TC_IRinvestigationRecordInputs extends BaseClass {
 	@Test
-	public void TC_IRinvestigationRecordInputs() throws IOException, InterruptedException, ParseException{
+	public void TC_IRinvestigationRecordInputs() throws IOException, InterruptedException, ParseException, AWTException{
 
 		SimpleDateFormat formatter = new SimpleDateFormat("ddMMyyyyHHmm");  
         Date date = new Date();  
         String dateTime = formatter.format(date);
         System.out.println(dateTime);
      
-		screens = 4;
+		screens = 6;
 		Elogger=extent.createTest("TC_IRinvestigationRecordInputs");		
-		
-		logger.info("URL is opened");
-		LoginPage lp = new LoginPage(driver);
-		lp.setUserName(usernameHIS);
-		logger.info("Entered username");
-		System.out.println("Entered Username -->" + usernameHIS);
-		Thread.sleep(1000);
-		lp.setPassword(passwordHIS);
-		System.out.println("Entered Password --->" + passwordHIS);
-		Thread.sleep(1000);
-		logger.info("Entered Password");
-		lp.clicksubmit();
-		logger.info("Login button pressed");
-		Thread.sleep(5000);
-		Elogger.log(Status.PASS, "Login is successful");
+
+		ReuseableFunctions rf = new ReuseableFunctions();
 
 		DashboardPO db = new DashboardPO(driver);
-
-		//clicking the incident dashboard on left navigation menu
-		db.clickincidentdashboard();
-		logger.info("dashboard button clicked");
-		Thread.sleep(2500);
-		Elogger.log(Status.PASS, "dashboard button clicked");
-
-		//clicking the quality dashboard inside incident dashboard
-		db.clickQualityDashboard();
-		logger.info("quality dashboard button clicked");
-		Thread.sleep(5000);
-		Elogger.log(Status.PASS, "quality dashboard button clicked");
-
+		IncidentPO in = new IncidentPO(driver);
+		
+		//login
+		rf.Login();
+		
 		//enter the IR code in quality dashboard
 		String IRcode = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IRinvestigationRecordInputs", 1,0);
-		//String IRcode = "018 /06/2022 NAP H";
-		db.enterIRcodeQD(IRcode);
-		logger.info("entered IR code");
-		Thread.sleep(2000);
-		Elogger.log(Status.PASS, "entered IR code");
-
-		//click on search button in quality dashboard
-		db.searchButtonQD();
-		logger.info("search button clicked");
-		Thread.sleep(2000);
-		Elogger.log(Status.PASS, "search button clicked");
+		rf.IRinvestigation(IRcode);
 		capureScreen(driver,"TC_IRinvestigationRecordInputs1");
-
-		//click on actions button for an IR code
-		db.clickAction();
-		logger.info("actions clicked");
-		Thread.sleep(2000);
-
-		//click on investigation button in the actions menu
-		db.clickInvestigationButton();
-		logger.info("investigation button clicked");
-		Thread.sleep(2000);
-		Elogger.log(Status.PASS, "investigation button clicked");
-
+		
+		
 		//click on recordInputs button in investigation page
 		db.recordInputs();
 		logger.info("recordInputs clicked");
@@ -124,14 +86,28 @@ public class TC_IRinvestigationRecordInputs extends BaseClass {
 		logger.info("response entered");
 		Thread.sleep(2000);
 		Elogger.log(Status.PASS, "test response in automation");
+/*
+		in.clickFileUpload("recordInputs");
+		logger.info("file uploaded");
+		Thread.sleep(2000);
+		Elogger.log(Status.PASS, "file uploaded successfully");
+	*/	
 		capureScreen(driver,"TC_IRinvestigationRecordInputs3");
 		
 		//click on submit button in record inputs pop-up
+		String user = db.getUser();
 		db.submitResponse();
 		logger.info("submit Response clicked");
 		Thread.sleep(2000);
 		Elogger.log(Status.PASS, "submit Response clicked");
 		capureScreen(driver,"TC_IRinvestigationRecordInputs4");
+		
+		
+		boolean flag5 = db.assertRecordSubmit();
+		Assert.assertTrue(flag5);
+		Thread.sleep(2000);
+		logger.info("assertion is successful after record is submitted for success pop-up");
+		Elogger.log(Status.PASS, "assertion is successful for success message in pop-up");
 		
 		//assertion for date&time of received on field getting reflected in the grid
 		ArrayList<String> dateTimeArr = new ArrayList<String>();
@@ -139,7 +115,68 @@ public class TC_IRinvestigationRecordInputs extends BaseClass {
 		boolean flag3 = dateTimeArr.contains(dateTimeF);
 		Assert.assertTrue(flag3);
 		Thread.sleep(2000);
-		Elogger.log(Status.PASS, "assertion is successful");
+		logger.info("assertion for date and time is successful");
+		Elogger.log(Status.PASS, "assertion for date and time is successful");
+
+		//assertion for department is getting reflected in the grid
+		ArrayList<String> getDeptArr = new ArrayList<String>();
+		getDeptArr = db.getDept();
+		boolean flag4 = getDeptArr.contains(dept);
+		Assert.assertTrue(flag4);
+		Thread.sleep(2000);
+		logger.info("assertion for department is successful");
+		Elogger.log(Status.PASS, "assertion for department is successful");
+
+		System.out.println("usernameHIS: "+usernameHIS);
+		System.out.println("user: "+user);
+		Assert.assertEquals(user, usernameHIS);
+		Thread.sleep(2000);
+		logger.info("assertion for logged in user is successful");
+		Elogger.log(Status.PASS, "assertion for logged in user is successful");
+		capureScreen(driver,"TC_IRinvestigationRecordInputs5");
+		
+		//evidence section
+		//selecting EvidenceType
+		db.selectEvidenceType();
+		Thread.sleep(2000);
+		logger.info("EvidenceType is selected");
+		Elogger.log(Status.PASS, "EvidenceType is selected");
+
+		//selecting EvidenceSource
+		db.selectEvidenceSource();
+		Thread.sleep(2000);
+		logger.info("EvidenceSource is selected");
+		Elogger.log(Status.PASS, "EvidenceSource is selected");
+
+		//enter Evidence description
+		String desc = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IRinvestigationRecordInputs", 1,2);
+		db.evidenceDesc(desc);
+		Thread.sleep(2000);
+		logger.info("Evidence Description is entered");
+		Elogger.log(Status.PASS, "Evidence Description is entered");
+		
+		//select Evidence Date & Time
+		db.evidenceDateTime(dateTime);
+		Thread.sleep(2000);
+		logger.info("Evidence Date & Time is selected");
+		Elogger.log(Status.PASS, "Evidence Date & Time is selected");
+		
+		//click add button for evidence
+		db.addEvidence();
+		Thread.sleep(2000);
+		logger.info("add button for evidence is clicked");
+		Elogger.log(Status.PASS, "add button for evidence is clicked");
+
+		//assertion for date&time of received on field getting reflected in the grid
+		ArrayList<String> dateTimeEvidence = new ArrayList<String>();
+		dateTimeEvidence = db.getEvidenceDateTime();
+		boolean flag6 = dateTimeEvidence.contains(dateTimeF);
+		Assert.assertTrue(flag6);
+		Thread.sleep(2000);
+		logger.info("assertion for evidence date and time is successful");
+		Elogger.log(Status.PASS, "assertion for evidence date and time is successful");
+		capureScreen(driver,"TC_IRinvestigationRecordInputs6");
+
 		
 	}
 }

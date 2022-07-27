@@ -396,6 +396,19 @@ public class DashboardPO {
 	public void clickInvestigationButton(){
 		investigationButton.click();
 	}
+
+	@FindBy(xpath="//*[@class=\"promptLabel\"]")
+	WebElement startIRinvestigation;
+	public boolean isStartIRinvestigation(){
+		boolean startInvestigation = startIRinvestigation.isDisplayed();
+		return startInvestigation;
+	}
+	
+	@FindBy(xpath="//button[text()='Yes']")
+	WebElement IRinvestigationYes;
+	public void IRinvestigationYes(){
+		IRinvestigationYes.click();
+	}
 	
 	@FindBy(xpath="//button[contains(text(),\"Request for Input\")]")
 	WebElement requestForInput;
@@ -417,24 +430,57 @@ public class DashboardPO {
 	
 	@FindBy(xpath="//*[@name=\"irInformation\"]/..")
 	WebElement IRinfo;
-	@FindBy(xpath="//*[@data-testid=\"combobox-Description\"]")
+	@FindBy(xpath="//*[@data-testid='combobox-Description']")
 	WebElement Desc;
-	public void selectIRinfo(){
+	public void selectDescription(){
 		IRinfo.click();
 		Desc.click();
 	}
+	
+	@FindBy(xpath="//*[@data-testid='combobox-Departments Involved']")
+	WebElement departmentsInvolved;
+	public void selectdepartmentsInvolved(){
+		departmentsInvolved.click();
+	}
 
+	@FindBy(xpath="//*[@data-testid='combobox-Copy From Previous']")
+	WebElement copyFromPrevious;
+	public boolean isCopyFromPreviousDisplayed(){
+		boolean flag = copyFromPrevious.isDisplayed();
+		return flag;
+	}
+
+	public void selectCopyFromPrevious(){
+		copyFromPrevious.click();
+	}
+	
 	@FindBy(xpath="//*[@name=\"query\"]")
 	WebElement query;
 	public void inputQuery(String user){
 		query.sendKeys(user);
 	}
+	
+	public void editedInputQuery(String user){
+		query.clear();
+		query.sendKeys(user);
+	}
 
-	@FindBy(xpath="//button[contains(text(),\"Submit Query\")]")
+	@FindBy(xpath="//button[contains(text(),'Submit Query')]")
 	WebElement submitQuery;
 	public void submitQuery(){
 		submitQuery.click();
 	}
+
+	@FindBy(xpath="//p[text()='Request submitted successfully.']")
+	WebElement successMsg;
+	@FindBy(xpath="//button[text()='Ok']")
+	WebElement okButton;
+	public boolean assertRequestSubmit(){
+		boolean msg = successMsg.isDisplayed();
+		okButton.click();
+		return msg;
+	}
+	
 	
 	//IR Query Dashboard
 	@FindBy(xpath="//*[contains(text(),\"IR Query Dashboard\")]")
@@ -486,12 +532,31 @@ public class DashboardPO {
 		String response = assertResponse.getText();
 		return response;
 	}
+
+	@FindBy(xpath="//button[text()='Close']")
+	WebElement closeButtonRequest;
+	public void clickCloseButton(){
+		closeButtonRequest.click();
+	}
+
+	@FindBy(xpath="(//*[@title='Delete'])[2]")
+	WebElement deleteButtonRequest;
+	public void clickDeleteButtonRequest(){
+		deleteButtonRequest.click();
+	}
 	
 	
 	@FindBy(xpath="//button[contains(text(),\"Record Inputs\")]")
 	WebElement recordInputs;
 	public void recordInputs(){
 		recordInputs.click();
+	}
+
+	@FindBy(xpath="//*[@name='responseFrom']")
+	WebElement loggedUser;
+	public String getUser(){
+		String user = loggedUser.getAttribute("value");
+		return user;
 	}
 
 	@FindBy(xpath="//*[@name='dept']//parent::div")
@@ -507,10 +572,11 @@ public class DashboardPO {
 	
 	@FindBy(xpath="//*[@name='source']//parent::div")
 	WebElement evidenceSource;
-	@FindBy(xpath="//*[contains(text(),'Test 1')]")
+	@FindBy(xpath="//*[@data-testid='combobox-Test 1']")
 	WebElement sourceOption;
-	public void evidenceSource(){
+	public void evidenceSource() throws InterruptedException{
 		evidenceSource.click();
+		Thread.sleep(2000);
 		sourceOption.click();
 	}
 	
@@ -524,6 +590,26 @@ public class DashboardPO {
 	WebElement submitResponse;
 	public void submitResponse(){
 		submitResponse.click();
+	}
+
+	@FindBy(xpath="//p[text()='Record submitted successfully.']")
+	WebElement successMsgRecord;
+	@FindBy(xpath="//button[text()='Ok']")
+	WebElement okButtonRecord;
+	public boolean assertRecordSubmit(){
+		boolean msg = successMsgRecord.isDisplayed();
+		okButtonRecord.click();
+		return msg;
+	}
+
+	@FindBy(xpath="//p[text()='Response submitted successfully.']")
+	WebElement successMsgResp;
+	@FindBy(xpath="//button[text()='Ok']")
+	WebElement okButtonResp;
+	public boolean assertRespSubmit(){
+		boolean msg = successMsgResp.isDisplayed();
+		okButtonResp.click();
+		return msg;
 	}
 	
 	@FindBy(xpath="//tbody/tr/td[4]")
@@ -556,11 +642,27 @@ public class DashboardPO {
 		return ar;
 	}
 	
+	
+	public void clickEditInputs(int id) {
+		getResDateTime.findElement(By.xpath("(//button[@title='Edit'])["+id+"]")).click();
+	}
+
 	@FindBy(xpath="//tbody/tr/td[5]")
 	WebElement getResDateTime;
 	public ArrayList<String> getResDateTime(){
 		ArrayList<String> ar = new ArrayList<String>();
 		List<WebElement> text1 = getResDateTime.findElements(By.xpath("//tbody/tr/td[5]"));
+		for(WebElement a:text1) {
+			ar.add(a.getText());
+		}
+		return ar;
+	}
+
+	@FindBy(xpath="//tbody/tr/td[4]")
+	WebElement getDept;
+	public ArrayList<String> getDept(){
+		ArrayList<String> ar = new ArrayList<String>();
+		List<WebElement> text1 = getDept.findElements(By.xpath("//tbody/tr/td[4]"));
 		for(WebElement a:text1) {
 			ar.add(a.getText());
 		}
@@ -667,6 +769,12 @@ public class DashboardPO {
 		addButton.click();
 	}
 
+	@FindBy(xpath="(//button[@type='submit'])[1]")
+	WebElement editAddButton;
+	public void editAddButton(){
+		editAddButton.click();
+	}
+
 	@FindBy(xpath="//tbody/tr/td[3]")
 	WebElement eventTime;
 	public ArrayList<String> assertEvent(){
@@ -677,12 +785,74 @@ public class DashboardPO {
 		}
 		return ar;
 	}
+
+	@FindBy(xpath="//tbody/tr/td[2]")
+	WebElement eventDetails;
+	public ArrayList<String> assertEventDetails(){
+		ArrayList<String> ar = new ArrayList<String>();
+		List<WebElement> text1 = eventDetails.findElements(By.xpath("//tbody/tr/td[2]"));
+		for(WebElement a:text1) {
+			ar.add(a.getText());
+		}
+		return ar;
+	}
+	
+	@FindBy(xpath="(//button[@title='Edit'])[1]")
+	WebElement eventEditButton;
+	public void clickEditButton(){
+		eventEditButton.click();
+	}
+
+	public String isDetailsNull(){
+		String detailsEvent = details.getText();
+		details.clear();
+		return detailsEvent;
+	}
+
+
+	@FindBy(xpath="(//button[@title='Delete'])[1]")
+	WebElement eventDeleteButton;
+	@FindBy(xpath="//td[starts-with(@class,'handle style_handle')]")
+	WebElement noOfEvents;
+	public int clickDeleteButton(){
+		List<WebElement> events = noOfEvents.findElements(By.xpath("//td[starts-with(@class,'handle style_handle')]"));
+		eventDeleteButton.click();
+		return events.size();
+	}
+	
+
+	@FindBy(xpath="//*[@class='promptLabel' and text()='CONFIRMATION']")
+	WebElement deleteConfirmation;
+	public boolean deleteConfirmation(){
+		boolean deletePopup = deleteConfirmation.isDisplayed();
+		return deletePopup;
+	}
+
+	@FindBy(xpath="//button[text()='Yes']")
+	WebElement confirmationYes;
+	public void confirmationYes(){
+		confirmationYes.click();
+	}
+
+	public int noOfEvents(){
+		List<WebElement> events = noOfEvents.findElements(By.xpath("//td[starts-with(@class,'handle style_handle')]"));
+		return events.size();
+	}
+
+	
+	//Risk Assessment section Displayed
+	@FindBy(xpath="//h4[text()='RISK ASSESSMENT']")
+	WebElement riskAssessmentDisplayed;
+	public boolean isRiskAssessmentDisplayed(){
+		boolean riskAssess = riskAssessmentDisplayed.isDisplayed();
+		return riskAssess;
+	}
 	
 
 	//Severity
 	@FindBy(xpath="(//*[starts-with(@class,\"elements_displayValue__\")])[2]//parent::div")
 	WebElement severityDropdown;
-	@FindBy(xpath="//*[contains(text(),'Major')]")
+	@FindBy(xpath="//*[@data-testid='combobox-Major']")
 	WebElement optionMajor;
 	public void selectSeverity(){
 		severityDropdown.click();
@@ -692,39 +862,71 @@ public class DashboardPO {
 	//Likelihood
 	@FindBy(xpath="(//*[starts-with(@class,\"elements_displayValue__\")])[3]//parent::div")
 	WebElement LikelihoodDropdown;
-	@FindBy(xpath="//*[contains(text(),'High')]")
+	@FindBy(xpath="//*[@data-testid='combobox-High']")
 	WebElement optionHigh;
 	public void selectLikelihood(){
 		LikelihoodDropdown.click();
 		optionHigh.click();
 	}
 
-	// Risk inlcuded in Risk Register
+	// Risk included in Risk Register as No
 	@FindBy(xpath="//*[@id=\"riskIncludedfalse\"]")
 	WebElement NoRadiobutton;
 	public void selectRiskRadioButton(){
 		NoRadiobutton.click();
 	}
-		
+	
+	
+	// Risk inlcuded in Risk Register as Yes
+	@FindBy(xpath="//*[@id='riskIncludedtrue']")
+	WebElement YesRadiobutton;
+	public void selectRiskRadioButtonYes(){
+		YesRadiobutton.click();
+	}
+	
 	//Risk ID
-	@FindBy(xpath="//input[@name=\"riskId\"]")
+	@FindBy(xpath="//input[@name='riskId']")
 	WebElement RiskID;
 	public void enterRiskID(String riskid){
 		RiskID.sendKeys(riskid);
 	}
+
+	//self reporting section
+	@FindBy(xpath="//label[text()='Self reporting']")
+	WebElement isSelfReporting;
+	public boolean isSelfReportingDisplayed(){
+		boolean selfReporting = isSelfReporting.isDisplayed();
+		return selfReporting;
+	}
 	
 	//self reporting No button
-	@FindBy(xpath="//input[@id=\"selfRepfalse\"]")
+	@FindBy(xpath="//input[@id='selfRepfalse']")
 	WebElement notesNoButton;
 	public void selectSelfReporting(){
 		notesNoButton.click();
 	}
 	
+	//self reporting Yes button
+	@FindBy(xpath="//input[@id='selfReptrue']")
+	WebElement notesYesButton;
+	public void selectSelfReportingYes(){
+		notesYesButton.click();
+	}
+		
+		
 	//NotesName
 	@FindBy(xpath="//input[@class=\"reactSelect__input\"]")
 	WebElement notesName;
 	public void selectName(String name){
 		notesName.sendKeys(name, Keys.RETURN);
+	}
+
+	//self reporting section
+	@FindBy(xpath="//label[text()='IPSG Breach']")
+	WebElement isIPSGbreach;
+	public boolean isIPSGbreachDisplayed(){
+		boolean IPSGbreach = isIPSGbreach.isDisplayed();
+		return IPSGbreach;
 	}
 	
 	//Notes_NotesName
@@ -780,6 +982,53 @@ public class DashboardPO {
 		buttonOK.click();
 	}
 	
+	@FindBy(xpath="//*[@name='eviType']/preceding-sibling::p")
+	WebElement evidenceTypeDropdown;
+	@FindBy(xpath="//*[@data-testid='combobox-Evidence Type 1']")
+	WebElement evidenceTypeOption;
+	public void selectEvidenceType(){
+		evidenceTypeDropdown.click();
+		evidenceTypeOption.click();
+	}
+
+	@FindBy(xpath="//input[@name='eviSource']/preceding-sibling::p")
+	WebElement evidenceSourceDropdown;
+	@FindBy(xpath="//*[@data-testid='combobox-Test 1']")
+	WebElement evidenceSourceOption;
+	public void selectEvidenceSource(){
+		evidenceSourceDropdown.click();
+		evidenceSourceOption.click();
+	}
+
+	@FindBy(xpath="//*[@name='eviDesc']")
+	WebElement evidenceDesc;
+	public void evidenceDesc(String desc){
+		evidenceDesc.sendKeys(desc);
+	}
+		
+	@FindBy(xpath="//input[@name='dateTime']")
+	WebElement evidenceDateTime;
+	public void evidenceDateTime(String date){
+		evidenceDateTime.sendKeys(date);
+	}
+	
+	@FindBy(xpath="//button[@type='submit']")
+	WebElement EvidenceSubmit;
+	public void addEvidence(){
+		EvidenceSubmit.click();
+	}
+
+	@FindBy(xpath="//tbody/tr/td[4]")
+	WebElement getEvidenceDateTime;
+	public ArrayList<String> getEvidenceDateTime(){
+		ArrayList<String> ar = new ArrayList<String>();
+		List<WebElement> text1 = getEvidenceDateTime.findElements(By.xpath("//tbody/tr/td[4]"));
+		for(WebElement a:text1) {
+			ar.add(a.getText());
+		}
+		return ar;
+	}
+	
 	
 	//(//*[starts-with(@class,"elements_displayValue__")])[2]
 	
@@ -793,5 +1042,12 @@ public class DashboardPO {
 	//*[starts-with(@class,"irDashboard_innerWrapper__")]/child::p[1]
 	//*[starts-with(@class,"style_responses__")]/child::li/child::p[2]
 	//*[starts-with(@class,"elements_field__")]
+	
+	//*[@name='eviType']/parent::div
+	//*[@data-testid='combobox-Evidence Type 1']
+	//input[@name='eviSource']/parent::div
+	//*[@data-testid='combobox-Test 1']
+	//*[@name='eviDesc']
+	
 }
 

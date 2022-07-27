@@ -133,7 +133,7 @@ public class TC_IncidentReportAllDetails extends BaseClass {
 		Thread.sleep(2000);
 		
 		//file upload
-		in.clickFileUpload();
+		in.clickFileUpload("file1");
 		logger.info("File upload done");
 		Thread.sleep(2000);
 				

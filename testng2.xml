@@ -7,6 +7,7 @@
 <class name="com.HC.testCases.TC_IRinvestigationRequestInput" />
 <class name="com.HC.testCases.TC_IRinvestigationRecordInputs" />
 <class name="com.HC.testCases.TC_IRinvestigationIRDetails" />
+<class name="com.HC.testCases.TC_IRinvestigationIRDetailsEditDelete" />
 </classes>
 </test>
 </suite>

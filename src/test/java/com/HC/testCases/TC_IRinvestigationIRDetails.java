@@ -16,6 +16,7 @@ import com.HC.pageObjects.DashboardPO;
 import com.HC.pageObjects.LoginPage;
 import com.HC.utilities.BaseClass;
 import com.HC.utilities.Constants;
+import com.HC.utilities.ReuseableFunctions;
 import com.HC.utilities.XLUtils;
 import com.aventstack.extentreports.Status;
 
@@ -29,98 +30,21 @@ public class TC_IRinvestigationIRDetails extends BaseClass {
         System.out.println(dateTime);
      
 				
-		screens = 3;
+		screens = 4;
 		Elogger=extent.createTest("TC_IRinvestigationIRDetails");		
 		
-		logger.info("URL is opened");
-		LoginPage lp = new LoginPage(driver);
-		lp.setUserName(usernameHIS);
-		logger.info("Entered username");
-		System.out.println("Entered Username -->" + usernameHIS);
-		Thread.sleep(1000);
-		lp.setPassword(passwordHIS);
-		System.out.println("Entered Password --->" + passwordHIS);
-		Thread.sleep(1000);
-		logger.info("Entered Password");
-		lp.clicksubmit();
-		logger.info("Login button pressed");
-		Thread.sleep(5000);
-		Elogger.log(Status.PASS, "Login is successful");
+		ReuseableFunctions rf = new ReuseableFunctions();
 		
 		DashboardPO db = new DashboardPO(driver);
 		
-		//IR Configuration
-		db.IRConfiguration();
-		logger.info("IR Configuration clicked");
-		Thread.sleep(2000);
+		//login
+		rf.Login();
+
+		rf.IRMasterconfiguration();
 		
-		//checking the risk assessment
-		boolean f1 = db.isRiskAssessment();
-		Thread.sleep(2500);
-		if(f1==false) {
-			logger.info("enabling the risk assessment");
-			db.enableRiskAssessment();
-		}
-		logger.info("checked the risk assessment");
-		Thread.sleep(2500);
-		
-
-		//checking the Self-reporting IRs
-		boolean f2 = db.isSelfReporting();
-		Thread.sleep(2500);
-		if(f2==false) {
-			logger.info("enabling the Self-reporting IRs");
-			db.enableSelfReporting();
-		}
-		logger.info("checked the Self-reporting IRs");
-		Thread.sleep(2500);
-		
-
-		//checking the IPSG Type
-		boolean f3 = db.isIPSGtype();
-		Thread.sleep(2500);
-		if(f3==false) {
-			logger.info("enabling the IPSG Type");
-			db.enableIPSGtype();
-		}
-		logger.info("checked the IPSG Type");
-		Thread.sleep(2500);
-
-		//clicking the incident dashboard on left navigation menu
-		db.clickincidentdashboard();
-		logger.info("dashboard button clicked");
-		Thread.sleep(2500);
-
-		//clicking the quality dashboard inside incident dashboard
-		db.clickQualityDashboard();
-		logger.info("quality dashboard button clicked");
-		Thread.sleep(5000);
-		Elogger.log(Status.PASS, "quality dashboard button clicked");
-
 		//enter the IR code in quality dashboard
 		String IRcode = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IRinvestigationIRDetails", 1,0);
-		//String IRcode = "018 /06/2022 NAP H";
-		db.enterIRcodeQD(IRcode);
-		logger.info("entered IR code");
-		Thread.sleep(2000);
-		Elogger.log(Status.PASS, "entered IR code");
-
-		//click on search button in quality dashboard
-		db.searchButtonQD();
-		logger.info("search button clicked");
-		Thread.sleep(2000);
-		Elogger.log(Status.PASS, "search button clicked");
-
-		//click on actions button for an IR code
-		db.clickAction();
-		logger.info("actions clicked");
-		Thread.sleep(2000);
-
-		//click on investigation button in the actions menu
-		db.clickInvestigationButton();
-		logger.info("investigation button clicked");
-		Thread.sleep(2000);
-		Elogger.log(Status.PASS, "investigation button clicked");
+		rf.IRinvestigation(IRcode);
 		
 		//click on IR details tab in investigation page
 		db.clickIRdetailsTab();
@@ -129,7 +53,7 @@ public class TC_IRinvestigationIRDetails extends BaseClass {
 		Elogger.log(Status.PASS, "IR Details tab is clicked");
 		capureScreen(driver,"TC_IRinvestigationIRDetails1");
 		
-		//selct the No radio button for Previous Similar Incidents in investigation button
+		//select the No radio button for Previous Similar Incidents in investigation button
 		db.clickNoRadioButton();
 		logger.info("No radio button for previous similar incidents is clicked");
 		Thread.sleep(2000);
@@ -157,15 +81,24 @@ public class TC_IRinvestigationIRDetails extends BaseClass {
 		db.clickAddButton();
 		logger.info("add button is clicked");
 		Thread.sleep(2000);
-		Elogger.log(Status.PASS, "add button is clicked");
+		Elogger.log(Status.PASS, "add button is clicked in table of events");
+		capureScreen(driver,"TC_IRinvestigationIRDetails2");
 		
 		//assertion for date&time of table of events is getting reflected in the grid
 		ArrayList<String> dateTimeArr = new ArrayList<String>();
 		dateTimeArr = db.assertEvent();
 		boolean flag3 = dateTimeArr.contains(dateTimeF);
 		Assert.assertTrue(flag3);
+		logger.info("Assert for addition of Table of Events is successful");
 		Thread.sleep(2000);
 		Elogger.log(Status.PASS, "Assert for addition of Table of Events is successful");
+		
+		//is risk assessment section displayed
+		boolean flag4 = db.isRiskAssessmentDisplayed();
+		Assert.assertTrue(flag4);
+		logger.info("Assert for risk assessment section is successful");
+		Thread.sleep(2000);
+		Elogger.log(Status.PASS, "Assert for risk assessment section is successful");
 		
 		//select severity in IR details page
 		db.selectSeverity();
@@ -185,6 +118,12 @@ public class TC_IRinvestigationIRDetails extends BaseClass {
 		Thread.sleep(2000);
 		Elogger.log(Status.PASS, "Risk Register is selected");
 		
+		//Assert for self-reporting section displayed
+		boolean flag5 = db.isSelfReportingDisplayed();
+		Assert.assertTrue(flag5);
+		Thread.sleep(2000);
+		Elogger.log(Status.PASS, "Assert for self-reporting section is successful");
+		
 		//selecting the Self Reporting
 		db.selectSelfReporting();
 		logger.info("Self Reporting is selected");
@@ -197,6 +136,12 @@ public class TC_IRinvestigationIRDetails extends BaseClass {
 		logger.info("name is selected");
 		Thread.sleep(2000);
 		Elogger.log(Status.PASS, "name is selected");
+		
+		//Assert for IPSG breach section
+		boolean flag6 = db.isIPSGbreachDisplayed();
+		Assert.assertTrue(flag6);
+		Thread.sleep(2000);
+		Elogger.log(Status.PASS, "Assert for IPSG breach section is successful");
 		
 		//enter notes in notes section
 		String notesDetails = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IRinvestigationIRDetails", 1,3);
@@ -213,7 +158,7 @@ public class TC_IRinvestigationIRDetails extends BaseClass {
 		db.clickNotesAddButton();
 		logger.info("add button clicked");
 		Thread.sleep(2000);
-		capureScreen(driver,"TC_IRinvestigationIRDetails2");
+		capureScreen(driver,"TC_IRinvestigationIRDetails3");
 		Elogger.log(Status.PASS, "notes is added");
 		
 		//assertion for date&time of table of events is getting reflected in the grid
@@ -229,7 +174,7 @@ public class TC_IRinvestigationIRDetails extends BaseClass {
 		logger.info("submit button clicked");
 		Thread.sleep(2000);
 		Elogger.log(Status.PASS, "submit button clicked");
-		capureScreen(driver,"TC_IRinvestigationIRDetails3");
+		capureScreen(driver,"TC_IRinvestigationIRDetails4");
 
 		//assertion the pop-up whether it is containing the success response of saving the data
 		boolean result = db.assertSuccessResponse();

@@ -145,9 +145,15 @@ public class IncidentPO {
 
 	//@FindBy(xpath="//*[")
 	//WebElement fileUpload;
-	public void clickFileUpload() throws InterruptedException, AWTException{
+	public void clickFileUpload(String xpath) throws InterruptedException, AWTException{
+		String xpath1 = "//*[contains(text(),'Item select')]";
+		String xpath2 = "(//*[contains(text(),\"Item select\")])[2]";
+		String xpathUsed = xpath1;
+		if(xpath=="recordInputs") {
+			xpathUsed = xpath2;
+		}
 		Actions act= new Actions(ldriver);
-		  WebElement chooseFile=ldriver.findElement(By.xpath("//*[contains(text(),\"Item select\")]"));
+		  WebElement chooseFile=ldriver.findElement(By.xpath(xpathUsed));
 		  act.moveToElement(chooseFile).click().perform();
 		  Thread.sleep(2000);
 
