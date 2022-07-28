@@ -6213,3 +6213,30 @@
 2022-07-27 14:55:34,880 - ehealth -INFO - add button clicked
 2022-07-27 14:55:39,700 - ehealth -INFO - submit button clicked
 2022-07-27 14:55:42,096 - ehealth -INFO - Ok button clicked
+2022-07-28 15:46:36,916 - ehealth -INFO - URL is opened
+2022-07-28 15:46:37,196 - ehealth -INFO - Entered username
+2022-07-28 15:46:39,340 - ehealth -INFO - Entered Password
+2022-07-28 15:46:41,639 - ehealth -INFO - Login button pressed
+2022-07-28 15:46:47,827 - ehealth -INFO - dashboard button clicked
+2022-07-28 15:46:50,511 - ehealth -INFO - quality dashboard button clicked
+2022-07-28 15:46:55,752 - ehealth -INFO - entered IR code
+2022-07-28 15:46:57,914 - ehealth -INFO - search button clicked
+2022-07-28 15:47:00,023 - ehealth -INFO - actions clicked
+2022-07-28 15:47:02,220 - ehealth -INFO - investigation button clicked
+2022-07-28 15:47:14,820 - ehealth -INFO - recordInputs clicked
+2022-07-28 15:47:17,332 - ehealth -INFO - department is selected
+2022-07-28 15:47:21,529 - ehealth -INFO - Source clicked
+2022-07-28 15:47:23,651 - ehealth -INFO - receivedOn date clicked
+2022-07-28 15:47:26,008 - ehealth -INFO - response entered
+2022-07-28 15:47:37,918 - ehealth -INFO - file uploaded
+2022-07-28 15:47:40,376 - ehealth -INFO - submit Response clicked
+2022-07-28 15:47:44,869 - ehealth -INFO - assertion is successful after record is submitted for success pop-up
+2022-07-28 15:47:47,746 - ehealth -INFO - assertion for date and time is successful
+2022-07-28 15:47:50,541 - ehealth -INFO - assertion for department is successful
+2022-07-28 15:47:52,556 - ehealth -INFO - assertion for logged in user is successful
+2022-07-28 15:47:55,043 - ehealth -INFO - EvidenceType is selected
+2022-07-28 15:47:57,166 - ehealth -INFO - EvidenceSource is selected
+2022-07-28 15:47:59,477 - ehealth -INFO - Evidence Description is entered
+2022-07-28 15:48:01,586 - ehealth -INFO - Evidence Date & Time is selected
+2022-07-28 15:48:03,691 - ehealth -INFO - add button for evidence is clicked
+2022-07-28 15:48:06,530 - ehealth -INFO - assertion for evidence date and time is successful

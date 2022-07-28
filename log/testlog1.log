@@ -6213,3 +6213,30 @@
 2022-07-27 14:55:34,880 [main] INFO ehealth - add button clicked
 2022-07-27 14:55:39,700 [main] INFO ehealth - submit button clicked
 2022-07-27 14:55:42,096 [main] INFO ehealth - Ok button clicked
+2022-07-28 15:46:36,916 [main] INFO ehealth - URL is opened
+2022-07-28 15:46:37,196 [main] INFO ehealth - Entered username
+2022-07-28 15:46:39,340 [main] INFO ehealth - Entered Password
+2022-07-28 15:46:41,639 [main] INFO ehealth - Login button pressed
+2022-07-28 15:46:47,827 [main] INFO ehealth - dashboard button clicked
+2022-07-28 15:46:50,511 [main] INFO ehealth - quality dashboard button clicked
+2022-07-28 15:46:55,752 [main] INFO ehealth - entered IR code
+2022-07-28 15:46:57,914 [main] INFO ehealth - search button clicked
+2022-07-28 15:47:00,023 [main] INFO ehealth - actions clicked
+2022-07-28 15:47:02,220 [main] INFO ehealth - investigation button clicked
+2022-07-28 15:47:14,820 [main] INFO ehealth - recordInputs clicked
+2022-07-28 15:47:17,332 [main] INFO ehealth - department is selected
+2022-07-28 15:47:21,529 [main] INFO ehealth - Source clicked
+2022-07-28 15:47:23,651 [main] INFO ehealth - receivedOn date clicked
+2022-07-28 15:47:26,008 [main] INFO ehealth - response entered
+2022-07-28 15:47:37,918 [main] INFO ehealth - file uploaded
+2022-07-28 15:47:40,376 [main] INFO ehealth - submit Response clicked
+2022-07-28 15:47:44,869 [main] INFO ehealth - assertion is successful after record is submitted for success pop-up
+2022-07-28 15:47:47,746 [main] INFO ehealth - assertion for date and time is successful
+2022-07-28 15:47:50,541 [main] INFO ehealth - assertion for department is successful
+2022-07-28 15:47:52,556 [main] INFO ehealth - assertion for logged in user is successful
+2022-07-28 15:47:55,043 [main] INFO ehealth - EvidenceType is selected
+2022-07-28 15:47:57,166 [main] INFO ehealth - EvidenceSource is selected
+2022-07-28 15:47:59,477 [main] INFO ehealth - Evidence Description is entered
+2022-07-28 15:48:01,586 [main] INFO ehealth - Evidence Date & Time is selected
+2022-07-28 15:48:03,691 [main] INFO ehealth - add button for evidence is clicked
+2022-07-28 15:48:06,530 [main] INFO ehealth - assertion for evidence date and time is successful

@@ -23,7 +23,7 @@
 			<class name="com.HC.testCases.TC_IR_TAT" />
 		
 		-->	
-			<class name="com.HC.testCases.TC_IRinvestigationIRDetails" />
+			<class name="com.HC.testCases.TC_IRinvestigationRecordInputs" />
 
 	
 		</classes>

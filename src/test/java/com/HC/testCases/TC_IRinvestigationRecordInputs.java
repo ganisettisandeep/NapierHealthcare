@@ -86,12 +86,12 @@ public class TC_IRinvestigationRecordInputs extends BaseClass {
 		logger.info("response entered");
 		Thread.sleep(2000);
 		Elogger.log(Status.PASS, "test response in automation");
-/*
+
 		in.clickFileUpload("recordInputs");
 		logger.info("file uploaded");
 		Thread.sleep(2000);
 		Elogger.log(Status.PASS, "file uploaded successfully");
-	*/	
+		
 		capureScreen(driver,"TC_IRinvestigationRecordInputs3");
 		
 		//click on submit button in record inputs pop-up

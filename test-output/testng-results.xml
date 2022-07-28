@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="NapierHealthCareProject" duration-ms="106931" started-at="2022-07-27T09:23:58Z" finished-at="2022-07-27T09:25:45Z">
+  <suite name="NapierHealthCareProject" duration-ms="103564" started-at="2022-07-28T10:16:24Z" finished-at="2022-07-28T10:18:08Z">
     <groups>
     </groups>
-    <test name="HealthCare Test" duration-ms="106931" started-at="2022-07-27T09:23:58Z" finished-at="2022-07-27T09:25:45Z">
-      <class name="com.HC.testCases.TC_IRinvestigationIRDetails">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetails@13fee20c]" name="setUpSuite" is-config="true" duration-ms="267" started-at="2022-07-27T09:23:58Z" finished-at="2022-07-27T09:23:58Z">
+    <test name="HealthCare Test" duration-ms="103564" started-at="2022-07-28T10:16:24Z" finished-at="2022-07-28T10:18:08Z">
+      <class name="com.HC.testCases.TC_IRinvestigationRecordInputs">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@13fee20c]" name="setUpSuite" is-config="true" duration-ms="301" started-at="2022-07-28T10:16:24Z" finished-at="2022-07-28T10:16:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetails@13fee20c]" name="setup" is-config="true" duration-ms="5996" started-at="2022-07-27T09:23:58Z" finished-at="2022-07-27T09:24:04Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@13fee20c]" name="setup" is-config="true" duration-ms="11637" started-at="2022-07-28T10:16:25Z" finished-at="2022-07-28T10:16:36Z">
           <params>
             <param index="0">
               <value>
@@ -22,26 +22,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TC_IRinvestigationIRDetails()[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetails@13fee20c]" name="TC_IRinvestigationIRDetails" duration-ms="99447" started-at="2022-07-27T09:24:04Z" finished-at="2022-07-27T09:25:44Z">
+        <test-method status="PASS" signature="TC_IRinvestigationRecordInputs()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@13fee20c]" name="TC_IRinvestigationRecordInputs" duration-ms="90142" started-at="2022-07-28T10:16:36Z" finished-at="2022-07-28T10:18:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_IRinvestigationIRDetails -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetails@13fee20c]" name="tearDownMethod" is-config="true" duration-ms="862" started-at="2022-07-27T09:25:44Z" finished-at="2022-07-27T09:25:44Z">
+        </test-method> <!-- TC_IRinvestigationRecordInputs -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@13fee20c]" name="tearDownMethod" is-config="true" duration-ms="984" started-at="2022-07-28T10:18:06Z" finished-at="2022-07-28T10:18:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_IRinvestigationIRDetails status=SUCCESS method=TC_IRinvestigationIRDetails.TC_IRinvestigationIRDetails()[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetails@13fee20c] output={null}]]]>
+                <![CDATA[[TestResult name=TC_IRinvestigationRecordInputs status=SUCCESS method=TC_IRinvestigationRecordInputs.TC_IRinvestigationRecordInputs()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@13fee20c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetails@13fee20c]" name="tearDownTest" is-config="true" duration-ms="344" started-at="2022-07-27T09:25:44Z" finished-at="2022-07-27T09:25:45Z">
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@13fee20c]" name="tearDownTest" is-config="true" duration-ms="469" started-at="2022-07-28T10:18:07Z" finished-at="2022-07-28T10:18:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-      </class> <!-- com.HC.testCases.TC_IRinvestigationIRDetails -->
+      </class> <!-- com.HC.testCases.TC_IRinvestigationRecordInputs -->
     </test> <!-- HealthCare Test -->
   </suite> <!-- NapierHealthCareProject -->
 </testng-results>
