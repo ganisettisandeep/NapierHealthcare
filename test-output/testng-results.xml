@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="10" total="16" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="NapierHealthCareProject" duration-ms="103564" started-at="2022-07-28T10:16:24Z" finished-at="2022-07-28T10:18:08Z">
+  <suite name="NapierHealthCareProject" duration-ms="638486" started-at="2022-09-15T11:00:09Z" finished-at="2022-09-15T11:10:48Z">
     <groups>
     </groups>
-    <test name="HealthCare Test" duration-ms="103564" started-at="2022-07-28T10:16:24Z" finished-at="2022-07-28T10:18:08Z">
+    <test name="HealthCare Test" duration-ms="638486" started-at="2022-09-15T11:00:09Z" finished-at="2022-09-15T11:10:48Z">
       <class name="com.HC.testCases.TC_IRinvestigationRecordInputs">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@13fee20c]" name="setUpSuite" is-config="true" duration-ms="301" started-at="2022-07-28T10:16:24Z" finished-at="2022-07-28T10:16:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@13fee20c]" name="setup" is-config="true" duration-ms="11637" started-at="2022-07-28T10:16:25Z" finished-at="2022-07-28T10:16:36Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@78b729e6]" name="setup" is-config="true" duration-ms="22002" started-at="2022-09-15T11:02:32Z" finished-at="2022-09-15T11:02:54Z">
           <params>
             <param index="0">
               <value>
@@ -22,26 +18,170 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TC_IRinvestigationRecordInputs()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@13fee20c]" name="TC_IRinvestigationRecordInputs" duration-ms="90142" started-at="2022-07-28T10:16:36Z" finished-at="2022-07-28T10:18:06Z">
+        <test-method status="PASS" signature="TC_IRinvestigationRecordInputs()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@78b729e6]" name="TC_IRinvestigationRecordInputs" duration-ms="98570" started-at="2022-09-15T11:02:54Z" finished-at="2022-09-15T11:04:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_IRinvestigationRecordInputs -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@13fee20c]" name="tearDownMethod" is-config="true" duration-ms="984" started-at="2022-07-28T10:18:06Z" finished-at="2022-07-28T10:18:07Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@78b729e6]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2022-09-15T11:04:33Z" finished-at="2022-09-15T11:04:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_IRinvestigationRecordInputs status=SUCCESS method=TC_IRinvestigationRecordInputs.TC_IRinvestigationRecordInputs()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@13fee20c] output={null}]]]>
+                <![CDATA[[TestResult name=TC_IRinvestigationRecordInputs status=SUCCESS method=TC_IRinvestigationRecordInputs.TC_IRinvestigationRecordInputs()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@78b729e6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRecordInputs@13fee20c]" name="tearDownTest" is-config="true" duration-ms="469" started-at="2022-07-28T10:18:07Z" finished-at="2022-07-28T10:18:08Z">
+      </class> <!-- com.HC.testCases.TC_IRinvestigationRecordInputs -->
+      <class name="com.HC.testCases.TC_IRinvestigationConfirmationMessage">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.HC.testCases.TC_IRinvestigationConfirmationMessage@197d671]" name="setup" is-config="true" duration-ms="9906" started-at="2022-09-15T11:08:27Z" finished-at="2022-09-15T11:08:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_IRinvestigationConfirmationMessage()[pri:0, instance:com.HC.testCases.TC_IRinvestigationConfirmationMessage@197d671]" name="TC_IRinvestigationConfirmationMessage" duration-ms="60750" started-at="2022-09-15T11:08:37Z" finished-at="2022-09-15T11:09:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_IRinvestigationConfirmationMessage -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.HC.testCases.TC_IRinvestigationConfirmationMessage@197d671]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2022-09-15T11:09:38Z" finished-at="2022-09-15T11:09:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_IRinvestigationConfirmationMessage status=SUCCESS method=TC_IRinvestigationConfirmationMessage.TC_IRinvestigationConfirmationMessage()[pri:0, instance:com.HC.testCases.TC_IRinvestigationConfirmationMessage@197d671] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- com.HC.testCases.TC_IRinvestigationConfirmationMessage -->
+      <class name="com.HC.testCases.TC_IRinvestigationIRDetailsEditDelete">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetailsEditDelete@27c86f2d]" name="setup" is-config="true" duration-ms="14770" started-at="2022-09-15T11:06:29Z" finished-at="2022-09-15T11:06:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_IRinvestigationIRDetailsEditDelete()[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetailsEditDelete@27c86f2d]" name="TC_IRinvestigationIRDetailsEditDelete" duration-ms="102922" started-at="2022-09-15T11:06:44Z" finished-at="2022-09-15T11:08:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_IRinvestigationIRDetailsEditDelete -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetailsEditDelete@27c86f2d]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2022-09-15T11:08:27Z" finished-at="2022-09-15T11:08:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_IRinvestigationIRDetailsEditDelete status=SUCCESS method=TC_IRinvestigationIRDetailsEditDelete.TC_IRinvestigationIRDetailsEditDelete()[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetailsEditDelete@27c86f2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- com.HC.testCases.TC_IRinvestigationIRDetailsEditDelete -->
+      <class name="com.HC.testCases.TC_IRinvestigationRequestInput">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRequestInput@501edcf1]" name="setUpSuite" is-config="true" duration-ms="235" started-at="2022-09-15T11:00:09Z" finished-at="2022-09-15T11:00:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.HC.testCases.TC_IRinvestigationRequestInput@501edcf1]" name="setup" is-config="true" duration-ms="11410" started-at="2022-09-15T11:00:09Z" finished-at="2022-09-15T11:00:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_IRinvestigationRequestInput()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRequestInput@501edcf1]" name="TC_IRinvestigationRequestInput" duration-ms="130789" started-at="2022-09-15T11:00:21Z" finished-at="2022-09-15T11:02:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_IRinvestigationRequestInput -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.HC.testCases.TC_IRinvestigationRequestInput@501edcf1]" name="tearDownMethod" is-config="true" duration-ms="425" started-at="2022-09-15T11:02:32Z" finished-at="2022-09-15T11:02:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_IRinvestigationRequestInput status=SUCCESS method=TC_IRinvestigationRequestInput.TC_IRinvestigationRequestInput()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRequestInput@501edcf1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:com.HC.testCases.TC_IRinvestigationRequestInput@501edcf1]" name="tearDownTest" is-config="true" duration-ms="8053" started-at="2022-09-15T11:10:39Z" finished-at="2022-09-15T11:10:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-      </class> <!-- com.HC.testCases.TC_IRinvestigationRecordInputs -->
+      </class> <!-- com.HC.testCases.TC_IRinvestigationRequestInput -->
+      <class name="com.HC.testCases.TC_BeyondAcceptableTAT">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.HC.testCases.TC_BeyondAcceptableTAT@402e37bc]" name="setup" is-config="true" duration-ms="24408" started-at="2022-09-15T11:09:38Z" finished-at="2022-09-15T11:10:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_BeyondAcceptableTAT()[pri:0, instance:com.HC.testCases.TC_BeyondAcceptableTAT@402e37bc]" name="TC_BeyondAcceptableTAT" duration-ms="37383" started-at="2022-09-15T11:10:02Z" finished-at="2022-09-15T11:10:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_BeyondAcceptableTAT -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.HC.testCases.TC_BeyondAcceptableTAT@402e37bc]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2022-09-15T11:10:39Z" finished-at="2022-09-15T11:10:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_BeyondAcceptableTAT status=SUCCESS method=TC_BeyondAcceptableTAT.TC_BeyondAcceptableTAT()[pri:0, instance:com.HC.testCases.TC_BeyondAcceptableTAT@402e37bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- com.HC.testCases.TC_BeyondAcceptableTAT -->
+      <class name="com.HC.testCases.TC_IRinvestigationIRDetails">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetails@6b4a4e18]" name="setup" is-config="true" duration-ms="17838" started-at="2022-09-15T11:04:33Z" finished-at="2022-09-15T11:04:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_IRinvestigationIRDetails()[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetails@6b4a4e18]" name="TC_IRinvestigationIRDetails" duration-ms="98992" started-at="2022-09-15T11:04:50Z" finished-at="2022-09-15T11:06:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_IRinvestigationIRDetails -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetails@6b4a4e18]" name="tearDownMethod" is-config="true" duration-ms="1" started-at="2022-09-15T11:06:29Z" finished-at="2022-09-15T11:06:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_IRinvestigationIRDetails status=SUCCESS method=TC_IRinvestigationIRDetails.TC_IRinvestigationIRDetails()[pri:0, instance:com.HC.testCases.TC_IRinvestigationIRDetails@6b4a4e18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- com.HC.testCases.TC_IRinvestigationIRDetails -->
     </test> <!-- HealthCare Test -->
   </suite> <!-- NapierHealthCareProject -->
 </testng-results>

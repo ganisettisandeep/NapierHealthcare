@@ -6240,3 +6240,552 @@
 2022-07-28 15:48:01,586 - ehealth -INFO - Evidence Date & Time is selected
 2022-07-28 15:48:03,691 - ehealth -INFO - add button for evidence is clicked
 2022-07-28 15:48:06,530 - ehealth -INFO - assertion for evidence date and time is successful
+2022-09-14 12:21:40,682 - ehealth -INFO - URL is opened
+2022-09-14 12:21:41,049 - ehealth -INFO - Entered username
+2022-09-14 12:21:43,142 - ehealth -INFO - Entered Password
+2022-09-14 12:21:45,352 - ehealth -INFO - Login button pressed
+2022-09-14 12:21:58,075 - ehealth -INFO - dashboard button clicked
+2022-09-14 12:22:00,836 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 12:22:05,962 - ehealth -INFO - entered IR code
+2022-09-14 12:22:08,107 - ehealth -INFO - search button clicked
+2022-09-14 12:22:10,172 - ehealth -INFO - actions clicked
+2022-09-14 12:22:12,323 - ehealth -INFO - investigation button clicked
+2022-09-14 12:22:24,712 - ehealth -INFO - RequestForInput button clicked
+2022-09-14 12:22:27,297 - ehealth -INFO - dept is selected
+2022-09-14 12:22:29,561 - ehealth -INFO - user is selected
+2022-09-14 12:22:31,723 - ehealth -INFO - Description is selected in IR Information dropdown
+2022-09-14 12:22:33,789 - ehealth -INFO - Departments Involved is selected in IR Information dropdown 
+2022-09-14 12:22:36,083 - ehealth -INFO - Copy From Previous is selected in IR Information dropdown 
+2022-09-14 12:22:38,332 - ehealth -INFO - query noted
+2022-09-14 12:47:08,833 - ehealth -INFO - URL is opened
+2022-09-14 12:47:08,971 - ehealth -INFO - Entered username
+2022-09-14 12:47:11,152 - ehealth -INFO - Entered Password
+2022-09-14 12:47:13,401 - ehealth -INFO - Login button pressed
+2022-09-14 12:47:19,636 - ehealth -INFO - dashboard button clicked
+2022-09-14 12:47:22,341 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 12:47:27,519 - ehealth -INFO - entered IR code
+2022-09-14 12:47:29,731 - ehealth -INFO - search button clicked
+2022-09-14 12:47:31,815 - ehealth -INFO - actions clicked
+2022-09-14 12:47:34,003 - ehealth -INFO - investigation button clicked
+2022-09-14 12:47:46,499 - ehealth -INFO - recordInputs clicked
+2022-09-14 12:47:48,973 - ehealth -INFO - department is selected
+2022-09-14 12:47:53,139 - ehealth -INFO - Source clicked
+2022-09-14 12:47:55,290 - ehealth -INFO - receivedOn date clicked
+2022-09-14 12:47:57,718 - ehealth -INFO - response entered
+2022-09-14 12:48:10,659 - ehealth -INFO - file uploaded
+2022-09-14 12:48:13,077 - ehealth -INFO - submit Response clicked
+2022-09-14 12:48:17,568 - ehealth -INFO - assertion is successful after record is submitted for success pop-up
+2022-09-14 12:48:20,305 - ehealth -INFO - assertion for date and time is successful
+2022-09-14 12:48:22,370 - ehealth -INFO - assertion for department is successful
+2022-09-14 12:48:24,373 - ehealth -INFO - assertion for logged in user is successful
+2022-09-14 12:48:26,769 - ehealth -INFO - EvidenceType is selected
+2022-09-14 12:48:28,913 - ehealth -INFO - EvidenceSource is selected
+2022-09-14 12:48:31,238 - ehealth -INFO - Evidence Description is entered
+2022-09-14 12:48:33,344 - ehealth -INFO - Evidence Date & Time is selected
+2022-09-14 12:48:35,439 - ehealth -INFO - add button for evidence is clicked
+2022-09-14 12:48:37,512 - ehealth -INFO - assertion for evidence date and time is successful
+2022-09-14 14:44:44,064 - ehealth -INFO - URL is opened
+2022-09-14 14:44:44,189 - ehealth -INFO - Entered username
+2022-09-14 14:44:46,312 - ehealth -INFO - Entered Password
+2022-09-14 14:44:48,532 - ehealth -INFO - Login button pressed
+2022-09-14 14:44:54,604 - ehealth -INFO - dashboard button clicked
+2022-09-14 14:44:57,264 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 14:45:02,492 - ehealth -INFO - entered IR code
+2022-09-14 14:45:04,727 - ehealth -INFO - search button clicked
+2022-09-14 14:45:06,814 - ehealth -INFO - actions clicked
+2022-09-14 14:45:08,994 - ehealth -INFO - investigation button clicked
+2022-09-14 14:45:21,419 - ehealth -INFO - recordInputs clicked
+2022-09-14 14:45:23,909 - ehealth -INFO - department is selected
+2022-09-14 14:45:28,070 - ehealth -INFO - Source clicked
+2022-09-14 14:45:30,173 - ehealth -INFO - receivedOn date clicked
+2022-09-14 14:45:32,458 - ehealth -INFO - response entered
+2022-09-14 14:45:42,743 - ehealth -INFO - file uploaded
+2022-09-14 14:52:46,938 - ehealth -INFO - URL is opened
+2022-09-14 14:52:47,080 - ehealth -INFO - Entered username
+2022-09-14 14:52:49,216 - ehealth -INFO - Entered Password
+2022-09-14 14:52:51,455 - ehealth -INFO - Login button pressed
+2022-09-14 14:52:57,779 - ehealth -INFO - dashboard button clicked
+2022-09-14 14:53:00,481 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 14:53:05,650 - ehealth -INFO - entered IR code
+2022-09-14 14:53:07,855 - ehealth -INFO - search button clicked
+2022-09-14 14:53:09,978 - ehealth -INFO - actions clicked
+2022-09-14 14:53:12,223 - ehealth -INFO - investigation button clicked
+2022-09-14 14:53:24,758 - ehealth -INFO - recordInputs clicked
+2022-09-14 14:53:27,264 - ehealth -INFO - department is selected
+2022-09-14 14:53:31,481 - ehealth -INFO - Source clicked
+2022-09-14 14:53:33,627 - ehealth -INFO - receivedOn date clicked
+2022-09-14 14:53:35,921 - ehealth -INFO - response entered
+2022-09-14 14:53:46,224 - ehealth -INFO - file uploaded
+2022-09-14 14:59:35,383 - ehealth -INFO - URL is opened
+2022-09-14 14:59:35,527 - ehealth -INFO - Entered username
+2022-09-14 14:59:37,642 - ehealth -INFO - Entered Password
+2022-09-14 14:59:39,896 - ehealth -INFO - Login button pressed
+2022-09-14 14:59:46,028 - ehealth -INFO - dashboard button clicked
+2022-09-14 14:59:48,703 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 14:59:53,868 - ehealth -INFO - entered IR code
+2022-09-14 14:59:56,056 - ehealth -INFO - search button clicked
+2022-09-14 14:59:58,165 - ehealth -INFO - actions clicked
+2022-09-14 15:00:00,421 - ehealth -INFO - investigation button clicked
+2022-09-14 15:00:12,863 - ehealth -INFO - recordInputs clicked
+2022-09-14 15:00:15,512 - ehealth -INFO - department is selected
+2022-09-14 15:00:19,676 - ehealth -INFO - Source clicked
+2022-09-14 15:00:21,796 - ehealth -INFO - receivedOn date clicked
+2022-09-14 15:00:24,074 - ehealth -INFO - response entered
+2022-09-14 15:00:34,353 - ehealth -INFO - file uploaded
+2022-09-14 15:00:39,086 - ehealth -INFO - assertion is successful for file upload in record input pop-up
+2022-09-14 15:00:39,232 - ehealth -INFO - submit Response clicked
+2022-09-14 15:00:43,679 - ehealth -INFO - assertion is successful after record is submitted for success pop-up
+2022-09-14 15:00:45,845 - ehealth -INFO - assertion for date and time is successful
+2022-09-14 15:07:19,023 - ehealth -INFO - URL is opened
+2022-09-14 15:07:19,239 - ehealth -INFO - Entered username
+2022-09-14 15:07:21,383 - ehealth -INFO - Entered Password
+2022-09-14 15:07:23,679 - ehealth -INFO - Login button pressed
+2022-09-14 15:07:30,095 - ehealth -INFO - dashboard button clicked
+2022-09-14 15:07:32,790 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 15:07:37,996 - ehealth -INFO - entered IR code
+2022-09-14 15:07:40,219 - ehealth -INFO - search button clicked
+2022-09-14 15:07:42,365 - ehealth -INFO - actions clicked
+2022-09-14 15:07:44,642 - ehealth -INFO - investigation button clicked
+2022-09-14 15:07:57,314 - ehealth -INFO - recordInputs clicked
+2022-09-14 15:07:59,978 - ehealth -INFO - department is selected
+2022-09-14 15:08:04,216 - ehealth -INFO - Source clicked
+2022-09-14 15:08:06,373 - ehealth -INFO - receivedOn date clicked
+2022-09-14 15:08:08,692 - ehealth -INFO - response entered
+2022-09-14 15:08:19,035 - ehealth -INFO - file uploaded
+2022-09-14 15:08:23,788 - ehealth -INFO - assertion is successful for file upload in record input pop-up
+2022-09-14 15:08:23,963 - ehealth -INFO - submit Response clicked
+2022-09-14 15:08:28,564 - ehealth -INFO - assertion is successful after record is submitted for success pop-up
+2022-09-14 15:08:30,753 - ehealth -INFO - assertion for date and time is successful
+2022-09-14 15:18:30,880 - ehealth -INFO - URL is opened
+2022-09-14 15:18:31,013 - ehealth -INFO - Entered username
+2022-09-14 15:18:33,140 - ehealth -INFO - Entered Password
+2022-09-14 15:18:35,410 - ehealth -INFO - Login button pressed
+2022-09-14 15:18:41,757 - ehealth -INFO - dashboard button clicked
+2022-09-14 15:18:44,444 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 15:18:49,710 - ehealth -INFO - entered IR code
+2022-09-14 15:18:51,942 - ehealth -INFO - search button clicked
+2022-09-14 15:18:54,071 - ehealth -INFO - actions clicked
+2022-09-14 15:18:56,245 - ehealth -INFO - investigation button clicked
+2022-09-14 15:19:08,842 - ehealth -INFO - recordInputs clicked
+2022-09-14 15:19:11,411 - ehealth -INFO - department is selected
+2022-09-14 15:19:15,618 - ehealth -INFO - Source clicked
+2022-09-14 15:19:17,733 - ehealth -INFO - receivedOn date clicked
+2022-09-14 15:19:20,033 - ehealth -INFO - response entered
+2022-09-14 15:19:30,368 - ehealth -INFO - file uploaded
+2022-09-14 15:19:35,159 - ehealth -INFO - assertion is successful for file upload in record input pop-up
+2022-09-14 15:19:35,316 - ehealth -INFO - submit Response clicked
+2022-09-14 15:19:39,776 - ehealth -INFO - assertion is successful after record is submitted for success pop-up
+2022-09-14 15:19:41,927 - ehealth -INFO - assertion for date and time is successful
+2022-09-14 15:32:46,704 - ehealth -INFO - URL is opened
+2022-09-14 15:32:46,848 - ehealth -INFO - Entered username
+2022-09-14 15:32:48,980 - ehealth -INFO - Entered Password
+2022-09-14 15:32:51,257 - ehealth -INFO - Login button pressed
+2022-09-14 15:32:57,442 - ehealth -INFO - dashboard button clicked
+2022-09-14 15:33:00,098 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 15:33:05,323 - ehealth -INFO - entered IR code
+2022-09-14 15:33:07,510 - ehealth -INFO - search button clicked
+2022-09-14 15:33:09,592 - ehealth -INFO - actions clicked
+2022-09-14 15:33:11,737 - ehealth -INFO - investigation button clicked
+2022-09-14 15:33:24,209 - ehealth -INFO - recordInputs clicked
+2022-09-14 15:33:26,643 - ehealth -INFO - department is selected
+2022-09-14 15:33:30,808 - ehealth -INFO - Source clicked
+2022-09-14 15:33:32,912 - ehealth -INFO - receivedOn date clicked
+2022-09-14 15:33:35,200 - ehealth -INFO - response entered
+2022-09-14 15:33:45,442 - ehealth -INFO - file uploaded
+2022-09-14 15:33:50,032 - ehealth -INFO - assertion is successful for file upload in record input pop-up
+2022-09-14 15:33:50,147 - ehealth -INFO - submit Response clicked
+2022-09-14 15:33:54,544 - ehealth -INFO - assertion is successful after record is submitted for success pop-up
+2022-09-14 15:33:56,688 - ehealth -INFO - assertion for date and time is successful
+2022-09-14 15:37:24,653 - ehealth -INFO - URL is opened
+2022-09-14 15:37:24,814 - ehealth -INFO - Entered username
+2022-09-14 15:37:26,964 - ehealth -INFO - Entered Password
+2022-09-14 15:37:29,223 - ehealth -INFO - Login button pressed
+2022-09-14 15:37:35,520 - ehealth -INFO - dashboard button clicked
+2022-09-14 15:37:38,229 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 15:37:43,401 - ehealth -INFO - entered IR code
+2022-09-14 15:37:45,581 - ehealth -INFO - search button clicked
+2022-09-14 15:37:47,691 - ehealth -INFO - actions clicked
+2022-09-14 15:37:49,961 - ehealth -INFO - investigation button clicked
+2022-09-14 15:38:02,446 - ehealth -INFO - recordInputs clicked
+2022-09-14 15:38:04,992 - ehealth -INFO - department is selected
+2022-09-14 15:38:09,156 - ehealth -INFO - Source clicked
+2022-09-14 15:38:11,286 - ehealth -INFO - receivedOn date clicked
+2022-09-14 15:38:13,583 - ehealth -INFO - response entered
+2022-09-14 15:38:23,842 - ehealth -INFO - file uploaded
+2022-09-14 15:38:28,415 - ehealth -INFO - assertion is successful for file upload in record input pop-up
+2022-09-14 15:38:28,539 - ehealth -INFO - submit Response clicked
+2022-09-14 15:38:32,995 - ehealth -INFO - assertion is successful after record is submitted for success pop-up
+2022-09-14 15:38:35,184 - ehealth -INFO - assertion for date and time is successful
+2022-09-14 15:38:37,244 - ehealth -INFO - assertion for query Date&Time empty is successful
+2022-09-14 15:47:19,782 - ehealth -INFO - URL is opened
+2022-09-14 15:47:19,936 - ehealth -INFO - Entered username
+2022-09-14 15:47:22,071 - ehealth -INFO - Entered Password
+2022-09-14 15:47:24,430 - ehealth -INFO - Login button pressed
+2022-09-14 15:47:30,486 - ehealth -INFO - dashboard button clicked
+2022-09-14 15:47:33,146 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 15:47:38,318 - ehealth -INFO - entered IR code
+2022-09-14 15:47:40,476 - ehealth -INFO - search button clicked
+2022-09-14 15:47:42,565 - ehealth -INFO - actions clicked
+2022-09-14 15:47:44,780 - ehealth -INFO - investigation button clicked
+2022-09-14 15:47:57,226 - ehealth -INFO - recordInputs clicked
+2022-09-14 15:47:59,696 - ehealth -INFO - department is selected
+2022-09-14 15:48:03,829 - ehealth -INFO - Source clicked
+2022-09-14 15:48:05,951 - ehealth -INFO - receivedOn date clicked
+2022-09-14 15:48:08,261 - ehealth -INFO - response entered
+2022-09-14 15:48:18,530 - ehealth -INFO - file uploaded
+2022-09-14 15:48:23,021 - ehealth -INFO - assertion is successful for file upload in record input pop-up
+2022-09-14 15:48:23,135 - ehealth -INFO - submit Response clicked
+2022-09-14 15:48:27,548 - ehealth -INFO - assertion is successful after record is submitted for success pop-up
+2022-09-14 15:48:29,743 - ehealth -INFO - assertion for date and time is successful
+2022-09-14 15:48:31,777 - ehealth -INFO - assertion for query Date&Time empty is successful
+2022-09-14 15:48:33,823 - ehealth -INFO - assertion for query by empty is successful
+2022-09-14 15:48:35,997 - ehealth -INFO - assertion for department is successful
+2022-09-14 15:48:38,008 - ehealth -INFO - assertion for logged in user is successful
+2022-09-14 15:48:40,447 - ehealth -INFO - EvidenceType is selected
+2022-09-14 15:48:42,597 - ehealth -INFO - EvidenceSource is selected
+2022-09-14 15:48:44,872 - ehealth -INFO - Evidence Description is entered
+2022-09-14 15:48:46,968 - ehealth -INFO - Evidence Date & Time is selected
+2022-09-14 15:48:49,065 - ehealth -INFO - add button for evidence is clicked
+2022-09-14 15:48:51,193 - ehealth -INFO - assertion for evidence date and time is successful
+2022-09-14 19:14:56,731 - ehealth -INFO - URL is opened
+2022-09-14 19:14:56,863 - ehealth -INFO - Entered username
+2022-09-14 19:14:58,991 - ehealth -INFO - Entered Password
+2022-09-14 19:15:01,220 - ehealth -INFO - Login button pressed
+2022-09-14 19:15:06,501 - ehealth -INFO - IR Configuration clicked
+2022-09-14 19:15:11,077 - ehealth -INFO - enabling the risk assessment
+2022-09-14 19:15:11,136 - ehealth -INFO - checked the risk assessment
+2022-09-14 19:15:16,190 - ehealth -INFO - checked the Self-reporting IRs
+2022-09-14 19:15:21,273 - ehealth -INFO - checked the IPSG Type
+2022-09-14 19:23:12,968 - ehealth -INFO - URL is opened
+2022-09-14 19:23:13,139 - ehealth -INFO - Entered username
+2022-09-14 19:23:15,287 - ehealth -INFO - Entered Password
+2022-09-14 19:23:17,514 - ehealth -INFO - Login button pressed
+2022-09-14 19:23:23,822 - ehealth -INFO - dashboard button clicked
+2022-09-14 19:23:26,529 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 19:23:31,697 - ehealth -INFO - entered IR code
+2022-09-14 19:23:34,085 - ehealth -INFO - search button clicked
+2022-09-14 19:23:36,208 - ehealth -INFO - actions clicked
+2022-09-14 19:23:38,390 - ehealth -INFO - investigation button clicked
+2022-09-14 19:23:51,559 - ehealth -INFO - entered IR code
+2022-09-14 19:23:53,664 - ehealth -INFO - search button clicked
+2022-09-14 19:23:56,313 - ehealth -INFO - entered IR code
+2022-09-14 19:23:58,453 - ehealth -INFO - search button clicked
+2022-09-14 19:30:35,712 - ehealth -INFO - URL is opened
+2022-09-14 19:30:35,864 - ehealth -INFO - Entered username
+2022-09-14 19:30:37,998 - ehealth -INFO - Entered Password
+2022-09-14 19:30:40,412 - ehealth -INFO - Login button pressed
+2022-09-14 19:30:46,588 - ehealth -INFO - dashboard button clicked
+2022-09-14 19:30:49,271 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 19:30:54,515 - ehealth -INFO - entered IR code
+2022-09-14 19:30:56,792 - ehealth -INFO - search button clicked
+2022-09-14 19:30:58,905 - ehealth -INFO - actions clicked
+2022-09-14 19:31:01,060 - ehealth -INFO - investigation button clicked
+2022-09-14 19:31:14,276 - ehealth -INFO - entered IR code
+2022-09-14 19:31:16,362 - ehealth -INFO - search button clicked
+2022-09-14 19:31:19,003 - ehealth -INFO - entered IR code
+2022-09-14 19:31:21,133 - ehealth -INFO - search button clicked
+2022-09-14 19:31:23,230 - ehealth -INFO - actions clicked
+2022-09-14 19:31:25,321 - ehealth -INFO - investigation button clicked
+2022-09-14 19:34:22,990 - ehealth -INFO - URL is opened
+2022-09-14 19:34:23,165 - ehealth -INFO - Entered username
+2022-09-14 19:34:25,292 - ehealth -INFO - Entered Password
+2022-09-14 19:34:27,538 - ehealth -INFO - Login button pressed
+2022-09-14 19:34:33,850 - ehealth -INFO - dashboard button clicked
+2022-09-14 19:34:36,550 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 19:34:41,771 - ehealth -INFO - entered IR code
+2022-09-14 19:34:44,126 - ehealth -INFO - search button clicked
+2022-09-14 19:34:46,251 - ehealth -INFO - actions clicked
+2022-09-14 19:34:48,469 - ehealth -INFO - investigation button clicked
+2022-09-14 19:35:01,744 - ehealth -INFO - entered IR code
+2022-09-14 19:35:03,839 - ehealth -INFO - search button clicked
+2022-09-14 19:35:06,570 - ehealth -INFO - entered IR code
+2022-09-14 19:35:08,729 - ehealth -INFO - search button clicked
+2022-09-14 19:35:10,834 - ehealth -INFO - actions clicked
+2022-09-14 19:35:12,925 - ehealth -INFO - investigation button clicked
+2022-09-14 19:35:19,444 - ehealth -INFO - Assert for confirmation message No redirected to dashboard page
+2022-09-14 19:35:19,902 - ehealth -INFO - entered IR code
+2022-09-14 19:35:22,013 - ehealth -INFO - search button clicked
+2022-09-14 19:35:24,077 - ehealth -INFO - assertion successful after clicking No in confirmation message
+2022-09-14 20:15:09,450 - ehealth -INFO - URL is opened
+2022-09-14 20:15:09,590 - ehealth -INFO - Entered username
+2022-09-14 20:15:11,716 - ehealth -INFO - Entered Password
+2022-09-14 20:15:13,958 - ehealth -INFO - Login button pressed
+2022-09-14 20:15:20,100 - ehealth -INFO - dashboard button clicked
+2022-09-14 20:15:22,748 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 20:15:28,046 - ehealth -INFO - entered IR code
+2022-09-14 20:15:30,219 - ehealth -INFO - search button clicked
+2022-09-14 20:15:32,312 - ehealth -INFO - actions clicked
+2022-09-14 20:15:34,449 - ehealth -INFO - investigation button clicked
+2022-09-14 20:15:47,603 - ehealth -INFO - entered IR code
+2022-09-14 20:15:49,695 - ehealth -INFO - search button clicked
+2022-09-14 20:15:52,365 - ehealth -INFO - entered IR code
+2022-09-14 20:15:54,490 - ehealth -INFO - search button clicked
+2022-09-14 20:15:56,584 - ehealth -INFO - actions clicked
+2022-09-14 20:15:58,668 - ehealth -INFO - investigation button clicked
+2022-09-14 20:16:05,112 - ehealth -INFO - Assert for confirmation message No redirected to dashboard page
+2022-09-14 20:16:05,555 - ehealth -INFO - entered IR code
+2022-09-14 20:16:07,657 - ehealth -INFO - search button clicked
+2022-09-14 20:16:09,745 - ehealth -INFO - assertion successful after clicking No in confirmation message
+2022-09-14 20:34:29,389 - ehealth -INFO - URL is opened
+2022-09-14 20:34:29,524 - ehealth -INFO - Entered username
+2022-09-14 20:34:31,613 - ehealth -INFO - Entered Password
+2022-09-14 20:34:33,831 - ehealth -INFO - Login button pressed
+2022-09-14 20:34:40,032 - ehealth -INFO - dashboard button clicked
+2022-09-14 20:34:42,665 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 20:34:47,963 - ehealth -INFO - entered IR code
+2022-09-14 20:34:50,139 - ehealth -INFO - search button clicked
+2022-09-14 20:34:52,221 - ehealth -INFO - actions clicked
+2022-09-14 20:34:54,345 - ehealth -INFO - investigation button clicked
+2022-09-14 20:35:07,448 - ehealth -INFO - entered IR code
+2022-09-14 20:35:10,232 - ehealth -INFO - search button clicked
+2022-09-14 20:35:12,813 - ehealth -INFO - entered IR code
+2022-09-14 20:35:14,890 - ehealth -INFO - search button clicked
+2022-09-14 20:35:16,964 - ehealth -INFO - actions clicked
+2022-09-14 20:35:19,026 - ehealth -INFO - investigation button clicked
+2022-09-14 20:35:25,411 - ehealth -INFO - Assert for confirmation message No redirected to dashboard page
+2022-09-14 20:35:25,810 - ehealth -INFO - entered IR code
+2022-09-14 20:35:27,880 - ehealth -INFO - search button clicked
+2022-09-14 20:35:29,924 - ehealth -INFO - assertion successful after clicking No in confirmation message
+2022-09-14 20:47:15,569 - ehealth -INFO - URL is opened
+2022-09-14 20:47:15,713 - ehealth -INFO - Entered username
+2022-09-14 20:47:17,809 - ehealth -INFO - Entered Password
+2022-09-14 20:47:20,009 - ehealth -INFO - Login button pressed
+2022-09-14 20:47:26,130 - ehealth -INFO - dashboard button clicked
+2022-09-14 20:47:28,764 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 20:47:34,051 - ehealth -INFO - entered IR code
+2022-09-14 20:47:36,303 - ehealth -INFO - search button clicked
+2022-09-14 20:47:38,395 - ehealth -INFO - actions clicked
+2022-09-14 20:47:40,626 - ehealth -INFO - investigation button clicked
+2022-09-14 20:47:53,724 - ehealth -INFO - entered IR code
+2022-09-14 20:47:55,825 - ehealth -INFO - search button clicked
+2022-09-14 20:47:58,451 - ehealth -INFO - entered IR code
+2022-09-14 20:48:00,549 - ehealth -INFO - search button clicked
+2022-09-14 20:48:02,628 - ehealth -INFO - actions clicked
+2022-09-14 20:48:04,689 - ehealth -INFO - investigation button clicked
+2022-09-14 20:48:11,070 - ehealth -INFO - Assert for confirmation message No redirected to dashboard page
+2022-09-14 20:48:11,499 - ehealth -INFO - entered IR code
+2022-09-14 20:48:13,572 - ehealth -INFO - search button clicked
+2022-09-14 20:48:15,621 - ehealth -INFO - assertion successful after clicking No in confirmation message
+2022-09-14 21:01:38,830 - ehealth -INFO - URL is opened
+2022-09-14 21:01:38,976 - ehealth -INFO - Entered username
+2022-09-14 21:01:41,066 - ehealth -INFO - Entered Password
+2022-09-14 21:01:43,290 - ehealth -INFO - Login button pressed
+2022-09-14 21:01:48,660 - ehealth -INFO - dashboard button clicked
+2022-09-14 21:01:51,306 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 21:01:56,473 - ehealth -INFO - entered IR code
+2022-09-14 21:01:58,724 - ehealth -INFO - search button clicked
+2022-09-14 21:02:00,836 - ehealth -INFO - actions clicked
+2022-09-14 21:02:03,010 - ehealth -INFO - investigation button clicked
+2022-09-14 21:02:16,069 - ehealth -INFO - entered IR code
+2022-09-14 21:02:18,153 - ehealth -INFO - search button clicked
+2022-09-14 21:02:20,747 - ehealth -INFO - entered IR code
+2022-09-14 21:02:22,852 - ehealth -INFO - search button clicked
+2022-09-14 21:02:24,926 - ehealth -INFO - actions clicked
+2022-09-14 21:02:26,988 - ehealth -INFO - investigation button clicked
+2022-09-14 21:02:33,378 - ehealth -INFO - Assert for confirmation message No redirected to dashboard page
+2022-09-14 21:02:33,777 - ehealth -INFO - entered IR code
+2022-09-14 21:02:35,845 - ehealth -INFO - search button clicked
+2022-09-14 21:02:37,888 - ehealth -INFO - assertion successful after clicking No in confirmation message
+2022-09-14 21:04:03,546 - ehealth -INFO - URL is opened
+2022-09-14 21:04:03,701 - ehealth -INFO - Entered username
+2022-09-14 21:04:05,797 - ehealth -INFO - Entered Password
+2022-09-14 21:04:08,051 - ehealth -INFO - Login button pressed
+2022-09-14 21:04:14,304 - ehealth -INFO - dashboard button clicked
+2022-09-14 21:04:16,951 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 21:04:22,125 - ehealth -INFO - entered IR code
+2022-09-14 21:04:24,270 - ehealth -INFO - search button clicked
+2022-09-14 21:04:26,385 - ehealth -INFO - actions clicked
+2022-09-14 21:04:28,567 - ehealth -INFO - investigation button clicked
+2022-09-14 21:04:41,695 - ehealth -INFO - entered IR code
+2022-09-14 21:04:43,778 - ehealth -INFO - search button clicked
+2022-09-14 21:04:46,396 - ehealth -INFO - entered IR code
+2022-09-14 21:04:48,496 - ehealth -INFO - search button clicked
+2022-09-14 21:04:50,566 - ehealth -INFO - actions clicked
+2022-09-14 21:04:52,642 - ehealth -INFO - investigation button clicked
+2022-09-14 21:04:59,040 - ehealth -INFO - Assert for confirmation message No redirected to dashboard page
+2022-09-14 21:04:59,466 - ehealth -INFO - entered IR code
+2022-09-14 21:05:01,536 - ehealth -INFO - search button clicked
+2022-09-14 21:05:03,580 - ehealth -INFO - assertion successful after clicking No in confirmation message
+2022-09-14 21:57:08,823 - ehealth -INFO - URL is opened
+2022-09-14 21:57:08,965 - ehealth -INFO - Entered username
+2022-09-14 21:57:11,089 - ehealth -INFO - Entered Password
+2022-09-14 21:57:13,344 - ehealth -INFO - Login button pressed
+2022-09-14 21:59:13,938 - ehealth -INFO - URL is opened
+2022-09-14 21:59:14,101 - ehealth -INFO - Entered username
+2022-09-14 21:59:16,255 - ehealth -INFO - Entered Password
+2022-09-14 21:59:18,510 - ehealth -INFO - Login button pressed
+2022-09-14 21:59:23,707 - ehealth -INFO - dashboard button clicked
+2022-09-14 21:59:26,353 - ehealth -INFO - quality dashboard button clicked
+2022-09-14 21:59:33,262 - ehealth -INFO - entered IR code
+2022-09-14 21:59:35,431 - ehealth -INFO - search button clicked
+2022-09-14 21:59:39,815 - ehealth -INFO - Beyond acceptable TAT symbol is displayed
+2022-09-14 21:59:41,980 - ehealth -INFO - TAT link is clicked
+2022-09-14 21:59:44,848 - ehealth -INFO - TAT text is captured
+2022-09-14 21:59:47,392 - ehealth -INFO - TAT from dashboard is captured
+2022-09-15 16:30:21,429 - ehealth -INFO - URL is opened
+2022-09-15 16:30:21,655 - ehealth -INFO - Entered username
+2022-09-15 16:30:23,773 - ehealth -INFO - Entered Password
+2022-09-15 16:30:26,081 - ehealth -INFO - Login button pressed
+2022-09-15 16:30:31,624 - ehealth -INFO - dashboard button clicked
+2022-09-15 16:30:34,279 - ehealth -INFO - quality dashboard button clicked
+2022-09-15 16:30:39,505 - ehealth -INFO - entered IR code
+2022-09-15 16:30:41,679 - ehealth -INFO - search button clicked
+2022-09-15 16:30:43,758 - ehealth -INFO - actions clicked
+2022-09-15 16:30:45,912 - ehealth -INFO - investigation button clicked
+2022-09-15 16:30:58,727 - ehealth -INFO - RequestForInput button clicked
+2022-09-15 16:31:01,377 - ehealth -INFO - dept is selected
+2022-09-15 16:31:03,600 - ehealth -INFO - user is selected
+2022-09-15 16:31:05,764 - ehealth -INFO - Description is selected in IR Information dropdown
+2022-09-15 16:31:07,855 - ehealth -INFO - Departments Involved is selected in IR Information dropdown 
+2022-09-15 16:31:10,002 - ehealth -INFO - Copy From Previous is selected in IR Information dropdown 
+2022-09-15 16:31:12,308 - ehealth -INFO - query noted
+2022-09-15 16:31:18,690 - ehealth -INFO - assertion for raised by user is successful
+2022-09-15 16:31:20,766 - ehealth -INFO - assertion for previousText in RequestForInput pop-up is successful
+2022-09-15 16:31:20,869 - ehealth -INFO - query submitted
+2022-09-15 16:31:24,998 - ehealth -INFO - assertion is successful
+2022-09-15 16:31:27,642 - ehealth -INFO - assertion is successful
+2022-09-15 16:31:28,099 - ehealth -INFO - edited query is logged
+2022-09-15 16:31:30,475 - ehealth -INFO - edited query submitted
+2022-09-15 16:31:34,592 - ehealth -INFO - assertion is successful after editing query submit
+2022-09-15 16:31:34,770 - ehealth -INFO - IR Query Dashboard clicked
+2022-09-15 16:31:36,936 - ehealth -INFO - entered IR code
+2022-09-15 16:31:39,071 - ehealth -INFO - search button clicked
+2022-09-15 16:31:41,165 - ehealth -INFO - view response clicked
+2022-09-15 16:31:43,476 - ehealth -INFO - query asserted
+2022-09-15 16:31:45,735 - ehealth -INFO - response is entered
+2022-09-15 16:31:48,130 - ehealth -INFO - submit response is clicked
+2022-09-15 16:31:52,515 - ehealth -INFO - assertion is successful after response is submitted
+2022-09-15 16:31:52,636 - ehealth -INFO - dashboard button clicked
+2022-09-15 16:31:55,291 - ehealth -INFO - quality dashboard button clicked
+2022-09-15 16:32:00,494 - ehealth -INFO - entered IR code
+2022-09-15 16:32:02,664 - ehealth -INFO - search button clicked
+2022-09-15 16:32:04,771 - ehealth -INFO - actions clicked
+2022-09-15 16:32:06,930 - ehealth -INFO - investigation button clicked
+2022-09-15 16:32:19,080 - ehealth -INFO - view button clicked
+2022-09-15 16:32:21,374 - ehealth -INFO - response from query dashboard is asserted in IR Input page
+2022-09-15 16:32:25,482 - ehealth -INFO - close button clicked
+2022-09-15 16:32:25,544 - ehealth -INFO - delete button is clicked
+2022-09-15 16:32:54,515 - ehealth -INFO - URL is opened
+2022-09-15 16:32:54,668 - ehealth -INFO - Entered username
+2022-09-15 16:32:56,785 - ehealth -INFO - Entered Password
+2022-09-15 16:32:58,993 - ehealth -INFO - Login button pressed
+2022-09-15 16:33:04,314 - ehealth -INFO - dashboard button clicked
+2022-09-15 16:33:06,968 - ehealth -INFO - quality dashboard button clicked
+2022-09-15 16:33:12,163 - ehealth -INFO - entered IR code
+2022-09-15 16:33:14,324 - ehealth -INFO - search button clicked
+2022-09-15 16:33:16,454 - ehealth -INFO - actions clicked
+2022-09-15 16:33:18,698 - ehealth -INFO - investigation button clicked
+2022-09-15 16:33:31,202 - ehealth -INFO - recordInputs clicked
+2022-09-15 16:33:33,701 - ehealth -INFO - department is selected
+2022-09-15 16:33:37,856 - ehealth -INFO - Source clicked
+2022-09-15 16:33:39,971 - ehealth -INFO - receivedOn date clicked
+2022-09-15 16:33:42,231 - ehealth -INFO - response entered
+2022-09-15 16:33:59,037 - ehealth -INFO - file uploaded
+2022-09-15 16:34:03,589 - ehealth -INFO - assertion is successful for file upload in record input pop-up
+2022-09-15 16:34:03,691 - ehealth -INFO - submit Response clicked
+2022-09-15 16:34:08,117 - ehealth -INFO - assertion is successful after record is submitted for success pop-up
+2022-09-15 16:34:10,338 - ehealth -INFO - assertion for date and time is successful
+2022-09-15 16:34:12,379 - ehealth -INFO - assertion for query Date&Time empty is successful
+2022-09-15 16:34:14,461 - ehealth -INFO - assertion for query by empty is successful
+2022-09-15 16:34:16,697 - ehealth -INFO - assertion for department is successful
+2022-09-15 16:34:18,698 - ehealth -INFO - assertion for logged in user is successful
+2022-09-15 16:34:21,407 - ehealth -INFO - EvidenceType is selected
+2022-09-15 16:34:23,564 - ehealth -INFO - EvidenceSource is selected
+2022-09-15 16:34:25,844 - ehealth -INFO - Evidence Description is entered
+2022-09-15 16:34:27,991 - ehealth -INFO - Evidence Date & Time is selected
+2022-09-15 16:34:30,148 - ehealth -INFO - add button for evidence is clicked
+2022-09-15 16:34:32,314 - ehealth -INFO - assertion for evidence date and time is successful
+2022-09-15 16:34:50,871 - ehealth -INFO - URL is opened
+2022-09-15 16:34:51,021 - ehealth -INFO - Entered username
+2022-09-15 16:34:53,167 - ehealth -INFO - Entered Password
+2022-09-15 16:34:55,424 - ehealth -INFO - Login button pressed
+2022-09-15 16:35:00,669 - ehealth -INFO - IR Configuration clicked
+2022-09-15 16:35:05,224 - ehealth -INFO - enabling the risk assessment
+2022-09-15 16:35:05,514 - ehealth -INFO - checked the risk assessment
+2022-09-15 16:35:10,577 - ehealth -INFO - checked the Self-reporting IRs
+2022-09-15 16:35:15,621 - ehealth -INFO - checked the IPSG Type
+2022-09-15 16:35:18,337 - ehealth -INFO - dashboard button clicked
+2022-09-15 16:35:21,151 - ehealth -INFO - quality dashboard button clicked
+2022-09-15 16:35:26,375 - ehealth -INFO - entered IR code
+2022-09-15 16:35:28,678 - ehealth -INFO - search button clicked
+2022-09-15 16:35:30,781 - ehealth -INFO - actions clicked
+2022-09-15 16:35:32,958 - ehealth -INFO - investigation button clicked
+2022-09-15 16:35:45,222 - ehealth -INFO - IR Details tab is clicked
+2022-09-15 16:35:47,628 - ehealth -INFO - No radio button for previous similar incidents is clicked
+2022-09-15 16:35:49,870 - ehealth -INFO - details entered
+2022-09-15 16:35:51,998 - ehealth -INFO - Date&Time entered
+2022-09-15 16:35:54,128 - ehealth -INFO - add button is clicked
+2022-09-15 16:35:56,712 - ehealth -INFO - Assert for addition of Table of Events is successful
+2022-09-15 16:35:58,790 - ehealth -INFO - Assert for risk assessment section is successful
+2022-09-15 16:36:01,029 - ehealth -INFO - severity is selected
+2022-09-15 16:36:03,186 - ehealth -INFO - Likelihood is selected
+2022-09-15 16:36:05,268 - ehealth -INFO - Risk Register is selected
+2022-09-15 16:36:09,461 - ehealth -INFO - Self Reporting is selected
+2022-09-15 16:36:11,936 - ehealth -INFO - name is selected
+2022-09-15 16:36:16,231 - ehealth -INFO - notes is entered
+2022-09-15 16:36:18,405 - ehealth -INFO - Date&Time is entered
+2022-09-15 16:36:20,516 - ehealth -INFO - add button clicked
+2022-09-15 16:36:25,380 - ehealth -INFO - submit button clicked
+2022-09-15 16:36:27,852 - ehealth -INFO - Ok button clicked
+2022-09-15 16:36:44,627 - ehealth -INFO - URL is opened
+2022-09-15 16:36:44,794 - ehealth -INFO - Entered username
+2022-09-15 16:36:46,913 - ehealth -INFO - Entered Password
+2022-09-15 16:36:49,178 - ehealth -INFO - Login button pressed
+2022-09-15 16:36:54,440 - ehealth -INFO - IR Configuration clicked
+2022-09-15 16:36:58,989 - ehealth -INFO - enabling the risk assessment
+2022-09-15 16:36:59,064 - ehealth -INFO - checked the risk assessment
+2022-09-15 16:37:04,114 - ehealth -INFO - checked the Self-reporting IRs
+2022-09-15 16:37:09,155 - ehealth -INFO - checked the IPSG Type
+2022-09-15 16:37:11,869 - ehealth -INFO - dashboard button clicked
+2022-09-15 16:37:14,516 - ehealth -INFO - quality dashboard button clicked
+2022-09-15 16:37:19,738 - ehealth -INFO - entered IR code
+2022-09-15 16:37:21,942 - ehealth -INFO - search button clicked
+2022-09-15 16:37:24,020 - ehealth -INFO - actions clicked
+2022-09-15 16:37:26,193 - ehealth -INFO - investigation button clicked
+2022-09-15 16:37:38,482 - ehealth -INFO - IR Details tab is clicked
+2022-09-15 16:37:40,929 - ehealth -INFO - No radio button for previous similar incidents is clicked
+2022-09-15 16:37:43,101 - ehealth -INFO - details entered
+2022-09-15 16:37:45,220 - ehealth -INFO - Date&Time entered
+2022-09-15 16:37:47,325 - ehealth -INFO - add button is clicked
+2022-09-15 16:37:51,563 - ehealth -INFO - details entered for second event
+2022-09-15 16:37:53,680 - ehealth -INFO - Date&Time entered for second event
+2022-09-15 16:37:55,767 - ehealth -INFO - add button is clicked for second event
+2022-09-15 16:37:57,860 - ehealth -INFO - edit button is clicked
+2022-09-15 16:38:00,474 - ehealth -INFO - details entered for edit
+2022-09-15 16:38:02,840 - ehealth -INFO - add button is clicked for edited event
+2022-09-15 16:38:17,791 - ehealth -INFO - Risk Register is selected
+2022-09-15 16:38:20,610 - ehealth -INFO - riskID is entered
+2022-09-15 16:38:22,717 - ehealth -INFO - Self Reporting Yes is selected
+2022-09-15 16:38:25,217 - ehealth -INFO - submit button clicked
+2022-09-15 16:38:37,473 - ehealth -INFO - URL is opened
+2022-09-15 16:38:37,729 - ehealth -INFO - Entered username
+2022-09-15 16:38:39,903 - ehealth -INFO - Entered Password
+2022-09-15 16:38:42,128 - ehealth -INFO - Login button pressed
+2022-09-15 16:38:47,376 - ehealth -INFO - dashboard button clicked
+2022-09-15 16:38:50,012 - ehealth -INFO - quality dashboard button clicked
+2022-09-15 16:38:55,269 - ehealth -INFO - entered IR code
+2022-09-15 16:38:57,455 - ehealth -INFO - search button clicked
+2022-09-15 16:38:59,545 - ehealth -INFO - actions clicked
+2022-09-15 16:39:01,716 - ehealth -INFO - investigation button clicked
+2022-09-15 16:39:15,183 - ehealth -INFO - entered IR code
+2022-09-15 16:39:18,029 - ehealth -INFO - search button clicked
+2022-09-15 16:39:20,590 - ehealth -INFO - entered IR code
+2022-09-15 16:39:22,677 - ehealth -INFO - search button clicked
+2022-09-15 16:39:24,767 - ehealth -INFO - actions clicked
+2022-09-15 16:39:26,859 - ehealth -INFO - investigation button clicked
+2022-09-15 16:39:33,312 - ehealth -INFO - Assert for confirmation message No redirected to dashboard page
+2022-09-15 16:39:33,758 - ehealth -INFO - entered IR code
+2022-09-15 16:39:35,854 - ehealth -INFO - search button clicked
+2022-09-15 16:39:37,931 - ehealth -INFO - assertion successful after clicking No in confirmation message
+2022-09-15 16:40:02,618 - ehealth -INFO - URL is opened
+2022-09-15 16:40:02,746 - ehealth -INFO - Entered username
+2022-09-15 16:40:04,869 - ehealth -INFO - Entered Password
+2022-09-15 16:40:07,090 - ehealth -INFO - Login button pressed
+2022-09-15 16:40:12,232 - ehealth -INFO - dashboard button clicked
+2022-09-15 16:40:14,899 - ehealth -INFO - quality dashboard button clicked
+2022-09-15 16:40:20,147 - ehealth -INFO - entered IR code
+2022-09-15 16:40:22,323 - ehealth -INFO - search button clicked
+2022-09-15 16:40:26,725 - ehealth -INFO - Beyond acceptable TAT symbol is displayed
+2022-09-15 16:40:28,889 - ehealth -INFO - TAT link is clicked
+2022-09-15 16:40:32,199 - ehealth -INFO - TAT text is captured
+2022-09-15 16:40:34,736 - ehealth -INFO - TAT from dashboard is captured

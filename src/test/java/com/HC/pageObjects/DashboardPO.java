@@ -203,6 +203,7 @@ public class DashboardPO {
 	@FindBy(xpath="//input[@name=\"sequence\"]")
 	WebElement IRcode;
 	public void enterIRcodeQD(String data){
+		IRcode.clear();
 		IRcode.sendKeys(data);
 	}
 	
@@ -410,6 +411,27 @@ public class DashboardPO {
 		IRinvestigationYes.click();
 	}
 	
+	@FindBy(xpath="//button[text()='No']")
+	WebElement IRinvestigationNo;
+	public void IRinvestigationNo(){
+		IRinvestigationNo.click();
+	}
+
+	@FindBy(xpath="//h3[contains(text(),'IR INVESTIGATION')]")
+	WebElement IRinvestigationPage;
+	public boolean IRinvestigationPage(){
+		boolean IRinvestigationPageHeader = IRinvestigationPage.isDisplayed();
+		return IRinvestigationPageHeader;
+	}
+	
+	@FindBy(xpath="//h3[text()='INCIDENT REPORTING DASHBOARD']")
+	WebElement IRincidentReportingDashboardPage;
+	public boolean IRincidentReportingDashboardPage(){
+		boolean IRincidentReportingDashboardPageHeader = IRincidentReportingDashboardPage.isDisplayed();
+		return IRincidentReportingDashboardPageHeader;
+	}
+	
+	
 	@FindBy(xpath="//button[contains(text(),\"Request for Input\")]")
 	WebElement requestForInput;
 	public void clickRequestForInput(){
@@ -544,8 +566,13 @@ public class DashboardPO {
 	public void clickDeleteButtonRequest(){
 		deleteButtonRequest.click();
 	}
-	
-	
+
+	@FindBy(xpath="//a[contains(text(),'Back to IR Dashboard')]")
+	WebElement BacktoDashboard;
+	public void BacktoDashboard(){
+		BacktoDashboard.click();
+	}
+
 	@FindBy(xpath="//button[contains(text(),\"Record Inputs\")]")
 	WebElement recordInputs;
 	public void recordInputs(){
@@ -629,6 +656,20 @@ public class DashboardPO {
 		String date = getRaisedOnDateTime.getAttribute("value");
 		return date;
 	}
+
+	@FindBy(xpath="//*[contains(text(),'Raised by')]/following-sibling::div/span/input")
+	WebElement getRaisedBy;
+	public String getRaisedBy(){
+		String raisedBy = getRaisedBy.getAttribute("value");
+		return raisedBy;
+	}
+	
+	@FindBy(xpath="//*[@name='copyPrev']")
+	WebElement previousText;
+	public String getPreviousText(){
+		String previousText1 = previousText.getAttribute("value");
+		return previousText1;
+	}
 	
 
 	@FindBy(xpath="//tbody/tr/td[1]")
@@ -668,6 +709,32 @@ public class DashboardPO {
 		}
 		return ar;
 	}
+
+	@FindBy(xpath="//tbody/tr[1]/td[1]")
+	WebElement queryDateTime;
+	public boolean assertQueryDateTime(int element){
+		String text1 = queryDateTime.findElement(By.xpath("//tbody/tr["+element+"]/td[1]")).getText();
+		System.out.println("text1 is: "+text1);
+		boolean flagDT = text1.equals("");
+		return flagDT;
+	}
+
+	@FindBy(xpath="//tbody/tr[1]/td[2]")
+	WebElement queryBy;
+	public boolean assertQueryBy(int element){
+		String text2 = queryBy.findElement(By.xpath("//tbody/tr["+element+"]/td[2]")).getText();
+		System.out.println("text2 is: "+text2);
+		boolean flagDT = text2.equals("");
+		return flagDT;
+	}
+	
+	@FindBy(xpath="//*[starts-with(@class,\"irDashboard_irCode\")]")
+	WebElement beyondTATsymbol;
+	public boolean assertBeyondTATsymbol(){
+		boolean symbol = beyondTATsymbol.isDisplayed();
+		return symbol;
+	}
+	
 	
 
 	@FindBy(xpath="//*[starts-with(@class,\"elements_tableActions\")]/preceding-sibling::td[1]")

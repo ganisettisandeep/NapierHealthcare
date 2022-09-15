@@ -8,6 +8,8 @@
 <class name="com.HC.testCases.TC_IRinvestigationRecordInputs" />
 <class name="com.HC.testCases.TC_IRinvestigationIRDetails" />
 <class name="com.HC.testCases.TC_IRinvestigationIRDetailsEditDelete" />
+<class name="com.HC.testCases.TC_IRinvestigationConfirmationMessage" />
+<class name="com.HC.testCases.TC_BeyondAcceptableTAT" />
 </classes>
 </test>
 </suite>

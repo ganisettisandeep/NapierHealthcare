@@ -173,8 +173,19 @@ public class IncidentPO {
 		  
 		  System.out.println("file uploaded successfully");
 	}
-	
-	
+
+	@FindBy(xpath="(//*[@data-testid=\"fileInput\"]/div/span)[2]")
+	WebElement fileSelected;	
+	@FindBy(xpath="//button[@title='Remove']")
+	WebElement assertFile;
+	@FindBy(xpath="(//button[@class='btn clear'])[2]")
+	WebElement closePopup;
+	public boolean assertFileSelected(){
+		fileSelected.click();
+		boolean isFilePresent = assertFile.isDisplayed();
+		closePopup.click();
+		return isFilePresent;
+	}			
 
 	@FindBy(xpath="//*[@type=\"button\" and contains(text(),\"Clear\")]")
 	WebElement IRclearButton;

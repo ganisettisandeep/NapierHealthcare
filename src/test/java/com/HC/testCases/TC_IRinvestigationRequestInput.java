@@ -105,6 +105,29 @@ public class TC_IRinvestigationRequestInput extends BaseClass {
 		System.out.println(dateTimeF);
 		Thread.sleep(2000);
 
+		//capturing the raised by field while submitting query
+		String raisedBy = db.getRaisedBy();
+
+		//assertion for raised by in RequestForInput pop-up
+		System.out.println("usernameHIS: "+usernameHIS);
+		System.out.println("raisedBy: "+raisedBy);
+		Assert.assertEquals(usernameHIS, raisedBy);
+		Thread.sleep(2000);
+		logger.info("assertion for raised by user is successful");
+		Elogger.log(Status.PASS, "assertion for raised by user is successful");					
+		
+		
+		//assertion for text in "From Previous" field in RequestForInput pop-up
+		String previousTextpopUp = db.getPreviousText();
+		String previousTextexcel = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IRinvestigationRequestInput", 1,6);
+		System.out.println("previousTextpopUp: "+previousTextpopUp);
+		System.out.println("previousTextexcel: "+previousTextexcel);
+		Assert.assertEquals(previousTextexcel, previousTextpopUp);
+		Thread.sleep(2000);
+		logger.info("assertion for previousText in RequestForInput pop-up is successful");
+		Elogger.log(Status.PASS, "assertion for previousText in RequestForInput pop-up is successful");					
+		
+		
 		//click on submit button in RequestForInput pop-up
 		db.submitQuery();
 		logger.info("query submitted");

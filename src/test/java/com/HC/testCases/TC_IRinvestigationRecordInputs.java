@@ -94,6 +94,14 @@ public class TC_IRinvestigationRecordInputs extends BaseClass {
 		
 		capureScreen(driver,"TC_IRinvestigationRecordInputs3");
 		
+		//assertion for uploaded file
+		boolean isFilePresent = in.assertFileSelected();
+		Assert.assertTrue(isFilePresent);
+		Thread.sleep(2000);
+		logger.info("assertion is successful for file upload in record input pop-up");
+		Elogger.log(Status.PASS, "assertion is successful for file upload in record input pop-up");
+		
+		
 		//click on submit button in record inputs pop-up
 		String user = db.getUser();
 		db.submitResponse();
@@ -109,7 +117,7 @@ public class TC_IRinvestigationRecordInputs extends BaseClass {
 		logger.info("assertion is successful after record is submitted for success pop-up");
 		Elogger.log(Status.PASS, "assertion is successful for success message in pop-up");
 		
-		//assertion for date&time of received on field getting reflected in the grid
+		//assertion for date&time of "received on" field getting reflected in the grid
 		ArrayList<String> dateTimeArr = new ArrayList<String>();
 		dateTimeArr = db.getResDateTime();
 		boolean flag3 = dateTimeArr.contains(dateTimeF);
@@ -117,6 +125,22 @@ public class TC_IRinvestigationRecordInputs extends BaseClass {
 		Thread.sleep(2000);
 		logger.info("assertion for date and time is successful");
 		Elogger.log(Status.PASS, "assertion for date and time is successful");
+
+		//assertion for query date&time is empty in the grid
+		int arrayElementNumber = dateTimeArr.indexOf(dateTimeF);
+		System.out.println(arrayElementNumber+1);
+		boolean flagDT = db.assertQueryDateTime(arrayElementNumber+1);
+		Assert.assertTrue(flagDT);
+		Thread.sleep(2000);
+		logger.info("assertion for query Date&Time empty is successful");
+		Elogger.log(Status.PASS, "assertion for query Date&Time empty is successful");
+
+		//assertion for query by is empty in the grid
+		boolean flag = db.assertQueryBy(arrayElementNumber+1);
+		Assert.assertTrue(flag);
+		Thread.sleep(2000);
+		logger.info("assertion for query by empty is successful");
+		Elogger.log(Status.PASS, "assertion for query by empty is successful");
 
 		//assertion for department is getting reflected in the grid
 		ArrayList<String> getDeptArr = new ArrayList<String>();

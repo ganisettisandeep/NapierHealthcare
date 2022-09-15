@@ -69,7 +69,7 @@ public class BaseClass extends Constants{
 	        folderName = "TestReport-"+formatter.format(date);
 	        System.out.println(folderName);
 	        
-	        File newDir = new File("./"+folderName);
+	        File newDir = new File("./TestReports/"+folderName);
 	        if (!newDir.exists()){
 	        	newDir.mkdirs();
 	        }
@@ -77,7 +77,7 @@ public class BaseClass extends Constants{
 			String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
 			String repName="Test-Report-"+timeStamp+".html";
 			
-			htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+"/"+folderName+"/"+repName);//specify location of the report
+			htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+"/"+"TestReports"+"/"+folderName+"/"+repName);//specify location of the report
 			htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
 			
 			extent = loggersGenerator();
@@ -143,7 +143,7 @@ public class BaseClass extends Constants{
 		
 		for(int i=1; i<=screens1; i++) {
 			
-		String screenshotPath=System.getProperty("user.dir")+"\\"+folderName+"\\"+tr.getName()+i+".png";
+		String screenshotPath=System.getProperty("user.dir")+"\\"+"TestReports"+"\\"+folderName+"\\"+tr.getName()+i+".png";
 		System.out.println("screenshotPath: "+screenshotPath);
 		File f = new File(screenshotPath); 
 		
@@ -162,7 +162,7 @@ public class BaseClass extends Constants{
 	public void capureScreen(WebDriver driver, String tname) throws IOException {
 	TakesScreenshot ts = (TakesScreenshot) driver;
 	File scrFile = ts.getScreenshotAs(OutputType.FILE);
-	File target = new File(System.getProperty("user.dir") + "/"+ folderName+ "/" + tname + ".png");
+	File target = new File(System.getProperty("user.dir") + "/"+"TestReports"+"/"+ folderName+ "/" + tname + ".png");
 	System.out.println("target"+target);
 	FileUtils.copyFile(scrFile, target);
 	System.out.println("ScreenShot Taken");

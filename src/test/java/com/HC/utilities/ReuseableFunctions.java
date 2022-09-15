@@ -78,6 +78,9 @@ public class ReuseableFunctions extends BaseClass {
 		catch(Exception e){
 			System.out.println("No confirmation message to start investigation");
 		}
+		
+		boolean investigationPage = db.IRinvestigationPage();
+		Assert.assertEquals(true, investigationPage);
 	}
 
 	public void IRMasterconfiguration() throws InterruptedException {

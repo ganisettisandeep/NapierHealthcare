@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -46,7 +47,7 @@ public class TC_IRinvestigationIRDetailsEditDelete extends BaseClass {
 		//enter the IR code in quality dashboard
 		String IRcode = XLUtils.getCellData(Constants.Path_IncidentData,"TC_IRinvestigationIRDetails", 1,0);
 		rf.IRinvestigation(IRcode);
-		
+				
 		//click on IR details tab in investigation page
 		db.clickIRdetailsTab();
 		logger.info("IR Details tab is clicked");
